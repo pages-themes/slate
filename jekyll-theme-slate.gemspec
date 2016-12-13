@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name          = "jekyll-theme-slate"
   s.version       = "0.0.1"
   s.authors       = ["Please come forward"]
-  s.email         = ["support@github.com"]
+  s.email         = ["opensource+jekyll-theme-slate@github.com"]
   s.homepage      = "https://github.com/pages-themes/slate"
   s.summary       = "Slate is a theme for GitHub Pages"
 
