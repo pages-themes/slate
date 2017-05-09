@@ -156,7 +156,6 @@ p img {
 }
 
 pre, code {
-  width: 100%;
   color: #222;
   background-color: #fff;
 
@@ -169,7 +168,6 @@ pre, code {
 }
 
 pre {
-  width: 100%;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
   overflow: auto;
@@ -421,8 +419,6 @@ Small Device Styles
   }
 
   code, pre {
-    min-width: 320px;
-    max-width: 480px;
     font-size: 11px;
   }
 
