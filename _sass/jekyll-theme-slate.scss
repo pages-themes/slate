@@ -423,3 +423,53 @@ Small Device Styles
   }
 
 }
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 240px;
+    max-width: 320px;
+  }
+
+  #project_title {
+  font-size: 28px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 240px;
+    max-width: 320px;
+    font-size: 11px;
+  }
+
+}
