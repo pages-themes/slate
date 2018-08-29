@@ -3892,6 +3892,12 @@ input[type="button"].btn-block {
   padding-right: 5px;
 }
 
+.tag-line {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #d0d0d0;
+  }
 
 .nav-tabs .nav-link {
   border: 1px solid transparent;
