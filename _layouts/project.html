@@ -33,7 +33,7 @@
                     <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/services.html">Services</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Projects<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://4mber.github.io/">Projects<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/contact.html">Contact Us</a>
@@ -55,43 +55,6 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
-        <h2>Categories</h2>
-        <ul>
-        {% assign categories_list = site.categories %}
-          {% if categories_list.first[0] == null %}
-            {% for category in categories_list %}
-              <li><a href="#{{ category }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a></li>
-            {% endfor %}
-          {% else %}
-            {% for category in categories_list %}
-              <li><a href="#{{ category[0] | downcase }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
-            {% endfor %}
-          {% endif %}
-        {% assign categories_list = nil %}
-        </ul>
-
-        {% for category in site.categories %}
-          <h3 id="{{ category[0] }}">{{ category[0] | capitalize }}</h3>
-          <ul>
-            {% assign pages_list = category[1] %}
-            {% for post in pages_list %}
-              {% if post.title != null %}
-              {% if group == null or group == post.group %}
-              <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
-              {% endif %}
-              {% endif %}
-            {% endfor %}
-            {% assign pages_list = nil %}
-            {% assign group = nil %}
-          </ul>
-        {% endfor %}
-
-
-
-
-
-
-        <h1>All Projects</h1>
         <ul style="list-style: none;">
           {% for post in site.posts %}
             <li>
@@ -100,9 +63,8 @@
                   {{ post.title }}
                 </a>
               </h2>
-              {{ post.category }}
               <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-              <a href="{{ post.url }}">{{ post.excerpt }}</a>
+              <a href="{{ post.url }}">{{ post.content }}</a>
               <hr>
             </li>
           {% endfor %}
