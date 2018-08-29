@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="icon" href="assets/images/logo.png">
+    <title>Oxford Cruisers Ltd.</title>
 
 {% seo %}
   </head>
@@ -13,6 +15,32 @@
   <body>
 
     <!-- HEADER -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="resources/logo.svg" id="logo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse w-100" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div id="header_wrap" class="outer">
         <header class="inner">
 
