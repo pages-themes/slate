@@ -62,11 +62,11 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 0.95rem;
-  font-weight: 300;
   line-height: 1.5;
   color: #212529;
   text-align: left;
   background-color: #fff;
+  -webkit-font-smoothing: auto;
 }
 
 [tabindex="-1"]:focus {
@@ -3907,8 +3907,6 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: 1.4;
   color: #d0d0d0;
-  font-weight: 500;
-  letter-spacing: -1px;
 }
 
 .nav-tabs .nav-link {
@@ -4091,8 +4089,7 @@ p img {
   box-shadow: 0px 2px 5px -1px rgba(107,107,107,0.75);
 }
 
-#category-float {
-  right: 50px;
+#categories {
   text-align: right;
 }
 
@@ -4367,7 +4364,6 @@ p img {
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 600;
-  letter-spacing: -1px;
   font-size: 0.99rem;
 }
 

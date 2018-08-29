@@ -46,7 +46,7 @@
         <header class="inner">
 
           <p class="tag-line">Projects from</p>
-          <h1 style="color: #ffffff; font-weight: 600;">Oxford Cruisers Ltd.</h1>
+          <h1 style="color: #ffffff;">Oxford Cruisers Ltd.</h1>
 
         </header>
     </div>
@@ -55,7 +55,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
-        <div id="category-float">
+        <div id="categories">
           <h2>Categories</h2>
           <ul style="list-style: none;">
           {% assign categories_list = site.categories %}
@@ -84,10 +84,8 @@
                   {{ post.title }}
                 </a>
               </h2>
-              {{ post.category }}
               <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
               <a href="{{ post.url }}">{{ post.excerpt }}</a>
-              <hr>
               </li>
               {% endif %}
               {% endif %}
@@ -95,6 +93,7 @@
             {% assign pages_list = nil %}
             {% assign group = nil %}
           </ul>
+          <a href="#categories">Back to Top</a>
         {% endfor %}
 
       </section>
