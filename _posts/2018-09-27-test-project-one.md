@@ -3,7 +3,7 @@ title: 'Test Project: Two Categories, Welding & Painting'
 category:
 - welding
 - painting
-
+image: /assets/images/cruisers1.png
 ---
 #### **Test Project: Two Categories, Welding & Painting**
 

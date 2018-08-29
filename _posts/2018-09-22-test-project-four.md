@@ -1,6 +1,7 @@
 ---
 title: Test Project Four
 category: other
+image: /assets/images/cruisers3.jpg
 ---
 
 ![Other Image 1]({{ "/assets/images/cruisers3.jpg" | absolute_url }})
