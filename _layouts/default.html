@@ -72,8 +72,8 @@
           </ul>
         </div>
         {% for category in site.categories %}
-          <h2 id="{{ category[0] }}">{{ category[0] | capitalize }}</h2>
           <h5><a href="#categories">Back to Top</a></h5>
+          <h2 id="{{ category[0] }}">{{ category[0] | capitalize }}</h2>
           <ul style="list-style: none;">
             {% assign pages_list = category[1] %}
             {% for post in pages_list %}
