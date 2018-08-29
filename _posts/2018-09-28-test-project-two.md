@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Test Project Two
 category: welding
 ---
