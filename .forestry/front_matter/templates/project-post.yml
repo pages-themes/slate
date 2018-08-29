@@ -12,5 +12,3 @@ fields:
 - type: file
   name: image
   label: Featured Image
-pages:
-- _posts/2018-08-29-test-project-create-category.md
