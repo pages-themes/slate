@@ -1,10 +1,12 @@
 ---
-title: Test Project One
-category: welding
+title: Test Project, Two Categories
+category:
+- welding
+- painting
 
 ---
 ![](/uploads/cruisers1.png)
 
-#### **Test Project One**
+#### **Test Project, Two Categories**
 
-This is a really cool project in which we welded some things together. It was awesome. We're really good at it.
+This is a really cool project! This project post is testing how the website will handle a post with two different project categories.
