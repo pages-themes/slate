@@ -1,0 +1,14 @@
+---
+label: Project Post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+- type: tag_list
+  label: Category
+  name: category
+- type: file
+  name: image
+  label: Featured Image
