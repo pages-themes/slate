@@ -4098,6 +4098,10 @@ img {
   text-align: right;
 }
 
+.inner {
+  max-width: 70rem;
+}
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
