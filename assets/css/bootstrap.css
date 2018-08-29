@@ -3857,7 +3857,11 @@ input[type="button"].btn-block {
 }
 
 #main_content {
-  margin-top: 11rem;
+  margin-top: 9rem;
+}
+
+#main_content_wrap {
+  background: #ffffff;
 }
 
 .nav {
@@ -4065,6 +4069,12 @@ input[type="button"].btn-block {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
+}
+
+footer {
+  width: 100%;
+  padding: 100px 100px 10px 100px;
+  color: #d0d0d0;
 }
 
 @media (max-width: 575.98px) {
