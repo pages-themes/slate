@@ -4091,6 +4091,11 @@ p img {
   box-shadow: 0px 2px 5px -1px rgba(107,107,107,0.75);
 }
 
+#category-float {
+  position: fixed;
+  float: right;
+}
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
