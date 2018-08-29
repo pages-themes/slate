@@ -1,11 +1,11 @@
 ---
-title: Test Project Four
+title: 'Test Project: Other, No Ft. Image'
 category: other
-image: /assets/images/cruisers3.jpg
+image: ''
+
 ---
+#### Test Project: Other, No Ft. Image
 
-![Other Image 1]({{ "/assets/images/cruisers3.jpg" | absolute_url }})
+![](/uploads/cruisers3.jpg)
 
-{{ page.title }}
-
-This is a really cool project in which we did other miscellaneous stuff.
+This is a really cool project in which we did other miscellaneous stuff. This project post is testing what it looks like on the preview page if you do not select a featured image!
