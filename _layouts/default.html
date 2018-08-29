@@ -72,19 +72,19 @@
           </ul>
         </div>
         {% for category in site.categories %}
-          <h1 id="{{ category[0] }}">{{ category[0] | capitalize }}</h1>
+          <h2 id="{{ category[0] }}">{{ category[0] | capitalize }}</h2>
           <ul style="list-style: none;">
             {% assign pages_list = category[1] %}
             {% for post in pages_list %}
               {% if post.title != null %}
               {% if group == null or group == post.group %}
               <li>
-              <h2>
+              <h3>
                 <a href="{{ post.url }}">
                   {{ post.title }}
                 </a>
-              </h2>
-              <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+              </h3>
+              <em style="color: #929ca7;"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time></em>
               <a href="{{ post.url }}">{{ post.excerpt }}</a>
               </li>
               {% endif %}
@@ -93,7 +93,7 @@
             {% assign pages_list = nil %}
             {% assign group = nil %}
           </ul>
-          <a href="#categories">Back to Top</a>
+          <h4><a href="#categories">Back to Top</a></h4>
         {% endfor %}
 
       </section>

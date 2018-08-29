@@ -372,11 +372,12 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2rem;
-  margin-top: 55px;
+  margin-top: 65px;
 }
 
 h3, .h3 {
   font-size: 1.75rem;
+  margin-top: 35px;
 }
 
 h4, .h4 {
