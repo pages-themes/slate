@@ -1,5 +1,5 @@
 ---
-title: 'Test Project: Two Categories'
+title: 'Test Project: Two Categories, Welding & Painting'
 category:
 - welding
 - painting
