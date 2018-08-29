@@ -4092,8 +4092,8 @@ p img {
 }
 
 #category-float {
-  position: fixed;
-  float: right;
+  right: 50px;
+  text-align: right;
 }
 
 @media (max-width: 575.98px) {

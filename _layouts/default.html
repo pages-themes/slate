@@ -56,7 +56,7 @@
       <section id="main_content" class="inner">
         {{ content }}
         <div id="category-float">
-          <h1>Categories</h1>
+          <h2>Categories</h2>
           <ul style="list-style: none;">
           {% assign categories_list = site.categories %}
             {% if categories_list.first[0] == null %}
@@ -72,7 +72,7 @@
           </ul>
         </div>
         {% for category in site.categories %}
-          <h3 id="{{ category[0] }}">{{ category[0] | capitalize }}</h3>
+          <h1 id="{{ category[0] }}">{{ category[0] | capitalize }}</h1>
           <ul style="list-style: none;">
             {% assign pages_list = category[1] %}
             {% for post in pages_list %}
