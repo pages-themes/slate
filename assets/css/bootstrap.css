@@ -3842,12 +3842,18 @@ input[type="button"].btn-block {
   box-shadow: none;
 }
 
-/*#headerwrap {
-  height: 42rem;
-}*/
+#headerwrap {
+  height: 30rem;
+}
 
 #header_wrap .inner {
   padding: 0;
+  padding-top: 12rem;
+}
+
+.inner {
+  margin: 0;
+  margin-left: 8.5rem;
 }
 
 .nav {
