@@ -1,11 +1,11 @@
 ---
-title: Test Project Three
+title: 'Test Project: Painting'
 category: painting
-image: /assets/images/cruisers3.jpg
+image: "/assets/images/cruisers3.jpg"
+
 ---
+#### Test Project: Painting
 
-![Painting Image 1]({{ "/assets/images/cruisers3.jpg" | absolute_url }})
-
-{{ page.title }}
+![](/uploads/cruisers3.jpg)
 
 This is a really cool project in which we painted things some really fun colors. It was cool. We're really good at this.
