@@ -6,10 +6,16 @@ image: "/uploads/263.JPG"
 ---
 #### As on George Clarke's Amazing Spaces
 
-![](/uploads/cruisers3-1.jpg)   ![](/uploads/cruisers2.jpg)
+![](/uploads/239.JPG)
 
-This is another really cool project in which we welded some things together. It was still awesome. We're still really good at it. This project post is testing what it looks like when you have more than one image!
+_Cabin braced and strengthened prior to cutting. The cabin was raised 25cm._
 
-> _"And here's what it looks like when I'm quoting someone, just in case!"_
+_![](/uploads/248-1.JPG) _
 
-Cool Huh!?
+New steel cut and welded in.
+
+![](/uploads/280.JPG)
+
+A small section of cabin removed.
+
+b![](/uploads/291.JPG)
