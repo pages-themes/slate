@@ -4092,7 +4092,7 @@ footer {
 }
 
 img {
-  margin-top: 20px;
+  margin: 0;
   padding: 0;
 }
 
@@ -4116,6 +4116,8 @@ img, .ft-img {
   min-width: 70px;
   border: none;
   box-shadow: none;
+  margin-top: 20px;
+  padding: 0;
 }
 
 #categories {
