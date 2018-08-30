@@ -4118,10 +4118,10 @@ img, .ft-img {
 }
 
 #logo {
-  min-width: 70px;
+  width: 70px;
   border: none;
   box-shadow: none;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0;
 }
 
