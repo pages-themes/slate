@@ -4094,6 +4094,8 @@ footer {
 img {
   margin: 0;
   padding: 0;
+  width: 100%;
+  max-width: -webkit-fill-available;
 }
 
 .ft-img {
@@ -4118,6 +4120,10 @@ img, .ft-img {
   box-shadow: none;
   margin-top: 20px;
   padding: 0;
+}
+
+p img {
+  width: 500px;
 }
 
 #categories {
