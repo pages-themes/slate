@@ -4117,16 +4117,16 @@ img, .ft-img {
   box-shadow: 0px 2px 5px -1px rgba(107,107,107,0.75);
 }
 
-#logo {
-  width: 70px;
-  border: none;
-  box-shadow: none;
-  margin-top: 15px;
-  padding: 0;
-}
-
 p img {
   width: 500px;
+}
+
+#logo {
+  min-width: 70px;
+  border: none;
+  box-shadow: none;
+  margin-top: 20px;
+  padding: 0;
 }
 
 #categories {
