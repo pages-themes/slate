@@ -1,7 +1,7 @@
 ---
 title: 'Test Project: Welding, Two Images'
 category: welding
-image: "/assets/images/cruisers2.jpg"
+image: "/uploads/704.JPG"
 
 ---
 #### Test Project: Welding, Two Images

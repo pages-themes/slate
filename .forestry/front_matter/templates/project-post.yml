@@ -13,5 +13,5 @@ fields:
   name: image
   label: Featured Image
 pages:
-- _posts/gas-work.md
 - _posts/2018-08-30-test-project-1.md
+- _posts/gas-work.md
