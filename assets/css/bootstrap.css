@@ -6100,7 +6100,7 @@ button.close {
   text-align: center;
   bottom: -0.5rem;
   z-index: 10;
-  padding-bottom: 60px;
+  padding-bottom: 63px;
 }
 
 .align-baseline {
@@ -6198,7 +6198,12 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #434446 !important;
+  background: #212121;
+  background: -moz-linear-gradient(top, #373737, #212121);
+  background: -webkit-linear-gradient(top, #373737, #212121);
+  background: -ms-linear-gradient(top, #373737, #212121);
+  background: -o-linear-gradient(top, #373737, #212121);
+  background: linear-gradient(to top, #373737, #212121);
   color: #d0d0d0;
 }
 
