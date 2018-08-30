@@ -86,11 +86,10 @@
                 </a>
               </h3>
               <em style="color: #929ca7;"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time></em><br><br>
-              <div class="ft-img">
-                <a href="{{ post.url }}">
-                  <img src="{{ post.image }}">
-                </a>
-              </div>
+              <a href="{{ post.url }}">
+                <div class="ft-img">
+                </div>
+              </a>
               </li>
               {% endif %}
               {% endif %}
