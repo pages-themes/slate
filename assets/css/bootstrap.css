@@ -3868,6 +3868,7 @@ input[type="button"].btn-block {
 
 #main_content_wrap {
   background: #ffffff;
+  border: none;
 }
 
 .nav {
@@ -4079,6 +4080,7 @@ footer {
   width: 100%;
   padding: 100px 100px 10px 100px;
   color: #d0d0d0;
+  margin-top: 100px;
 }
 
 img {
