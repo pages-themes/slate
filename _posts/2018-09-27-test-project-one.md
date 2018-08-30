@@ -3,7 +3,7 @@ title: Welding to Environment Agency tug.
 category:
 - welding
 - painting
-image: "/uploads/cruisers1.png"
+image: "/uploads/112.JPG"
 
 ---
 #### **Sandblast and re-bottom craft.**
