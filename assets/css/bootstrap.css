@@ -373,6 +373,9 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2rem;
+}
+
+.category-head {
   margin-top: 65px;
 }
 
@@ -4128,6 +4131,9 @@ p img {
 
 #categories {
   text-align: right;
+  background-color: #ececec;
+  padding: 30px;
+  margin-top: 100px;
 }
 
 .inner {
