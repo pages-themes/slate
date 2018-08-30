@@ -3871,6 +3871,26 @@ input[type="button"].btn-block {
   border: none;
 }
 
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel2 {
+  margin: -75px -85px 10px 200px;
+}
+
+.carousel-caption2 {
+  bottom: -0.5rem;
+  z-index: 10;
+}
+
+.carousel-item2 {
+  height: 100%;
+  vertical-align: middle;
+}
+
+
+
 .nav {
   display: -ms-flexbox;
   display: flex;
