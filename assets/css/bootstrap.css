@@ -4099,7 +4099,6 @@ img {
 .ft-img {
   width: 400px;
   height: 400px;
-  background-image: {{ post.image }};
   overflow: hidden;
 }
 

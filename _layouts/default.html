@@ -87,7 +87,7 @@
               </h3>
               <em style="color: #929ca7;"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time></em><br><br>
               <a href="{{ post.url }}">
-                <div class="ft-img">
+                <div class="ft-img" style="background-image: {{ post.image }};">
                 </div>
               </a>
               </li>
