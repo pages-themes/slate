@@ -1,7 +1,7 @@
 ---
 title: 'Test Project: Painting'
 category: painting
-image: "/assets/images/cruisers3.jpg"
+image: "/uploads/cruisers2-1.jpg"
 
 ---
 #### Test Project: Painting
