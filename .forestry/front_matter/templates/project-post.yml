@@ -12,3 +12,5 @@ fields:
 - type: file
   name: image
   label: Featured Image
+pages:
+- _posts/test-project-1.md
