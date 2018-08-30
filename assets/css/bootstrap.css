@@ -3879,12 +3879,6 @@ input[type="button"].btn-block {
   margin: -75px -85px 10px 200px;
 }
 
-.carousel-caption2 {
-  bottom: -0.5rem;
-  z-index: 10;
-  padding-bottom: 35px;
-}
-
 .carousel-item2 {
   height: 100%;
   vertical-align: middle;
@@ -6100,13 +6094,13 @@ button.close {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 20px;
   left: 15%;
-  z-index: 10;
   padding-top: 20px;
-  padding-bottom: 65px;
   color: #fff;
   text-align: center;
+  bottom: -0.5rem;
+  z-index: 10;
+  padding-bottom: 35px;
 }
 
 .align-baseline {
