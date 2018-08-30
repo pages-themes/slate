@@ -10,7 +10,7 @@ image: "/uploads/263.JPG"
 
 _Cabin braced and strengthened prior to cutting. The cabin was raised 25cm._
 
-_![](/uploads/248-1.JPG) _
+_![](/uploads/248-1.JPG)
 
 New steel cut and welded in.
 
@@ -18,4 +18,14 @@ New steel cut and welded in.
 
 A small section of cabin removed.
 
-b![](/uploads/291.JPG)
+![](/uploads/291.JPG)
+
+New cabin sides on.
+
+![](/uploads/313.JPG)
+
+Roof beams in.
+
+![](/uploads/325.JPG)
+
+Nearly done.
