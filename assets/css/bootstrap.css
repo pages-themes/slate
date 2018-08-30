@@ -4099,6 +4099,13 @@ footer {
 
 img {
   margin-top: 20px;
+  padding: 0;
+}
+
+.ft-img {
+  width:400px;
+  height:400px;
+  overflow:hidden;
   border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
@@ -4106,8 +4113,8 @@ img {
   -webkit-box-shadow: 0px 2px 5px -1px rgba(107,107,107,0.75);
   -moz-box-shadow: 0px 2px 5px -1px rgba(107,107,107,0.75);
   box-shadow: 0px 2px 5px -1px rgba(107,107,107,0.75);
-  padding: 0;
 }
+
 
 #categories {
   text-align: right;
