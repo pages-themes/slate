@@ -4097,8 +4097,8 @@ img {
 }
 
 .ft-img {
-  width: 400px;
-  height: 400px;
+  width: 80%;
+  height: 200px;
   overflow: hidden;
 }
 
