@@ -1,10 +1,10 @@
 ---
-title: 'Test Project: Welding, Two Images'
-category: welding
-image: "/uploads/704.JPG"
+title: Tjalk Project - Raising and lengthen cabin
+category: []
+image: "/uploads/263.JPG"
 
 ---
-#### Test Project: Welding, Two Images
+#### As on George Clarke's Amazing Spaces
 
 ![](/uploads/cruisers3-1.jpg)   ![](/uploads/cruisers2.jpg)
 
