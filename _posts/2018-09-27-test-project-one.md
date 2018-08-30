@@ -1,13 +1,29 @@
 ---
-title: 'Test Project: Two Categories, Welding & Painting'
+title: Welding to Environment Agency tug.
 category:
 - welding
 - painting
 image: "/uploads/cruisers1.png"
 
 ---
-#### **Test Project: Two Categories, Welding & Painting**
+#### **Sandblast and re-bottom craft.**
 
-![](/uploads/cruisers1.png)
+![](/uploads/003.JPG)
 
-This is a really cool project! This project post is testing how the website will handle a post with two different project categories.
+Rusted out base plates cut out.
+
+![](/uploads/109.JPG)
+
+New metal welded in.
+
+![](/uploads/110.JPG)
+
+Portside.
+
+![](/uploads/105.JPG)
+
+Internal view.
+
+![](/uploads/113.JPG)
+
+Painted top, bottom inside and out. Ready for service.
