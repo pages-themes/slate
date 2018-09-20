@@ -4015,9 +4015,11 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
+  margin-left: 10px;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  width: 80px;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
