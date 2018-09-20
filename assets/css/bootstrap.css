@@ -4121,14 +4121,6 @@ p img {
   width: 500px;
 }
 
-#logo {
-  width: 70px;
-  border: none;
-  box-shadow: none;
-  margin-top: 20px;
-  padding: 0;
-}
-
 #categories {
   text-align: right;
   background-color: #ececec;
@@ -9031,6 +9023,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .invisible {
   visibility: hidden !important;
+}
+
+#logo {
+  width: 70px !important;
+  border: none;
+  box-shadow: none;
+  margin-top: 20px;
+  padding: 0;
 }
 
 @media print {
