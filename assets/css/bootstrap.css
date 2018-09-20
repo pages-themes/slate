@@ -391,7 +391,6 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.25rem;
   margin-top: 35px;
-  text-align: right;
 }
 
 h6, .h6 {
@@ -5884,7 +5883,7 @@ button.close {
 }
 
 .carousel-inner2 {
-  height: 500px;
+  height: 230px;
 }
 
 
