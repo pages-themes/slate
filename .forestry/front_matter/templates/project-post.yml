@@ -1,0 +1,18 @@
+---
+label: Project Post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+- type: tag_list
+  label: Category
+  name: category
+- type: file
+  name: image
+  label: Featured Image
+pages:
+- _posts/2018-10-09-test-post.md
+- _posts/2018-08-30-gas-work.md
+- _posts/2018-08-30-test-project-1.md

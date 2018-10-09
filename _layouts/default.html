@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/bootstrap.css">
+    <link rel="icon" href="/assets/images/logo.png">
+    <title>Oxford Cruisers Ltd.</title>
 
 {% seo %}
   </head>
@@ -13,21 +16,38 @@
   <body>
 
     <!-- HEADER -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="/assets/images/logo.svg" id="logo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse w-100" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/services.html">Services</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://4mber.github.io/">Projects<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://4mber.github.io/OxfordCruisers/contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div id="header_wrap" class="outer">
         <header class="inner">
-          {% if site.github.is_project_page %}
-            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
-          {% endif %}
 
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          <p class="tag-line">Projects from</p>
+          <h1 style="color: #ffffff;">Oxford Cruisers Ltd.</h1>
 
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
         </header>
     </div>
 
@@ -35,18 +55,120 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
+        <div id="categories">
+          <h2>Categories</h2>
+          <ul style="list-style: none;">
+          {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+              {% for category in categories_list %}
+                <li><a href="#{{ category }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a></li>
+              {% endfor %}
+            {% else %}
+              {% for category in categories_list %}
+                <li><a href="#{{ category[0] | downcase }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
+              {% endfor %}
+            {% endif %}
+          {% assign categories_list = nil %}
+          </ul>
+        </div>
+        {% for category in site.categories %}
+          <h5><a href="#categories" style="float: right; padding-top: 42px;">Back to Top</a></h5>
+          <h2 id="{{ category[0] }}" class="category-head">{{ category[0] | capitalize }}</h2>
+          <ul style="list-style: none;">
+            {% assign pages_list = category[1] %}
+            {% for post in pages_list %}
+              {% if post.title != null %}
+              {% if group == null or group == post.group %}
+              <li>
+              <h3>
+                <a href="{{ post.url }}">
+                  {{ post.title }}
+                </a>
+              </h3>
+              <em style="color: #929ca7;"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time></em><br><br>
+              {% if post.image != null %}
+              <div class="ft-img">
+                <a href="{{ post.url }}">
+                  <img src="{{ post.image }}">
+                </a>
+              </div>
+              {% endif %}
+              </li>
+              {% endif %}
+              {% endif %}
+            {% endfor %}
+            {% assign pages_list = nil %}
+            {% assign group = nil %}
+          </ul>
+        {% endfor %}
+
       </section>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+            <div class="row featurette2">
+                <div class="col-md-7 order-md-2 text-right">
+                    <h5>Contact Us</h5>
+                    <span>(P) 01865 881698</span><br>
+                    <span>(F) 01865 880056</span><br>
+                    <span>oxfordcruisers@aol.com</span><br><br><br><br><br><br><br><br>
+                    <h5>Testimonials</h5>
+                    <div id="Carousel2" class="carousel carousel2 slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#Carousel2" data-slide-to="0" class="active"></li>
+                            <li data-target="#Carousel2" data-slide-to="1"></li>
+                            <li data-target="#Carousel2" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner2">
+                            <div class="carousel-item carousel-item2 active">
+                                <div class="carousel-caption carousel-caption2 small-carousel-text text-right">
+                                    <p class="tag-line"><strong>
+                                    "You run an impressive and highly professional yard ... Thank you again for a good job, completed on time and within the estimate." 
+                                    </strong><a href="https://4mber.github.io/OxfordCruisers/about.html#testimonials"><em>More...</em></a></p>
+                                    <p class="tag-line"><em class="smaller">Chris Coburn, 10 July 2017</em></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item2">
+                                <div class="carousel-caption carousel-caption2 small-carousel-text text-right">
+                                    <p class="tag-line"><strong>
+                                    "You run an impressive and highly professional yard ... Thank you again for a good job, completed on time and within the estimate."
+                                    </strong><a href="https://4mber.github.io/OxfordCruisers/about.html#testimonials"><em>More...</em></a></p>
+                                    <p class="tag-line"><em class="smaller">Chris Coburn, 10 July 2017</em></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item2">
+                                <div class="carousel-caption carousel-caption2 small-carousel-text text-right">
+                                    <p class="tag-line"><strong>
+                                    "You run an impressive and highly professional yard ... Thank you again for a good job, completed on time and within the estimate."
+                                    </strong><a href="https://4mber.github.io/OxfordCruisers/about.html#testimonials"><em>More...</em></a></p>
+                                    <p class="tag-line"><em class="smaller">Chris Coburn, 10 July 2017</em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#Carousel2" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                        <a class="carousel-control-next" href="#Carousel2" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-1" style="z-index: 1;">
+                    <iframe width="320" height="280" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/?ie=UTF8&amp;t=h&amp;ll=51.7653632,-1.358777&amp;spn=0.003187,0.006866&amp;z=16&amp;output=embed"></iframe>
+                    <h5><br>Oxford Cruisers Ltd.</h5>
+                    <p>The Boat Centre<br> Oxford Road<br> Eynsham
+                        <br> OX29 4DA
+                    </p>
+                </div>
+            </div>
+            <div id="footnote">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>&copy; 2018 Oxford Cruisers Ltd.</p>
+            </div>
+        </footer>
 
     {% if site.google_analytics %}
       <script>
@@ -58,5 +180,14 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="/popper.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
   </body>
 </html>
