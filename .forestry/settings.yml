@@ -1,6 +1,6 @@
 ---
 new_page_extension: md
-auto_deploy: true
+auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
