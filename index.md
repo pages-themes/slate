@@ -5,6 +5,9 @@ layout: default
 ## Computer Vision
 [Schedule and Syllabus](./docs/syllabus.html)
 
+### 2018 Schedule
+>- [week1](./docs/sprint1/week1.md)
+
 ### 2018 Sprint1 Assignments  
 > - [Assignment #1 : Chap02 - 2 : Histogram](./docs/assignment1.html)  
 > - [Assignment #2 : Chap02 - 2 : Binary Image]()  
