@@ -6,7 +6,8 @@ layout: default
 [Schedule and Syllabus](./docs/syllabus.html)
 
 ### 2018 Schedule
->- [week1](./docs/sprint1/week1.md)
+>- [x] [week1](./docs/sprint1/week1.html)
+>- [ ] [week2](./docs/sprint1/week2.html)
 
 ### 2018 Sprint1 Assignments  
 > - [Assignment #1 : Chap02 - 2 : Histogram](./docs/assignment1.html)  
