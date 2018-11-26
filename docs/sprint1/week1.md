@@ -21,9 +21,9 @@
 <br>
 5. Presentation(발표일 : 월 화))
     1. Stat 110
-        1. 발표자 : 
+        1. 발표 : 오재민
     2. Linear Algebra
-        1. 발표자 : 
+        1. 발표 : 유재건 
     3. ~~~Computer Vision~~~
         1. No presentation this week
     4. ~~~CS231n~~~
