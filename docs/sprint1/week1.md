@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 ## Week1 (2018 11 19 ~ 11 25)
 
 1. **[Stat 110(Havard, powered by Edwith)](https://www.edwith.org/harvardprobability)**
@@ -41,3 +42,5 @@ layout: default
         - No Assignments this week~
     3. ~~~CS231n~~~
         - No Assignments this week 
+
+[이전](../../)

@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-
-## Week2 (2018 11 26 ~ 12 02)
+## Week2 (2018 11 26 - 12 02)
 
 ### 1. **[Stat 110 (Havard, powered by Edwith)](https://www.edwith.org/harvardprobability)**
 - [x] ~~[Lec 1 - 확률과 셈 원리 (Probability and Counting)](http://www.edwith.org/harvardprobability/lecture/29349/)~~
@@ -45,5 +44,8 @@ layout: default
 ### 7. Assignments
 1. ~~Stat 110 : No Assignments this week~~
 2. ~~Linear Algebra : No Assignments this week~~
-3. Computer Vision : [[Assignment1]](../assignment1.html)
+3. Computer Vision : [[Assignment #1]](../assignment1.html)
 4. ~~CS231n : No Assignments this week~~
+<br> 
+
+[이전](../../)
