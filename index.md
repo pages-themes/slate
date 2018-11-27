@@ -2,6 +2,9 @@
 layout: default
 ---
 
+## Lab Study Schedule
+[발표 스케줄](https://docs.google.com/spreadsheets/d/1F5Brg4HEhqU8hvQlHm3mWKJn7SnHkAQTdhIdnH1tNag/edit?usp=sharing)
+
 ## Computer Vision
 [Schedule and Syllabus](./docs/syllabus.html)
 
