@@ -61,6 +61,8 @@ layout: default
 
 ### Q3 : 알고리즘 2-3 - 히스토그램 역투영
 >**assignment1_2.cpp** 를 수행합니다.  
+>**참고사항 : 역투영하고자 하는 입력 이미지는 직접 선정하여 samples 폴더에 넣습니다**  
+>**주의사항 : 새롭게 추가된 입력이미지는 git에 commit하지 않습니다.**  
 >다음 의사코드를 C++을 이용하여 구현합니다.  
 ![algorithm_2_3](https://user-images.githubusercontent.com/15168540/48592142-5542cd00-e98a-11e8-9fe9-a9bd007cb665.png)
 
