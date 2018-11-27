@@ -20,6 +20,9 @@ layout: default
 # 작업 방법
 1. [github.com/IPCVLabEdu](https://github.com/IPCVLabEdu/assignments/tree/assignment_1)에서 개인 repository로 fork합니다. 
 2. SourceTree를 사용하여 개인 repository에 fork한 주소를 local repository로 clone 해서 작업합니다.
+3. master branch가 아닌 assignment_1 branch로 checkout 합니다. 
+4. assginment_1 branch에서 `본인이름_ass1`를 만듭니다. (e.g. `jaewon_ass1`)
+5. `본인이름_ass1` branch에서 과제를 수행합니다.  
 
 
 
