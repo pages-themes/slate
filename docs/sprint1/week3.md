@@ -50,7 +50,7 @@ layout: default
 ### 7. Assignments
 1. ~~Stat 110 : No Assignments this week~~
 2. ~~Linear Algebra : No Assignments this week~~
-3. Computer Vision : [[Assignment #1]](../assignments/assignment1.html)
+3. Computer Vision : [[Assignment #2]](../assignments/assignment2.html)
 4. ~~CS231n : No Assignments this week~~
 <br> 
 
