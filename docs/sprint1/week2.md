@@ -35,9 +35,9 @@ layout: default
 <br>
 
 ### 5. Presentation(발표일 : 월 화))
-1. Stat 110 (2018 12 03 월) :  
-2. Linear Algebra (2018 12 03 월) : 
-3. Computer Vision (2018 12 04 화) : 
+1. Stat 110 (2018 12 03 월) : 손정우, 김연중 
+2. Linear Algebra (2018 12 03 월) : 김희철
+3. Computer Vision (2018 12 04 화) : 이승아
 4. CS231n (2018 12 04 화) : 이재원 
 <br> 
 
