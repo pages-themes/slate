@@ -10,7 +10,8 @@ layout: default
 
 ### 2018 Schedule
 >- [x] [week1](./docs/sprint1/week1.html)
->- [ ] [week2](./docs/sprint1/week2.html)
+>- [x] [week2](./docs/sprint1/week2.html)
+>- [ ] [week3](./docs/sprint1/week3.html)
 
 ### 2018 Sprint1 Assignments  
 >- [ ] **[Assignment #1 : Chap02 - 2 : Histogram](./docs/assignments/assignment1.html) (Due : 2018 12 04)**
