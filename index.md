@@ -13,7 +13,7 @@ layout: default
 >- [ ] [week2](./docs/sprint1/week2.html)
 
 ### 2018 Sprint1 Assignments  
->- [ ] **[Assignment #1 : Chap02 - 2 : Histogram](./docs/assignment1.html) (Due : 2018 12 04)**
+>- [ ] **[Assignment #1 : Chap02 - 2 : Histogram](./docs/assignments/assignment1.html) (Due : 2018 12 04)**
 >- [ ] Assignment #2 : Chap02 - 2 : Binary Image  
 >- [ ] Assignment #3 : Chap02 - 2 : 3 Basic Operations
 >- [ ] Assignment #4 : Chap02 - 2 : Multi-Scale
