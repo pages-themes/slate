@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Assignment #1
+# Assignment #2
 
 ---
 # Setup
