@@ -2,11 +2,12 @@
 layout: default
 ---
 
-## Lab Study Schedule
-[발표 스케줄](https://docs.google.com/spreadsheets/d/1F5Brg4HEhqU8hvQlHm3mWKJn7SnHkAQTdhIdnH1tNag/edit?usp=sharing)
 
-## Computer Vision
-[Schedule and Syllabus](./docs/syllabus.html)
+## [Flipped learning 공지](./docs/admin.html)
+
+## [Lab Study Schedule](https://docs.google.com/spreadsheets/d/1F5Brg4HEhqU8hvQlHm3mWKJn7SnHkAQTdhIdnH1tNag/edit?usp=sharing)
+
+
 
 ### 2018 Schedule
 >- [x] [week1](./docs/sprint1/week1.html)
