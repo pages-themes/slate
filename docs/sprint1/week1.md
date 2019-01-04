@@ -34,13 +34,13 @@ layout: default
         1. No presentation this week
 <br> 
 7. Assignments
-    1. ~~~Stat 110~~~
+    1. Stat 110
         - No Assignments this week
-    1. ~~~Linear Algebra~~~
+    1. Linear Algebra
         - No Assignments this week
-    2. ~~~Computer Vision~~
+    2. Computer Vision
         - No Assignments this week~
-    3. ~~~CS231n~~~
+    3. CS231n
         - No Assignments this week 
 
 [이전](../../)
