@@ -25,9 +25,11 @@ layout: default
 
 # Class 2
 ### 2019 Schedule
->- [ ] [week1](./docs/class2/week1.html)
+>- [x] [week1](./docs/class2/week1.html)
+>- [ ] [week2](./docs/class2/week2.html)
 
 ### 2019 Sprint1 Assignments  
+>- [ ] [Assignment #1 : Chap02 - 2 : Historgram](./docs/class2_assignments/assignment1.html) (Due : 2018 01 14)
 
 ---
 
