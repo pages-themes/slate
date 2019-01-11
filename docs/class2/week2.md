@@ -31,7 +31,7 @@ layout: default
 
 ### 4. [CS231n(Stanford)](https://github.com/insurgent92/CS231N_17_KOR_SUB)
 - [X] ~~Lec 1 - Introduction to Convolutional Neural Networks for Visual Recognition~~
-- [ ] Lec 2 - Image Classification
+- [ ]  Lec 2 - Image Classification
 <br>
 
 ### 5. Study 진행자
