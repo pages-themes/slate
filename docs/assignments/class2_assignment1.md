@@ -17,6 +17,16 @@ layout: default
   
 ---
 
+# 작업 방법
+1. [github.com/IPCVLabEdu](https://github.com/IPCVLabEdu/assignments/tree/assignment_1)에서 개인 repository로 fork합니다. 
+2. SourceTree를 사용하여 개인 repository에 fork한 주소를 local repository로 clone 해서 작업합니다.
+3. master branch가 아닌 assignment_1 branch로 checkout 합니다. 
+4. assginment_1 branch에서 `본인이름_ass1` banch를 새로 만듭니다. (e.g. `jaewon_ass1`)
+5. `본인이름_ass1` branch에서 과제를 수행합니다.  
+6. 과제 제출은 upstream(github.com/IPCVLabEdu)의 `본인이름_ass1`으로 Pull Request합니다. (자세한 사항은 [[결과제출 방법]](./How_to_submit_assignments.html)을 확인바랍니다.)
+
+
+
 ### Q0 : OpenCV 접해보기
 >이미지를 불러와서 constrast와 brightness를 바꿔보는 간단한 예제입니다.  
 >**assignment1_0.cpp** 를 수행합니다.  
@@ -62,10 +72,8 @@ layout: default
 |:-:|:-:|:-:|
 |<img src="https://user-images.githubusercontent.com/15168540/49068530-52898700-f26a-11e8-84dc-6e6a2f40a601.png" alt="alt text" width="320" height="320">|<img src="https://user-images.githubusercontent.com/15168540/49068545-5c12ef00-f26a-11e8-951d-609268fa52b6.png" alt="alt text" width="320" height="320">|<img src="https://user-images.githubusercontent.com/15168540/49068569-68974780-f26a-11e8-920b-170fb998982e.png" alt="alt text" width="320" height="320">|
 
-## 결과 제출   
- **결과 제출은 [여기](http://visual.kangwon.ac.kr/assignment)를 눌러주세요.**
-
-  
+## 결과 제출
+[[결과제출 방법]](./How_to_submit_assignments.html)
 
 
-[이전](../../)
+[이전](../)
