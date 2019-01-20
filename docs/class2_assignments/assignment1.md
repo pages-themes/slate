@@ -62,12 +62,10 @@ layout: default
 |:-:|:-:|:-:|
 |<img src="https://user-images.githubusercontent.com/15168540/49068530-52898700-f26a-11e8-84dc-6e6a2f40a601.png" alt="alt text" width="320" height="320">|<img src="https://user-images.githubusercontent.com/15168540/49068545-5c12ef00-f26a-11e8-951d-609268fa52b6.png" alt="alt text" width="320" height="320">|<img src="https://user-images.githubusercontent.com/15168540/49068569-68974780-f26a-11e8-920b-170fb998982e.png" alt="alt text" width="320" height="320">|
 
-## 결과 제출  
+## 결과 제출   
+ **결과 제출은 [여기](http://visual.kangwon.ac.kr/assignment)를 눌러주세요.**
 
--> 결과 제출 방법은 추후 공지하겠습니다.  
-<!-- (./How_to_submit_assignments.html) -->  
-  
   
 
 
-[이전](../)
+[이전](../../)
