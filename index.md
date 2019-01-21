@@ -5,7 +5,6 @@ layout: default
 
 ## [Flipped learning 공지](./docs/admin.html)
 
-## [Lab Study Schedule](https://docs.google.com/spreadsheets/d/1F5Brg4HEhqU8hvQlHm3mWKJn7SnHkAQTdhIdnH1tNag/edit?usp=sharing)
 
 
 # Class 1
@@ -35,6 +34,20 @@ layout: default
 >- [ ] [Assignment #2 : Chap02 - 3 : Otsu Algorithm Criticism](./docs/class2_assignments/assignment2.html) (Due : 2019 01 23)  
 
 ---
+# Bodeum Class
+### 2019 Schedule
+#### [Notice](./docs/Bodeum/notice.html)
+>- [x] [week1](./docs/Bodeum/week1.html)
+>- [ ] [week2](./docs/Bodeum/week2.html)
+
+
+### 2019 Sprint1 Assignments 
+>- [x] ~~[Assignment #1 : Chap02 - 2 : Histogram](./docs/assignments/assignment1.html) (Due : 2018 12 04)~~
+>- [x] ~~[Assignment #2 : Chap02 - 2 : Binary Image](./docs/assignments/assignment2.html) (Due : 2018 12 11)~~
+
+
+---
+
 
 ### Module 0: Preparation
 >[OpenCV Tutorial by 희철](https://docs.google.com/presentation/d/1Uv1geoOMUp7PI4ReuiN8SLE4I6BZglN1viCBqW3DB8Y/edit)  
