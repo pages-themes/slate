@@ -27,10 +27,12 @@ layout: default
 ### 2019 Schedule
 >- [x] [week1](./docs/class2/week1.html)
 >- [x] [week2](./docs/class2/week2.html)
->- [ ] [week3](./docs/class2/week3.html)
+>- [x] [week3](./docs/class2/week3.html)
+>- [ ] [week4](./docs/class2/week4.html)
 
 ### 2019 Sprint1 Assignments  
 >- [ ] [Assignment #1 : Chap02 - 2 : Historgram](./docs/class2_assignments/assignment1.html) (Due : 2019 01 23)
+>- [ ] [Assignment #2 : Chap02 - 3 : Otsu Algorithm Criticism](./docs/class2_assignments/assignment2.html) (Due : 2019 01 23)  
 
 ---
 
