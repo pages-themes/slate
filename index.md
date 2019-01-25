@@ -33,7 +33,9 @@ layout: default
 ### 2019 Schedule
 #### [Notice](./docs/Bodeum/notice.html)
 >- [x] [week1](./docs/Bodeum/week1.html)
->- [ ] [week2](./docs/Bodeum/week2.html)
+>- [x] [week2](./docs/Bodeum/week2.html)
+>- [ ] [week3](./docs/Bodeum/week3.html)
+
 
 
 ### 2019 Sprint1 Assignments 
