@@ -37,7 +37,7 @@ layout: default
 - [x] ~~Lec 2 - Image Processing - 디지털 영상처리란?~~
 - [x] ~~Lec 2 - Image Processing - 히스토그램~~
 - [x] ~~Lec 2 - Image Processing - 이진 영상~~
-- [ ] ~~Lec 2 - Image Processing - 영상 처리의 세 가지 기본 연산~~
+- [ ] **Lec 2 - Image Processing - 영상 처리의 세 가지 기본 연산**
 <br>
 
 ### 4. [CS231n(Stanford)](https://github.com/insurgent92/CS231N_17_KOR_SUB)
