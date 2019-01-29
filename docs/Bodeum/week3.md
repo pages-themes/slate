@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## Week2 (2019 01 22 - 01 24)
+## Week3 (2019 미정)
 
 ### 1. **[Stat 110 (Havard, powered by Edwith)](https://www.edwith.org/harvardprobability)**
 - [x] ~~[Lec 1 - 확률과 셈 원리 (Probability and Counting)](http://www.edwith.org/harvardprobability/lecture/29349/)~~
@@ -10,8 +10,9 @@ layout: default
 - [x] ~~[Lec 4 - 조건부 확률 (Conditional Probability)](https://www.edwith.org/harvardprobability/lecture/30896/)~~
 - [x] ~~[Lec 5 - 조건부 확률과 전확률정리 (Conditioning Continued, Law of Total Probability)(50:01)](https://www.edwith.org/harvardprobability/lecture/30897/)~~
 - [x] ~~[Lec 6 - Monty Hall 문제와 심슨의 역설 (Monty Hall, Simpson's Paradox)(49:00)](https://www.edwith.org/harvardprobability/lecture/30898/)~~
-- [ ] ~~[Lec 7 - 도박꾼의 파산 문제와 확률변수 (Gambler's Ruin and Random Variables)](https://www.edwith.org/harvardprobability/lecture/30899/)~~
-- [ ] ~~[Lec 8 - 확률변수와 확률분포 (Random Variables and Their Distributions)](https://www.edwith.org/harvardprobability/lecture/30900/)~~
+- [x] ~~[Lec 7 - 도박꾼의 파산 문제와 확률변수 (Gambler's Ruin and Random Variables)](https://www.edwith.org/harvardprobability/lecture/30899/)~~
+- [x] ~~[Lec 8 - 확률변수와 확률분포 (Random Variables and Their Distributions)](https://www.edwith.org/harvardprobability/lecture/30900/)~~
+- [ ] **[Lec 9 - 기댓값, 지시확률변수와 선형성 (Expectation, Indicator Random Variables, Linearity](https://www.edwith.org/harvardprobability/lecture/30901/)**
 
  <br>
 
@@ -24,8 +25,10 @@ layout: default
 - [x] ~~[Lec6 - 벡터 - 단위벡터란?](https://www.edwith.org/linear-algebra/lecture/30308/)~~
 - [x] ~~[Lec7 - 벡터 - 직선의 매개변수 표현(20:34)]()~~
 - [x] ~~[Lec8 - 선형결합과 생성 - 선형결합과 생성(24:45)]( )~~
-- [ ] ~~[Lec9 - 선형독립이란?(15:46)](https://www.edwith.org/linear-algebra/lecture/30311/)~~
-- [ ] ~~[Lec10 - 선형독립 더 알아보기(17:38)](https://www.edwith.org/linear-algebra/lecture/30312/)~~
+- [x] ~~[Lec9 - 선형독립이란?(15:46)](https://www.edwith.org/linear-algebra/lecture/30311/)~~
+- [x] ~~[Lec10 - 선형독립 더 알아보기(17:38)](https://www.edwith.org/linear-algebra/lecture/30312/)~~
+- [ ] **[Lec11 - 선형생성과 선형독립 예제](https://www.edwith.org/linear-algebra/lecture/30313/)**
+- [ ] **[Lec12 - 선형 부분공간](https://www.edwith.org/linear-algebra/lecture/30314/)**
 <br>
 
 ### 3. **Computer Vision**
@@ -37,21 +40,22 @@ layout: default
 - [x] ~~Lec 2 - Image Processing - 디지털 영상처리란?~~
 - [x] ~~Lec 2 - Image Processing - 히스토그램~~
 - [x] ~~Lec 2 - Image Processing - 이진 영상~~
-- [ ] **Lec 2 - Image Processing - 영상 처리의 세 가지 기본 연산**
+- [x] **Lec 2 - Image Processing - 영상 처리의 세 가지 기본 연산**
 <br>
 
 ### 4. [CS231n(Stanford)](https://github.com/insurgent92/CS231N_17_KOR_SUB)
 - [X] ~~Lec 1 - Introduction to Convolutional Neural Networks for Visual Recognition~~
 - [X] ~~Lec 2 - Image Classification~~
 - [X] ~~Lec 3 - Loss Functions and Optimization~~
-- [ ] **Lec 4 - Introduction to Neural Networks**
+- [x] ~~Lec 4 - Introduction to Neural Networks~~
+- [ ] **Lec 5 - Convolution Neural Networks**
 <br>
 
-### 5. Presentation(발표일 : 화 목))
-1. Stat 110 (2019 01 22 화) : 김희철
+### 5. Presentation(발표일 : 미정))
+1. Stat 110 (2019 01 22 화) : 주태민
 2. Linear Algebra (2019 01 22 화) : 김희철
 3. Computer Vision (2019 01 24 목) : 김희철
-4. CS231n (2019 01 24 목) : 김희철
+4. CS231n (2019 01 24 목) : 이동렬
 <br> 
 
 ### 7. Assignments
