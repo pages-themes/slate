@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## Week2 (2019 01 21  - 01 27)
+## Week3 (2019 01 21  - 01 27)
 
 ### 1. **[Stat 110 (Havard, powered by Edwith)](https://www.edwith.org/harvardprobability)**
 - [x] ~~[Lec 1 - 확률과 셈 원리 (Probability and Counting)](http://www.edwith.org/harvardprobability/lecture/29349/)~~
