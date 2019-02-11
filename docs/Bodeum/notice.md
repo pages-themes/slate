@@ -16,6 +16,10 @@ layout : default
 
 매주 진행하는 스터디는 위와 같은 플립러닝으로 진행합니다. 학생은 미리 강의를 듣고 스터디에 참여하며, 스터디 내용은 일방적인 반복 강의가 아닌, **서로 자신이 몰랐던 내용과 공유하고 싶은 지식, 오개념 수정** 등을 주로 합니다. 
 
+### Issue
+
+수업에 대해 궁금한 사항이 있을 경우 [https://github.com/IPCVLabEdu/flipped_learning/issues](https://github.com/IPCVLabEdu/flipped_learning/issues)에 올려주시면 됩니다.
+
 ### Boduem Style
 
 
@@ -25,14 +29,14 @@ layout : default
 
 #### 발표자
 
-| 과목 |week1|week2|week3|
+| 과목 |week1|week2|week3|week4|
 |---------|------|
-|Stat 110 |이동렬|김희철|주태민|
+|Stat 110 |이동렬|김희철|주태민|주태민|
 |---------|------|
-|Linear Algetra |이동렬|김희철|김희철|
+|Linear Algetra |이동렬|김희철|김희철|김희철|
 |---------|------|
-|Computer Vision |이동렬|김희철|김희철|
+|Computer Vision |이동렬|김희철|김희철|김희철|
 |---------|------|
-|CS231n |이동렬|김희철|이동렬|
+|CS231n |이동렬|김희철|이동렬|주태민|
 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## Week3 (2019 01 31 목)
+## Week4 (2019 02 15 금)
 
 ### 1. **[Stat 110 (Havard, powered by Edwith)](https://www.edwith.org/harvardprobability)**
 - [x] ~~[Lec 1 - 확률과 셈 원리 (Probability and Counting)](http://www.edwith.org/harvardprobability/lecture/29349/)~~
@@ -12,7 +12,8 @@ layout: default
 - [x] ~~[Lec 6 - Monty Hall 문제와 심슨의 역설 (Monty Hall, Simpson's Paradox)(49:00)](https://www.edwith.org/harvardprobability/lecture/30898/)~~
 - [x] ~~[Lec 7 - 도박꾼의 파산 문제와 확률변수 (Gambler's Ruin and Random Variables)](https://www.edwith.org/harvardprobability/lecture/30899/)~~
 - [x] ~~[Lec 8 - 확률변수와 확률분포 (Random Variables and Their Distributions)](https://www.edwith.org/harvardprobability/lecture/30900/)~~
-- [ ] **[Lec 9 - 기댓값, 지시확률변수와 선형성 (Expectation, Indicator Random Variables, Linearity](https://www.edwith.org/harvardprobability/lecture/30901/)**
+- [x] ~~[Lec 9 - 기댓값, 지시확률변수와 선형성 (Expectation, Indicator Random Variables, Linearity](https://www.edwith.org/harvardprobability/lecture/30901/)~~
+- [ ] **[Lec 9 - 기댓값(Expectation Continued)](https://www.edwith.org/harvardprobability/lecture/30902/)**
 
  <br>
 
@@ -27,8 +28,10 @@ layout: default
 - [x] ~~[Lec8 - 선형결합과 생성 - 선형결합과 생성(24:45)]( )~~
 - [x] ~~[Lec9 - 선형독립이란?(15:46)](https://www.edwith.org/linear-algebra/lecture/30311/)~~
 - [x] ~~[Lec10 - 선형독립 더 알아보기(17:38)](https://www.edwith.org/linear-algebra/lecture/30312/)~~
-- [ ] **[Lec11 - 선형생성과 선형독립 예제](https://www.edwith.org/linear-algebra/lecture/30313/)**
-- [ ] **[Lec12 - 선형 부분공간](https://www.edwith.org/linear-algebra/lecture/30314/)**
+- [x] ~~[Lec11 - 선형생성과 선형독립 예제](https://www.edwith.org/linear-algebra/lecture/30313/)~~
+- [x] ~~[Lec12 - 선형 부분공간](https://www.edwith.org/linear-algebra/lecture/30314/)~~
+- [ ] **[Lec13 - 부분공간의 기저](https://www.edwith.org/linear-algebra/lecture/30315/)**
+- [ ] **[Lec14 - 벡터의 내적과 벡터의 길이](https://www.edwith.org/linear-algebra/lecture/30316/)**
 <br>
 
 ### 3. **Computer Vision**
@@ -48,14 +51,15 @@ layout: default
 - [X] ~~Lec 2 - Image Classification~~
 - [X] ~~Lec 3 - Loss Functions and Optimization~~
 - [x] ~~Lec 4 - Introduction to Neural Networks~~
-- [ ] **Lec 5 - Convolution Neural Networks**
+- [x] ~~Lec 5 - Convolution Neural Networks~~
+- [ ] **Lec 6 - Training Neural Networks**
 <br>
 
-### 5. Presentation(발표일 : 목))
+### 5. Presentation(발표일 : 금))
 1. Stat 110 (2019 01 22 화) : 주태민
 2. Linear Algebra (2019 01 22 화) : 김희철
 3. Computer Vision (2019 01 24 목) : 김희철
-4. CS231n (2019 01 24 목) : 이동렬
+4. CS231n (2019 01 24 목) : 주태민
 <br> 
 
 ### 7. Assignments
