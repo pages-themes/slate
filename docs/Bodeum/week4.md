@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## Week3 (2019 미정)
+## Week4 (2019 02 15 금)
 
 ### 1. **[Stat 110 (Havard, powered by Edwith)](https://www.edwith.org/harvardprobability)**
 - [x] ~~[Lec 1 - 확률과 셈 원리 (Probability and Counting)](http://www.edwith.org/harvardprobability/lecture/29349/)~~
@@ -55,11 +55,11 @@ layout: default
 - [ ] **Lec 6 - Training Neural Networks**
 <br>
 
-### 5. Presentation(발표일 : 미정))
+### 5. Presentation(발표일 : 금))
 1. Stat 110 (2019 01 22 화) : 주태민
 2. Linear Algebra (2019 01 22 화) : 김희철
 3. Computer Vision (2019 01 24 목) : 김희철
-4. CS231n (2019 01 24 목) : 이동렬
+4. CS231n (2019 01 24 목) : 주태민
 <br> 
 
 ### 7. Assignments
