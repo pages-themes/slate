@@ -28,12 +28,14 @@ layout: default
 >- [x] [week2](./docs/class2/week2.html)
 >- [x] [week3](./docs/class2/week3.html)
 >- [x] [week4](./docs/class2/week4.html)  
->- [ ] [week5](./docs/class2/week5.html)
+>- [x] [week5](./docs/class2/week5.html)  
+>- [ ] [week6](./docs/class2/week6.html)
 
-### 2019 Sprint1 Assignments  
->- [ ] ~~[Assignment #1 : Chap02 - 2 : Historgram](./docs/class2_assignments/assignment1.html) (Due : 2019 01 23)~~
->- [ ] ~~[Assignment #2 : Chap02 - 3 : Otsu Algorithm Criticism](./docs/class2_assignments/assignment2.html) (Due : 2019 01 23)~~  
->- [ ] [Assignment #3 : Chap02 - 4 : Fwd/Bwd Geometric Transformation] (Due : 2019 02 10)  <!-- (./docs/class2_assignments/assignment2.html) -->
+### 2019 Class 2 Assignments  
+>- [x] ~~[Assignment #1 : Chap02 - 2 : Historgram](./docs/class2_assignments/assignment1.html) (Due : 2019 01 23)~~
+>- [x] ~~[Assignment #2 : Chap02 - 3 : Otsu Algorithm Criticism](./docs/class2_assignments/assignment2.html) (Due : 2019 01 23)~~  
+>- [x] ~~[Assignment #3 : Chap02 - 4 : Fwd/Bwd Geometric Transformation] (Due : 2019 02 10)~~  <!-- (./docs/class2_assignments/assignment2.html) -->  
+>- [ ] [ Assignment : [Submission site](./docs/class2_assignments/assignment1.html) ]  
 
 ---
 # Bodeum Class
