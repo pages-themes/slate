@@ -5,7 +5,7 @@ layout: default
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
-[Link to another page](./howto.html).
+[Link how to ... ](./howto.html).
 
 There should be whitespace between paragraphs.
 
