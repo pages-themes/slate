@@ -1,0 +1,65 @@
+---
+title: "In-Class Lab 7"
+author: "ECON 4223 (Prof. Tyler Ransom, U of Oklahoma)"
+date: "February 7, 2019"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+bibliography: biblio.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.keep = 'none')
+```
+
+The purpose of this in-class lab is to practice conducting hypothesis tests about regression parameters in R. The lab should be completed in your group. To get credit, upload your .R script to the appropriate place on Canvas. 
+
+## For starters
+Open up a new R script (named `ICL7_XYZ.R`, where `XYZ` are your initials) and add the usual "preamble" to the top:
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+# Add names of group members HERE
+library(tidyverse)
+library(broom)
+library(wooldridge)
+library(magrittr)
+```
+
+### Load the data
+We'll use a new data set on Research and Development (R&D) expenditures, called `rdchem`. The data set contains information on 32 companies in the chemical industry.
+```{r}
+df <- as_tibble(rdchem)
+```
+
+Check out what's in the data by typing
+```{r}
+glimpse(df)
+```
+
+The main variables are measures of R&D, profits, sales, and profits as a percentage of sales (`profmarg`, i.e. profit margin).
+
+## Regression and Hypothesis Testing
+Estimate the following regression model:
+\[
+rdintens = \beta_0 + \beta_1 \log(sales) + \beta_2 profmarg + u
+\]
+Note that the variable $log(sales)$ already exists in `df` as `lsales`. $rdintens$ is in percentage units, so a number of 2.6 means that the company's total R&D expenditures are 2.6% of its sales.
+
+**I won't show you the code for estimating this model, as it should be old hat by now. If you've forgotten, I recommend looking at code from a previous lab.**
+
+```{r include=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+est <- lm(rdintens ~ lsales + profmarg, data=df)
+tidy(est)
+```
+Answer the following questions:
+
+1. Interpret the coefficient on `lsales`. If $sales$ increase by 10%, what is the estimated percentage point change in $rdintens$? 
+2. Is this an *economically significant* relationship?
+3. Using the output of `tidy(est)`, test the hypothesis that sales affects R&D intensity at the 10% level. In other words, test:
+\[
+H_0: \beta_1 = 0;
+H_a: \beta_1 \neq 0
+\]
+4. Does your answer to (3) change if you instead consider a one-sided alternative? (i.e. $H_a: \beta_1 > 0$)
+5. Now consider the $\beta_2$ parameter. Is there a statistically significant effect of profit margin on R&D intensity?

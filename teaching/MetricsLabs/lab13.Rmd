@@ -1,0 +1,98 @@
+---
+title: "In-Class Lab 13"
+author: "ECON 4223 (Prof. Tyler Ransom, U of Oklahoma)"
+date: "March 14, 2019"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+bibliography: biblio.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.keep = 'none')
+```
+
+The purpose of this in-class lab is to use R to practice with instrumental variables estimation. The lab should be completed in your group. To get credit, upload your .R script to the appropriate place on Canvas.
+
+## For starters
+You may need to install the package `AER`. (It may have already been installed when you previously installed `car` and `zoo`.)
+
+Open up a new R script (named `ICL13_XYZ.R`, where `XYZ` are your initials) and add the usual "preamble" to the top:
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+# Add names of group members HERE
+library(tidyverse)
+library(wooldridge)
+library(broom)
+library(AER)
+library(magrittr)
+library(stargazer)
+```
+
+### Load the data
+We're going to use data on fertility of Botswanian women.
+
+```{r}
+df <- as_tibble(fertil2)
+```
+
+### Summary statistics
+We can easily compute summary statistics of our data by using the `stargazer` package:
+```{r}
+df %>% as.data.frame %>% stargazer(type="text")
+```
+
+1. What do you think is going on when you see varying numbers of observations across the different variables?
+
+## Determinants of fertility
+Suppose we want to see if education causes lower fertility (as can be seen when comparing more- and less-educated countries):
+\[
+children = \beta_0 + \beta_1 educ + \beta_2 age + \beta_3 age^2 + u
+\]
+where $children$ is the number of children born to the woman, $educ$ is years of education, and $age$ is age (in years).
+
+2. Interpret the estimates of the regression:
+
+```{r}
+est.ols <- lm(children ~ educ + age + I(age^2), data=df)
+```
+
+(Note: include `I(age^2)` puts the quadratic term in automatically without us having to use `mutate()` to create a new variable called `age.sq`.)
+
+We can also use stargazer to examine the output. It puts the standard errors of each variable in parentheses under the estimated coefficient.
+```{r}
+stargazer(est.ols, type="text")
+```
+
+### Instrumenting for endogenous education
+We know that education is endogenous (i.e. people choose the level of education that maximizes their utility). A possible instrument for education is $firsthalf$, which is a dummy equal to 1 if the woman was born in the first half of the calendar year, and 0 otherwise.
+
+Let's create this variable:
+```{r}
+df %<>% mutate(firsthalf = mnthborn<7)
+```
+
+We will assume that $firsthalf$ is uncorrelated with $u$.
+
+3. Check that $firsthalf$ is correlated with $educ$ by running a regression. (I will suppress the code, since it should be old hat) Call the output `est.iv1`.
+
+```{r include=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+est.iv1 <- lm(educ ~ firsthalf, data=df)
+stargazer(est.iv1, type="text")
+```
+
+### IV estimation
+Now let's do the IV regression:
+```{r}
+est.iv <- ivreg(children ~ educ + age + I(age^2) | firsthalf + age + I(age^2), data=df)
+```
+
+The variables on the right hand side of the `|` are the instruments (including the $x$'s that we assume to be exogenous, like $age$). The endogenous $x$ is the first one after the `~`.
+
+Now we can compare the output for each of the models:
+```{r}
+stargazer(est.ols,est.iv1,est.iv, type="text")
+```
+
+4. Comment on the IV estimates. Do they make sense? Discuss why the IV standard error is so much larger than the OLS standard error.

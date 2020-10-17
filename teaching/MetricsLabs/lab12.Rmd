@@ -1,0 +1,110 @@
+---
+title: "In-Class Lab 12"
+author: "ECON 4223 (Prof. Tyler Ransom, U of Oklahoma)"
+date: "February 28, 2019"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+bibliography: biblio.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.keep = 'none')
+```
+
+The purpose of this in-class lab is to use R to practice estimating time series regression models with standard errors corrected for heteroskedasticity and serial correlation (HAC). The lab should be completed in your group. To get credit, upload your .R script to the appropriate place on Canvas.
+
+## For starters
+Load the usual packages, as well as the new ones installed in Lab 11.[^1]
+
+Open up a new R script (named `ICL12_XYZ.R`, where `XYZ` are your initials) and add the usual "preamble" to the top:
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+# Add names of group members HERE
+library(tidyverse)
+library(wooldridge)
+library(broom)
+library(car)
+library(pdfetch)
+library(zoo)
+library(dynlm)
+library(lmtest)
+library(sandwich)
+library(magrittr)
+```
+
+### Load the data
+We're going to use data on US macroeconomic indicators. The `wooldridge` data set is called `phillips`.
+
+```{r}
+df <- as_tibble(phillips)
+```
+
+### Declare `df` as time series data
+```{r}
+df.ts <- zoo(df, order.by=df$year)
+```
+
+Now it will be easy to include lags of various variables into our regression models.
+
+## Plot time series data
+Let's have a look at the inflation rate and unemployment for the US over the postwar period (1948--2003):
+```{r}
+ggplot(df.ts, aes(year, inf)) + geom_line() + geom_line(data=df.ts, aes(year, unem), color="red")
+```
+
+The negative correlation between the two led economist William Phillips to conclude that governments could increase their inflation rate to reduce the unemployment rate. This is known as the "Phillips Curve."
+
+## Determinants of the inflation rate
+Now let's estimate the Phillips Curve:
+\[
+inf_{t} = \beta_0 + \beta_1 unemp_t + u_t
+\]
+where $inf$ is the inflation rate and $unem$ is the unemployment rate.
+
+```{r}
+est <- dynlm(inf ~ unem, data=df.ts)
+```
+
+1. Test for AR(1) serial correlation in this time series:
+```{r}
+dynlm(resid(est) ~ L(resid(est))) %>% coeftest
+```
+
+Equivalently, you can use the `bgtest()` function in the `lmtest` package:
+```{r}
+bgtest(est)
+```
+
+2. Interpret the coefficient on `unem` in the previous regression. What does it tell you about the idea that inflation and unemployment positively covary?
+
+## Correcting for Serial Correlation
+Now let's compute HAC (Heteroskedasticity and Autocorrelation Consistent) standard errors. To do so, we'll use the `NeweyWest` option in the `coeftest()` function of the `lmtest` package.[^2]
+
+```{r}
+coeftest(est) # re-display baseline results
+coeftest(est, vcov=NeweyWest)
+```
+
+3. How does your interpretation of the effect of unemployment on inflation change, using the Newey-West standard errors?
+
+### Another way to correct for serial correlation
+Another way to get rid of serial correlation is to *difference* the data. In this case, we will estimate the following regression:
+\[
+\Delta inf_{t} = \beta_0 + \beta_1 unemp_t + u_t
+\]
+where $\Delta inf_{t} = inf_{t}-inf_{t-1}$. Aside from addressing serial correlation, the differenced model also accounts for people's inflationary expectations.
+
+```{r}
+est.diff <- dynlm(d(inf) ~ unem, data = df.ts)
+```
+
+4. Now perform a Breusch-Godfrey test on the differenced model. Is there a serial correlation problem?
+
+5. Compute the Newey-West SEs on the difference model. Are they much different from the baseline model?
+
+6. What do you conclude about the effect of unemployment on the *change in* inflation?
+
+[^1]: You may need to install the `sandwich` package.
+[^2]: `NeweyWest` comes from the `sandwich` package.

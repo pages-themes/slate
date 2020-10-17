@@ -1,0 +1,275 @@
+\documentclass[11pt,english]{article}
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+% Uncomment any of the following four lines to get different fonts
+%\usepackage[garamondx,bigdelims]{newtxmath}
+%\usepackage{garamondx}
+%\usepackage{mathpazo}
+%\usepackage{mathptmx}
+\usepackage{newcent}
+
+% Colors: see  http://www.math.umbc.edu/~rouben/beamer/quickstart-Z-H-25.html
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{oucrimson}   {RGB}{132.,22. ,23. }
+\definecolor{byublue}     {RGB}{0.  ,30. ,76. }
+\definecolor{navyblue}    {RGB}{0.  ,0.  ,128.}
+\definecolor{darkblue}    {RGB}{0.  ,0.  ,139.}
+\definecolor{dukeblue}    {RGB}{0.  ,0.  ,156.}
+
+% Layout
+\usepackage{multirow}
+\usepackage{setspace} %singlespacing; onehalfspacing; doublespacing; setstretch{1.1}
+\setstretch{1.5}
+\usepackage[verbose,margin=1in]{geometry} % Margins
+\setlength{\headheight}{15pt} % Sufficent room for headers
+\usepackage[bottom]{footmisc} % Forces footnotes on bottom
+
+% Headers/Footers
+%\usepackage{datenumber}
+\usepackage{lastpage}
+\setlength{\headheight}{0pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\lhead{} \chead{} \rhead{}
+\lfoot{\today} \cfoot{}
+\rfoot{Page \thepage \,of \pageref{LastPage}}
+
+% Useful Packages
+%\usepackage{bookmark} % For speedier bookmarks
+%\usepackage{amsthm}   % For detailed theorems
+%\usepackage{amssymb}  % For fancy math symbols
+%\usepackage{amsmath}  % For awesome equations/equation arrays
+\usepackage{array}    % For tubular tables
+\usepackage{booktabs}
+\usepackage{longtable}% For long tables
+\usepackage[flushleft]{threeparttable} % For three-part tables
+\usepackage{multicol} % For multi-column cells
+\usepackage{graphicx} % For shiny pictures
+\usepackage{subfig}   % For sub-shiny pictures
+\usepackage{enumerate}% For cusomtizable lists
+%\usepackage{pstricks,pst-node,pst-tree,pst-plot} % For trees
+
+% Bib
+\usepackage[authoryear]{natbib} % Bibliography
+\usepackage{url}                % Allows urls in bib
+
+% TOC
+\setcounter{tocdepth}{4}
+
+% Links
+\usepackage{hyperref}    % Always add hyperref (almost) last
+\hypersetup{colorlinks,breaklinks,citecolor=black,filecolor=black,linkcolor=oucrimson,urlcolor=oucrimson}
+\usepackage[all]{hypcap} % Links point to top of image, builds on hyperref
+\usepackage{breakurl}    % Allows urls to wrap, including hyperref
+
+% Custom commands
+\newcommand{\makeheading}[2]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth\marginparwidth\marginparsep}%
+         {\LARGE\bfseries #1} \hfill  {\LARGE\bfseries #2 \hspace*{-2.3\marginparsep minus \marginparwidth}}\\[-0.2\baselineskip]%
+                 \rule{\textwidth}{1.5pt}\rule{\marginparsep}{1.5pt}\rule{\marginparwidth}{1.5pt}%
+         \end{minipage}}
+
+\setlength{\parindent}{0in}
+\reversemarginpar
+\renewcommand{\section}[2]{
+        \pagebreak[3]%
+        \vspace{1.0\baselineskip}%
+        \phantomsection\addcontentsline{toc}{section}{#1}%
+        \hspace{0in}%
+        %\marginpar{\raggedright \scshape #1}#2}
+        %\rule[3.5pt]{0.9in}{1.5pt} ~~
+        {\raggedright \scshape \large \textbf{#1}}%
+        \vspace{0.25\baselineskip}#2
+}
+
+
+\begin{document}
+%\thispagestyle{empty}
+\makeheading{NAME}{Curriculum Vitae}
+
+
+% ADDRESS/CONTACT HEADER
+% ==================================================================================
+\setstretch{1.0}
+\begin{multicols}{2}
+
+\begin{flushleft}
+Department of XXXX
+
+University of XXX
+
+Address 1
+
+Address 2
+
+\end{flushleft}
+        
+
+\begin{flushright}
+\textit{Phone:} (XXX) XXX-XXXX
+
+\textit{E-mail:} \href{mailto:address@host.edu}{address@host.edu}
+
+\textit{Homepage:} \href{https://www.aeaweb.org}{aeaweb.org}
+
+\textit{Citizenship:} [Country] 
+
+\end{flushright}
+
+\end{multicols}
+% ==================================================================================
+
+
+
+\setstretch{1.2}
+\vspace{-.25in}
+
+
+
+\section{Education}\\
+% ==================================================================================
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year & Ph.D. in Economics, Institution \\
+     & \small{Dissertation: \href{link}{Title}} \\
+     & \small{Committee: \href{link}{chair name (chair)},...,} \\
+Year & M.A. in Economics, Institution \\
+Year & B.A. in Economics (Awards), Institution \\
+\end{tabular}
+
+
+
+\section{Employment \& Affiliations}\\
+% ==================================================================================
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year- & Position 2, University 2 \\
+Year- & Other affiliation, \href{link}{Affiliate} \\
+Year-Year & Position 1, University 1 \\
+\end{tabular}
+
+
+
+\section{Research Fields}\\
+% ==================================================================================
+\vspace{-1mm}
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Primary:   & field 1, field 2\\
+Secondary: & field 3, field 4\\
+\end{tabular}
+
+
+
+\section{Published \& Forthcoming Papers}\\
+% ==================================================================================
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year &  \href{link}{``Title''} (with Coauthors), \textit{Journal}, vol. XX, n. No., pages pppp--pppp. \\
+Year &  \href{link}{``Title''} (with Coauthors), \textit{Journal}, vol. XX, n. No., pages pppp--pppp. \\
+Year &  \href{link}{``Title''} (with Coauthors), \textit{Journal}, vol. XX, n. No., pages pppp--pppp. \\
+\end{tabular}
+
+
+
+\section{Working Papers}\\
+% ==================================================================================
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year &  \href{link}{``Title''} (with Coauthors), \textit{Status} \\
+\end{tabular}
+
+
+\pagebreak{}
+\section{Works in Progress}\\
+% ==================================================================================
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year & ``Title'' (with Coauthors) \\
+\end{tabular}
+
+
+\section{Policy Writings}\\
+% % ==================================================================================
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year & ``Title'' (with Coauthors), Outlet, Date \\
+\end{tabular}
+
+
+
+\section{Invited Conference \& Seminar Presentations}\\ %\vspace{-7.5mm}
+% ==================================================================================
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year1-Year2 & List of outlets \\
+\end{tabular}
+
+
+
+\section{Paper Discussions}\\ %\vspace{-7.5mm}
+% ==================================================================================
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year & ``Title'' by Authors,(Conference, Location) \\
+\end{tabular}
+
+
+
+\section{Fellowships \& Awards}\\%\vspace{-7.5mm}
+% ==================================================================================
+%\begin{itemize} % Use \item[] to prevent a bullet from appearing
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year1-Year2 & Award, Institution\\
+\end{tabular}
+
+
+
+\section{Teaching Experience}\\
+% ==================================================================================
+\vspace{3mm}
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Instituiton & \href{link}{Course title} (Level)\\
+\end{tabular}
+
+
+\section{Media Appearances}\\
+% ==================================================================================
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year & \href{Link}{``Title''} by Author, \emph{Outlet}, Date \\
+\end{tabular}
+
+
+
+%\pagebreak{}
+\section{Skills}\\
+%==================================================================================$
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Coding & \multirow{2}{*}{List of coding skills}\\
+Skills:& \\
+Other & \multirow{2}{*}{List of other skills}\\
+Skills:& \\
+Languages:&  Languages\\
+\end{tabular}
+
+
+
+\section{Professional Service}\\
+%==================================================================================$
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Referee:&    \textit{Journal 1}, \textit{Journal 2}, \\
+\end{tabular}
+
+\pagebreak{}
+
+\section{Departmental \& University Service}\\
+%==================================================================================$
+\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Year- &   Role, Department, Committee name \\
+\end{tabular}
+
+
+%\pagebreak{}
+\section{References}\\
+%==================================================================================$
+Available upon request
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

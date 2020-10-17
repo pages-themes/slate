@@ -1,0 +1,117 @@
+---
+title: "In-class Lab 3"
+author: "ECON 4223 (Prof. Tyler Ransom, U of Oklahoma)"
+date: "January 24, 2019"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+bibliography: biblio.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.keep = 'none')
+```
+
+The purpose of this in-class lab is to practice running regressions, computing regression formulas, visualizing the Sample Regression Function, using non-linear transformations, and interpreting coefficients. The lab should be completed in your group. To get credit, upload your .R script to the appropriate place on Canvas. 
+
+## For starters
+Open up a new R script (named `ICL3_XYZ.R`, where `XYZ` are your initials) and add the usual "preamble" to the top:
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+library(tidyverse)
+library(broom)
+library(wooldridge)
+```
+
+For this lab, let's use data on school expenditures and math test pass rates from Michigan. This is located in the `meap93`  data set in the `wooldridge` package. Each observation is a school district in Michigan.
+```{r}
+df <- as_tibble(meap93)
+```
+
+## The Relationship between Expenditures and Math Test Pass Rates
+Estimate the following regression model:
+\[
+math10 = \beta_0 + \beta_1 expend + u
+\]
+
+The code to do so is:
+```{r}
+est <- lm(math10 ~ expend, data=df)
+tidy(est)
+glance(est)
+```
+
+You should get a coefficient of `0.00246` on `expend`. Interpret this coefficient. (You can type the interpretation as a comment in your .R script.) Is this number small, given the units that `math10` and `expend` are in?
+
+## Regression Coefficients "By Hand"
+Verify that the regression coefficients in `est` are the same as the formulas from the book:
+$$
+\hat{\beta}_0 = \overline{math10} - \hat{\beta}_1 \overline{expend}, \\
+\hat{\beta}_1 = \frac{\widehat{cov}(math10,expend)}{\widehat{var}(expend)}
+$$
+
+You can do this by typing:
+```{r}
+beta1 <- cov(df$math10,df$expend)/var(df$expend)
+beta0 <- mean(df$math10)-beta1*mean(df$expend)
+```
+
+## Visualizing Regression Estimates
+Often, it's helpful to visualize the estimated regression model. @wooldridge calls this the "Sample Regression Function." We can do this with the following code:
+```{r}
+ggplot(df,aes(expend,math10)) +
+    geom_point() +
+    geom_smooth(method='lm')
+```
+
+## Nonlinear transformations
+Let's consider a modified version of our model, where now we use *log* expenditures instead of expenditures. Why might we want to use log expenditures? Likely because we think that each additional dollar spent *doesn't* have an equal effect on pass rates. That is, additional dollars spent likely have diminishing effects on pass rates. (See also: the Law of Diminishing Marginal Returns)
+
+Create the log expenditures variable using `mutate()`:
+```{r}
+df <- df %>% mutate(logexpend = log(expend))
+```
+
+Now estimate your model again and re-do the visualization:
+```{r}
+est <- lm(math10 ~ logexpend, data=df)
+tidy(est)
+glance(est)
+
+ggplot(df,aes(logexpend,math10)) +
+    geom_point() +
+    geom_smooth(method='lm')
+```
+
+What is the interpretation of $\beta_1$ in this new model? (Add it as a comment in your R script)
+
+## Standard Errors and Regression Output
+Finally, we can look at the standard error, t-statistic, and p-values associated with our regression parameters $\beta_0$ and $\beta_1$. The `p.value` reported in `tidy(est)` tests the following hypothesis:
+
+\[
+H_0: \beta_1 = 0, \\
+H_a: \beta_1 \neq 0
+\]
+
+Does increased school spending significantly increase the math test pass rate?
+
+## Computing standard errors by hand
+If you have extra time, try computing the standard error formulas by hand, according to the formulas in the text book. To do so, we need to compute the following formulas: `sig` (the standard deviation of $u$), `n` (our regression's sample size), `SSTx` ($N-1$ times the variance of `logexpend`), and the sum of the squares of `logexpend`:
+```{r}
+n <- dim(df)[1]
+sig <- sqrt( sum (est$residuals^2) /(n-2) ) # or, more simply, glance(est)$sigma
+SSTx <- (n-1)*var(df$logexpend)
+sumx2 <- sum(df$logexpend^2)
+```
+
+The standard error of the intercept is computed with the following formula:
+```{r}
+sqrt((sig^2*(1/n)*sumx2)/SSTx)
+```
+
+And the standard error of the slope coefficient (`logexpend` in this case) is:
+```{r}
+sqrt(sig^2/SSTx)
+```
+# References

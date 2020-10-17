@@ -1,0 +1,119 @@
+---
+title: "In-Class Lab 16"
+author: "ECON 4223 (Prof. Tyler Ransom, U of Oklahoma)"
+date: "April 11, 2019"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+bibliography: biblio.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.keep = 'none')
+```
+
+The purpose of this in-class lab is to use R to practice with panel data estimation methods. The lab should be completed in your group. To get credit, upload your .R script to the appropriate place on Canvas.
+
+## For starters
+Open up a new R script (named `ICL16_XYZ.R`, where `XYZ` are your initials) and add the usual "preamble" to the top:
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+# Add names of group members HERE
+library(tidyverse)
+library(wooldridge)
+library(broom)
+library(magrittr)
+library(stargazer)
+library(clubSandwich)
+library(plm)   # You may need to install this package
+```
+
+### Load the data
+Our data set will be a panel of wages for 545 men. Load the data from the `wooldridge` package, format `year` to be a factor, and rename the variable `nr` to something more descriptive (`id`):
+```{r}
+df <- as_tibble(wagepan)
+df %<>% mutate(year=as.factor(year))
+df %<>% rename(id = nr)
+```
+
+### Summary statistics for panel data
+It is important to know what your panel looks like. How many units? How many time periods? The easiest way to do this is the `pdim()` function in the `plm` package.
+```{r}
+pdim(df)
+```
+
+It is also helpful to "convert" the data to a cross-section of within-unit averages. Let's do this for some of the key variables of our analysis.
+```{r}
+df.within <- df %>% select(id,year,educ,married,union,rur) %>% 
+             group_by(id) %>% 
+             summarize(
+                 mean.edu = mean(educ),
+                 var.edu  = var(educ),
+                mean.marr = mean(married),
+                 var.marr = var(married),
+               mean.union = mean(union),
+                var.union = var(union),
+               mean.rural = mean(rur),
+                var.rural = var(rur)
+             )
+df.within %>% as.data.frame %>% stargazer(type="text")
+```
+
+1. Is there any within-person variance in the `educ` variable? What about `married`, `union`, and `rural`?
+
+2. What does it mean for the married, union, or rural variables to have a positive within-person variance?
+
+3. Why is it important to know if a variable has positive within-person variance?
+
+## Pooled OLS, Random Effects, and Fixed Effects Models
+Now estimate the following model using various options of the `plm()` function:
+
+\begin{align*}
+\log(wage_{it}) & = \beta_0 + \beta_1 educ_{i} + \beta_2 black_{i} + \beta_3 hisp_{i} + \beta_4 exper_{it} + \beta_5 exper_{it}^2 + \beta_6 married_{it} + \\ 
+&\phantom{=\,\,}\beta_7 union_{it} + \beta_8 rur_{it} + \sum_t \beta_{9,t}year_{it} + a_i + u_{it} 
+\end{align*}
+
+### Pooled OLS
+The pooled OLS model can be run from the `plm()` function as follows.
+```{r}
+est.pols <- plm(lwage ~ educ + black + hisp + exper + I(exper^2) + married + union + rur + year,
+                data = df, index = c("id","year"), model = "pooling")
+```
+
+4. Interpret the coefficient on $\beta_7$ in the pooled OLS model
+
+### Random effects
+```{r}
+est.re <- plm(lwage ~ educ + black + hisp + exper + I(exper^2) + married + union + rur + year, 
+              data = df, index = c("id","year"), model = "random")
+```
+
+5. Explain why the standard errors in the random effects model are larger (or equal to) those of the pooled OLS model.
+
+6. What is the estimate of $\theta$ in the RE model? (Hint: check `est.re$ercomp$theta`) What does this tell you about what you expect the random effects estimates to be relative to the fixed effects estimates?
+
+### Fixed effects
+```{r}
+est.fe <- plm(lwage ~ I(exper^2) + married + union + rur + year, 
+              data = df, index = c("id","year"), model = "within")
+```
+
+7. Explain why we cannot estimate coefficients on `educ`, `black`, `hisp`, or `exper` in the fixed effects model. (Note: the reason for not being able to estimate `exper` is more nuanced)
+
+## Clustered standard errors
+As discussed in class, the most appropriate standard errors are not those reported by `plm()`. Let's compute standard errors that account for within-person serial correlation, and that are robust to heteroskedasticity:
+```{r}
+clust.po <- coef_test(est.pols, vcov = "CR1", cluster = "individual")
+clust.re <- coef_test(est.re,   vcov = "CR1", cluster = "individual")
+clust.fe <- coef_test(est.fe,   vcov = "CR1", cluster = "individual")
+```
+
+We can put these all in one `stargazer` table:
+```{r}
+stargazer(est.pols,est.re,est.fe,se=list(clust.po$SE,clust.re$SE,clust.fe$SE),type="text")
+```
+
+8. Interpret the coefficient on `union` across the three models.
+
+9. Comment on the comparability of the pooled OLS and RE estimators now that within-person serial correlation has been addressed.

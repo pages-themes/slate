@@ -1,0 +1,97 @@
+---
+title: "In-Class Lab 11"
+author: "ECON 4223 (Prof. Tyler Ransom, U of Oklahoma)"
+date: "February 26, 2019"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  word_document: default
+bibliography: biblio.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, results = 'hide', fig.keep = 'none')
+```
+
+The purpose of this in-class lab is to use R to practice estimating time series regression models and to test for serial correlation. The lab should be completed in your group. To get credit, upload your .R script to the appropriate place on Canvas.
+
+## For starters
+First, install the `pdfetch`, `zoo`, and `dynlm` packages. `pdfetch` stands for "Public Data Fetch" and is a slick way of downloading statistics on stock prices, GDP, inflation, unemployment, etc. `zoo` and `dynlm` are packages useful for working with time series data.
+
+Open up a new R script (named `ICL11_XYZ.R`, where `XYZ` are your initials) and add the usual "preamble" to the top:
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+# Add names of group members HERE
+library(tidyverse)
+library(wooldridge)
+library(broom)
+library(car)
+library(pdfetch)
+library(zoo)
+library(dynlm)
+library(magrittr)
+```
+
+### Load the data
+We're going to use data on US macroeconomic indicators. The `wooldridge` data set is called `intdef`.
+
+```{r}
+df <- as_tibble(intdef)
+```
+
+### Declare `df` as time series data
+```{r}
+df.ts <- zoo(df, order.by=df$year)
+```
+
+Now it will be easy to include lags of various variables into our regression models.
+
+## Plot time series data
+Let's have a look at the inflation rate for the US over the period 1948--2003:
+```{r}
+ggplot(df.ts, aes(year, inf)) + geom_line()
+```
+
+## Determinants of the interest rate
+Now let's estimate the following regression model:
+\[
+i3_{t} = \beta_0 + \beta_1 inf_t + \beta_2 inf_{t-1} + \beta_3 inf_{t-2} + \beta_4 def_{t} + u_t
+\]
+where $i3$ is the 3-month Treasury Bill interest rate, $inf$ is the inflation rate (as measured by the CPI), and $def$ is the budget deficit as a percentage of GDP.
+
+```{r}
+est <- dynlm(i3 ~ inf + L(inf,1) + L(inf,2) + def, data=df.ts)
+```
+
+1. Are any of these variables significant determinants of the interest rate? If so, which ones?
+
+## Testing for Serial Correlation
+Now let's test for serial correlation in our model. Serial correlation is defined as
+\[
+u_t = \rho u_{t-1}
+\]
+with $\vert\rho\vert>0$.
+
+We want to test
+\[
+H_0: \rho = 0
+\]
+
+To do so, we need to run a regression of residuals (from `est`) on lagged residuals and look at the $t$-stat.
+
+```{r}
+resids <- resid(est)
+est.resid <- dynlm(resids ~ L(resids))
+tidy(est.resid)
+```
+
+2. What is the outcome of the hypothesis test?
+
+### When the $x$'s aren't strictly exogenous 
+When $x$ is correlated with lags of $u$, we need to modify the above test to include our $x$'s from our original regression:
+
+```{r}
+est.resid. <- dynlm(resids ~ L(resids) + inf + L(inf,1) + L(inf,2) + def, data = df.ts)
+```
+
+3. What do you conclude about serial correlation in this more general case?
