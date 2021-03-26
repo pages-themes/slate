@@ -4,4 +4,4 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-slate
 github:
-    is_project_page: ["true" or "false" to indicate whether to add "view on github button"]
+    is_project_page: true
