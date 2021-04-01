@@ -38,6 +38,8 @@ Additionally, you may choose to set the following optional variables:
 ```yml
 show_downloads: ["true" or "false" to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
+github:
+    is_project_page: ["true" or "false" to indicate whether to add "view on github button]
 ```
 
 ### Stylesheet
