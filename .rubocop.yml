@@ -1,6 +1,10 @@
 AllCops:
-  Exclude:
-    - _site/**/*
-
-Metrics/LineLength:
-  Enabled: false
+	  NewCops: enable
+	  Exclude:
+	    - _site/**/*
+	Layout/LineLength:
+	  Enabled: false
+	Gemspec/RequiredRubyVersion:
+	  Enabled: false
+	Style/CaseLikeIf:
+	  Enabled: false
