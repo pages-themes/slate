@@ -3,8 +3,6 @@
 
 This ePortfolio integrates the knowledge and skills I gained and developed throughout the years of studying a Computer Science program at Southern New Hampshire University (SNHU). It represent my growth in the program and gained honor rolls from high-quality outcomes. The ePortfolio was designed and developed with a professional-quality written and a visual communication demonstrative of my capacities and abilities in a coherent, technically sound, and appropriately adapted to an specific technical audience and context.
 
-[Link to another page](./another-page.html).
-
 ### <u>Table of Content</u>
 
 &nbsp;[Professional Self-Assessment](#professional-self-assessment)<br/>
