@@ -55,6 +55,8 @@ The artifact selectedd for the Alogorithim and data structure category is the Py
 
 ## Artifact Databases
 
+[Database Data](./another-page.html).
+
 For the database category I decided to use the data from the Salvare Search for Rescue Web App project.  I wanted to create a web application within the github enviroment that allowed uses to view and see the data.  This showcases skills in the database skill set, by manpulated the data and showing it in a grah based form.
 
 ### Small image
