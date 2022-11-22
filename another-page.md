@@ -9,12 +9,6 @@
 <th title="Field #8">datetime</th>
 <th title="Field #9">monthyear</th>
 <th title="Field #10">name</th>
-<th title="Field #11">outcome_subtype</th>
-<th title="Field #12">outcome_type</th>
-<th title="Field #13">sex_upon_outcome</th>
-<th title="Field #14">location_lat</th>
-<th title="Field #15">location_long</th>
-<th title="Field #16">age_upon_outcome_in_weeks</th>
 </tr></thead>
 <tbody><tr>
 <td align="right">1</td>
