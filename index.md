@@ -47,18 +47,13 @@ The artifact selected for the software design and engineering category is the py
 
 The artifact selectedd for the Alogorithim and data structure category is the Pymongo Script created and used in the Salvare Search for Rescue Web App project.  I selected this artifact becacuse its consists of design considerations and creating an API to both use the artifact from software design and enineering and theailbity to quickly call an APU and manipulate and test data.  This showcases data structure skills with creating a script to quickly excute the expanded CRUD funtionity with the previous catoeries Query and List functions.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
 # Databases
+
+For the databasee artifact I decided to take the data and impliment it into a HTML, CSS, and Javascript set up.  This showcases the skills needed to build and full stack application using a data fill CSV file.  Along with importing the data to use chart.js to visual show the data in a meaningful way.  With this data I built the chart to show the age fo the dogs and cats in weeks.  Along with that showing each catorgoeie in a differnet color to easier disgunish between dogs and cats.
 
 ## Artifact Databases
 [Database Data](https://codepen.io/daimon2008/pen/yLEvdpb)
 
-
-
-For the database category I decided to use the data from the Salvare Search for Rescue Web App project.  I wanted to create a web application within the github enviroment that allowed uses to view and see the data.  This showcases skills in the database skill set, by manpulated the data and showing it in a grah based form.
 
 ### Small image
 
