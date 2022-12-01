@@ -54,18 +54,6 @@ For the databasee artifact I decided to take the data and impliment it into a HT
 ## Artifact Databases
 [Database Data](https://codepen.io/daimon2008/pen/yLEvdpb)
 
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
 <dl>
 <dt>Name</dt>
 <dd>Paul Schwartz</dd>
