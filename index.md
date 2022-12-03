@@ -23,7 +23,7 @@ I began my computer science journey starting in April 2019.  I decided on the co
 
 Throughout the program has led to an increased capacity for learning with being able to bring solutions to problems when data, software and technology are involved.  While completing this program I have gained many skills and then throughout the courses my capacity for those sills increased as well.  Learning and implementing how agile and waterfall developments works into my projects as well as using fundamentally computer science foundations to build them.
 
-Skills I learned over the course in relation to the development pipe line was planning and finding what the needs of the project are.  In the screen shot below is the beginning on the planning phase for a database for a pizza company.  These planning phase makes sure all needs are covered and implemented into the planning phase.  This allows a check list to go over as each class is built in the desired database.
+Skills I learned over the course in relation to the development pipe line was planning and finding what the needs of the project are.  In the screen shot below is the beginning on the planning phase for a database for a pizza company.  These planning phase makes sure all needs are covered and implemented into the planning phase.  This allows a check list to go over as each class is built in to the desired database.  With experience using MongoDB, SQL, and NoSQL these skilsl coudl be used and applied into any envrioment.
 
 <div style="text-align: center;">
     <img src="assets/images/Screenshot%20(235).png" width="720px" title="test" />
@@ -34,11 +34,17 @@ Skills I learned over the course in relation to the development pipe line was pl
 
 ## Preparing for the Future
 
-My ePortfolio demonstates my skills and abiliters as a software devlopper.  The ePortfolio also, demostarts the ability to adpart and learn with many different projects and classes using a varity of skills and programming languages.  I look forward to leaning, growing and am driven to complete work in a quality focused manner.
+The SNHU computer science program was instrumental for helping me grow not only as a programmer but also as a professional.  The course helped prepare me for a future in any of the software engineering career fields.  With basic skills built into software engineering, data analytics and full stack engineering.  This ePortfolio shows that I have all those necessary skills as a foundation and the skills to integrate them together for success.  I really am looking forward to being my career in one of those fields to expand my skills and grow as a professional.
 
 # Refinement Plan and Code Review
 
+On my career path as a software engineer I have learned code reviews and refinement plans are a integral part of the career and a big part of being successful in it.  Code reviews can range from personal reviews of your own code or peer reviews of others code or having those peers review yours.  Anytime you can have more eyes and reviews of code its beneficial not only in growing as a professional but making sure security flaws or errors are found early in the process.  Anytime you build and have a collaborative environment as a person or company, everyone will benefit from you, the company and the clients.
+
 ## Artifacts Code Review Videos Link
+
+
+[Link to Code Review Video](https://youtu.be/vFeJOg51eMM)
+
 
 # Software Design and Engineering
 
