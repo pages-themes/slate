@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - DataBase Data </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="title">Age of Cats and Dogs in Weeks</div>
+<div id="legend">
+  <div class="item Cat">Cat</div>
+  <div class="item Dog">Dog</div>
+</div>
+<div id="chart-wrapper">
+  <canvas id="chart"></canvas>
+</div>
+<div id="footer">
+  <div class="left" ><a href="https://createwithdata.com/chartjs-and-csv/" target="_blank">About</a></div>
+  <div class="right">Source: <a href="https://public.tableau.com/en-us/s/resources" target="_blank">Tableau</a> / Wikipedia</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
