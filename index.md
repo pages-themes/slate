@@ -44,6 +44,8 @@ My ePortfolio demonstates my skills and abiliters as a software devlopper.  The 
 
 # Software Design and Engineering
 
+The artifact selected for the software design and engineering category is the pymongo CRUD aplication from Salvare Search for Rescue Web App project.  The aplciations goal is to create the functionitily of CRUD for use with the mongodb database.  This showcaseese software design and engineering skills by examding the Python PyMongo drivers with dash framework intigartion.  With the CRUD module exanded with a Query and List funtion, this allows the data to be manipulated in a more streamlined way.
+
 ## Artifact Software Design and Engineering
 
 <div style="text-align: center;">
@@ -51,9 +53,9 @@ My ePortfolio demonstates my skills and abiliters as a software devlopper.  The 
     <p><em>Adding LS and CRUD</em></p>
 </div>
 
-The artifact selected for the software design and engineering category is the pymongo CRUD aplication from Salvare Search for Rescue Web App project.  The aplciations goal is to create the functionitily of CRUD for use with the mongodb database.  This showcaseese software design and engineering skills by examding the Python PyMongo drivers with dash framework intigartion.  With the CRUD module exanded with a Query and List funtion, this allows the data to be manipulated in a more streamlined way.
-
 # Algorithms and Data Structure
+
+The artifact selectedd for the Alogorithim and data structure category is the Pymongo Script created and used in the Salvare Search for Rescue Web App project.  I selected this artifact becacuse its consists of design considerations and creating an API to both use the artifact from software design and enineering and theailbity to quickly call an APU and manipulate and test data.  This showcases data structure skills with creating a script to quickly excute the expanded CRUD funtionity with the previous catoeries Query and List functions.
 
 ## Artifact Algorithms and Data Structures
 
@@ -62,11 +64,9 @@ The artifact selected for the software design and engineering category is the py
     <p><em>Modifying Script to work with addition to LS in CRUD</em></p>
 </div>
 
-The artifact selectedd for the Alogorithim and data structure category is the Pymongo Script created and used in the Salvare Search for Rescue Web App project.  I selected this artifact becacuse its consists of design considerations and creating an API to both use the artifact from software design and enineering and theailbity to quickly call an APU and manipulate and test data.  This showcases data structure skills with creating a script to quickly excute the expanded CRUD funtionity with the previous catoeries Query and List functions.
-
 # Databases
 
-For the databasee artifact I decided to take the data and impliment it into a HTML, CSS, and Javascript set up.  This showcases the skills needed to build and full stack application using a data fill CSV file.  Along with importing the data to use chart.js to visual show the data in a meaningful way.  With this data I built the chart to show the age fo the dogs and cats in weeks.  Along with that showing each catorgoeie in a differnet color to easier disgunish between dogs and cats.
+The main artifact selected for the database category is the data from Salver Search for Rescue web app.  The app uses restful API and http protocols to take data from a mongo DB and create a map interface using Lat and Lon coordinates.  My improvement for the artifact was taking the data from the artifact and create a system to analyze the data.  First was creating a way to be able to access the data, with that I uploaded the .cvs file to GitHub.  Then I created a HTML, JS and, CSS web page to import and visualize that data.  Using chat.js I was able to create a graph using specific entities to a color to make the visualization easier.  So, it is easier to see what are dogs and cats, and where their age in weeks falls on the graph.  This showcases skills with data analytics and being able to implements API’s and valuations the information.  This could easily be scaled up in a way to import vast amounts of data from AWS or Azure and then create visualizations based on hypothetical questions a company or client may have.
 
 ## Artifact Databases
 
@@ -75,7 +75,7 @@ For the databasee artifact I decided to take the data and impliment it into a HT
     <p><em>Data Analysis and Visulation</em></p>
 </div>
 
-#### Here is a built webpage using chat.js and API to visulaize and interface the data into a webpage.
+#### Here is a built webpage using chart.js and API to visulaize and interface the data into a webpage.
 
 [Database Data](https://daimon2008.github.io/database/)
 
