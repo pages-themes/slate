@@ -39,6 +39,11 @@ My ePortfolio demonstates my skills and abiliters as a software devlopper.  The 
 
 ## Artifact Software Design and Engineering
 
+<div style="text-align: center;">
+    <img src="assets/images/Screenshot%20(232).png" width="720px" title="test" />
+    <p><em>test</em></p>
+</div>
+
 The artifact selected for the software design and engineering category is the pymongo CRUD aplication from Salvare Search for Rescue Web App project.  The aplciations goal is to create the functionitily of CRUD for use with the mongodb database.  This showcaseese software design and engineering skills by examding the Python PyMongo drivers with dash framework intigartion.  With the CRUD module exanded with a Query and List funtion, this allows the data to be manipulated in a more streamlined way.
 
 # Algorithms and Data Structure
@@ -46,7 +51,7 @@ The artifact selected for the software design and engineering category is the py
 ## Artifact Algorithms and Data Structures
 
 <div style="text-align: center;">
-    <img src="assets/images/Screenshot%20(232).png" width="720px" title="test" />
+    <img src="assets/images/Screenshot%20(233).png" width="720px" title="test" />
     <p><em>test</em></p>
 </div>
 
