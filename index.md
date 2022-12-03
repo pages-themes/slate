@@ -67,6 +67,12 @@ The artifact selectedd for the Alogorithim and data structure category is the Py
 For the databasee artifact I decided to take the data and impliment it into a HTML, CSS, and Javascript set up.  This showcases the skills needed to build and full stack application using a data fill CSV file.  Along with importing the data to use chart.js to visual show the data in a meaningful way.  With this data I built the chart to show the age fo the dogs and cats in weeks.  Along with that showing each catorgoeie in a differnet color to easier disgunish between dogs and cats.
 
 ## Artifact Databases
+
+<div style="text-align: center;">
+    <img src="assets/images/Screenshot%20(237).png" width="720px" title="test" />
+    <p><em>test</em></p>
+</div>
+
 [Database Data](https://daimon2008.github.io/database/)
 
 <dl>
