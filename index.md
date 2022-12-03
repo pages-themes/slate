@@ -1,6 +1,4 @@
 
-# This is still a Work in Progress, Class Finsihes at the end of December
-
 # Welcome
 
 This ePortfolio integrates the knowledge and skills I gained and developed throughout the years of studying a Computer Science program at Southern New Hampshire University (SNHU). It represent my growth in the program and gained honor rolls from high-quality outcomes. The ePortfolio was designed and developed with a professional-quality written and a visual communication demonstrative of my capacities and abilities in a coherent, technically sound, and appropriately adapted to an specific technical audience and context.
