@@ -8,7 +8,6 @@ This ePortfolio integrates the knowledge and skills I gained and developed throu
 ### <u>Table of Content</u>
 
 &nbsp;[Professional Self-Assessment](#professional-self-assessment)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[_Portfolio Considerations_](#portfolio-considerations "Portfolio Considerations")<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[_Preparing For The Future_](#preparing-for-the-future "Preparing for the Future")<br/>
 &nbsp;[Refinement Plan and Code Review](#refinement-plan-and-code-review)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[_Code Review Videos Link_](#artifacts-code-review-videos-link)<br/>
@@ -31,8 +30,6 @@ Skills I learned over the course in relation to the development pipe line was pl
     <img src="assets/images/Screenshot%20(235).png" width="720px" title="test" />
     <p><em>IT- 235</em></p>
 </div>
-
-## Portfolio Considerations
 
 ## Preparing for the Future
 
