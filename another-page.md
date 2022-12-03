@@ -1,9 +1,1 @@
----
-layout: default
----
-
-## Welcome to another page
-
-_yay_
-
-[back](./)
+<meta http-equiv="refresh" content="0; url=https://repo.github.io/dist/index.html">
