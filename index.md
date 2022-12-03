@@ -29,7 +29,7 @@ Skills I learned over the course in relation to the development pipe line was pl
 
 <div style="text-align: center;">
     <img src="assets/images/Screenshot%20(235).png" width="720px" title="test" />
-    <p><em>test</em></p>
+    <p><em>IT- 235</em></p>
 </div>
 
 ## Portfolio Considerations
@@ -48,7 +48,7 @@ My ePortfolio demonstates my skills and abiliters as a software devlopper.  The 
 
 <div style="text-align: center;">
     <img src="assets/images/Screenshot%20(232).png" width="720px" title="test" />
-    <p><em>test</em></p>
+    <p><em>Adding LS and CRUD</em></p>
 </div>
 
 The artifact selected for the software design and engineering category is the pymongo CRUD aplication from Salvare Search for Rescue Web App project.  The aplciations goal is to create the functionitily of CRUD for use with the mongodb database.  This showcaseese software design and engineering skills by examding the Python PyMongo drivers with dash framework intigartion.  With the CRUD module exanded with a Query and List funtion, this allows the data to be manipulated in a more streamlined way.
@@ -59,7 +59,7 @@ The artifact selected for the software design and engineering category is the py
 
 <div style="text-align: center;">
     <img src="assets/images/Screenshot%20(233).png" width="720px" title="test" />
-    <p><em>test</em></p>
+    <p><em>Modifying Script to work with addition to LS in CRUD</em></p>
 </div>
 
 The artifact selectedd for the Alogorithim and data structure category is the Pymongo Script created and used in the Salvare Search for Rescue Web App project.  I selected this artifact becacuse its consists of design considerations and creating an API to both use the artifact from software design and enineering and theailbity to quickly call an APU and manipulate and test data.  This showcases data structure skills with creating a script to quickly excute the expanded CRUD funtionity with the previous catoeries Query and List functions.
@@ -72,7 +72,7 @@ For the databasee artifact I decided to take the data and impliment it into a HT
 
 <div style="text-align: center;">
     <img src="assets/images/Screenshot%20(237).png" width="720px" title="test" />
-    <p><em>test</em></p>
+    <p><em>Data Analysis and Visulation</em></p>
 </div>
 
 [Database Data](https://daimon2008.github.io/database/)
