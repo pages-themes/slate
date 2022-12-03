@@ -25,6 +25,11 @@ I began my computer science journey starting in April 2019.  I decided on the co
 
 Throughout the program has led to an increased capacity for learning with being able to bring solutions to problems when data, software and technology are involved.  While completing this program I have gained many skills and then throughout the courses my capacity for those sills increased as well.  Learning and implementing how agile and waterfall developments works into my projects as well as using fundamentally computer science foundations to build them.
 
+<div style="text-align: center;">
+    <img src="assets/images/Screenshot%20(235).png" width="720px" title="test" />
+    <p><em>test</em></p>
+</div>
+
 ## Portfolio Considerations
 
 ## Preparing for the Future
