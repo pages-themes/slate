@@ -21,9 +21,9 @@ This ePortfolio integrates the knowledge and skills I gained and developed throu
 
 # Professional self-assessment
 
-I begain my computer science jouney starting in April, 2019.  I decided on the comptuer sciecne program beucase of my passion fro working with and technology and software.  While in this program I gained knowleged and skills in many different aplications.  I have improved my organization skills, attention to detail and understanding how workflow works when dealing with software devlopment.  With going through this program I have learned how to impliment code reviews, best practices and secruity standards to all my code.  I also, learned the importance of Software Development Lifecycle and how this is implimetned to enterpruise scale operations.  By incorpting the SDLC into my coding practices I am able to correctly use pseudocode, Flow charts and algorithms.
+I began my computer science journey starting in April 2019.  I decided on the computer science program because of my passion for working with and technology and software.  While in this program I gained knowledge and skills in many different applications.  I have improved my organization skills, attention to detail and understanding how workflow works when dealing with software development.  With going through this program, I have learned how to implement code reviews, best practices and security standards to all my code.  I also, learned the importance of Software Development Lifecycle and how this is implemented to enterprise scale operations.  By incorporating the SDLC into my coding practices I can correctly use pseudocode, Flow charts and algorithms.
 
-Thoughout the program has led to an increased capiticy for learning with beingable to bring solutions to problems when data, software and technology are involved.
+Throughout the program has led to an increased capacity for learning with being able to bring solutions to problems when data, software and technology are involved.  While completing this program I have gained many skills and then throughout the courses my capacity for those sills increased as well.  Learning and implementing how agile and waterfall developments works into my projects as well as using fundamentally computer science foundations to build them.
 
 ## Portfolio Considerations
 
