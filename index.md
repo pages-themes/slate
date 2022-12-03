@@ -83,11 +83,11 @@ The main artifact selected for the database category is the data from Salver Sea
     <p><em>Data Analysis and Visulation</em></p>
 </div>
 
-#### Here is a built webpage using chart.js and API to visulaize and interface the data into a webpage.
+##### Links to files and Web page.
 
-[Database Data](https://daimon2008.github.io/database/)
+[Webpage of Data](https://daimon2008.github.io/database/)
 
-[Link to the Web Fiiles](https://github.com/daimon2008/database)
+[Link to the Web Files](https://github.com/daimon2008/database)
 
 <dl>
 <dt>Name</dt>
