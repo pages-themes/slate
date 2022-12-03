@@ -48,6 +48,8 @@ The artifact selected for the software design and engineering category is the py
 
 ## Artifact Software Design and Engineering
 
+[Link to Pymongo CRUD APLICATION](https://github.com/daimon2008/Capstone/blob/master/docs/shelter.py)
+
 <div style="text-align: center;">
     <img src="assets/images/Screenshot%20(232).png" width="720px" title="test" />
     <p><em>Adding LS and CRUD</em></p>
@@ -58,6 +60,8 @@ The artifact selected for the software design and engineering category is the py
 The artifact selectedd for the Alogorithim and data structure category is the Pymongo Script created and used in the Salvare Search for Rescue Web App project.  I selected this artifact becacuse its consists of design considerations and creating an API to both use the artifact from software design and enineering and theailbity to quickly call an APU and manipulate and test data.  This showcases data structure skills with creating a script to quickly excute the expanded CRUD funtionity with the previous catoeries Query and List functions.
 
 ## Artifact Algorithms and Data Structures
+
+[Link to Pymongo Script](https://github.com/daimon2008/Capstone/blob/master/docs/projectone(1).ipynb)
 
 <div style="text-align: center;">
     <img src="assets/images/Screenshot%20(233).png" width="720px" title="test" />
@@ -78,6 +82,8 @@ The main artifact selected for the database category is the data from Salver Sea
 #### Here is a built webpage using chart.js and API to visulaize and interface the data into a webpage.
 
 [Database Data](https://daimon2008.github.io/database/)
+
+[Link to the Web Fiiles](https://github.com/daimon2008/database)
 
 <dl>
 <dt>Name</dt>
