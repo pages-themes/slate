@@ -1,6 +1,5 @@
-title: Slate theme
-description: Slate is a theme for GitHub Pages.
-show_downloads: true
+title: Sandbar LLC.
+description: 検索技術やChatGPTを利用した機能開発・PoCを提供します
 google_analytics:
 theme: jekyll-theme-slate
 remote_theme: pages-themes/slate@v0.2.0
