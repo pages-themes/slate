@@ -1,7 +1,9 @@
-title: Sandbar LLC.
-description: 検索技術とChatGPTを活用した機能開発・PoC
+title: Sandbar合同会社
+description: 情報検索技術やChatGPTを活用した機能開発・検証
 google_analytics:
-theme: jekyll-theme-slate
-remote_theme: pages-themes/slate@v0.2.0
+theme: bay_jekyll_theme
+# theme: jekyll-theme-slate
+# remote_theme: pages-themes/slate@v0.2.0
+remote_theme: eliottvincent/bay
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one

@@ -4,7 +4,7 @@ layout: default
 
 # サービス
 
-Sandbar合同会社は、検索技術とChatGPTを駆使した機能開発とPoC（Proof of Concept）を提供する会社です。
+Sandbar合同会社は、検索技術やChatGPTを駆使した機能開発・検証(Proof of Concept)を提供する会社です。
 
 あくまで一例ですが以下のユーザー行動においては、実線の矢印部分をサポートします。
 
@@ -32,15 +32,15 @@ Sandbar合同会社は、検索技術とChatGPTを駆使した機能開発とPoC
 | 正式名称　| Sandbar合同会社  |
 | 代表者 | 安達光太郎  |
 | 事業内容　| コンピュータシステムの企画、開発、販売及び保守に関する業務   |
-| 資本金    | XXXX  |
-| 設立年月日    | XXXX  |
+| 資本金    | 500,000円  |
+| 設立年月日    | 2023年8月5日  |
 
 # お問合せ
 
 以下のいずれかからお気軽にお問合せください。
 
 - Twitter @kotaroooo0
-- Mail Address
+- Mail Address k33asby@gmail.com
 - Google Form
 
 
