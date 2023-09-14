@@ -1,9 +1,37 @@
-title: Sandbar合同会社
-description: 情報検索技術やChatGPTを活用した機能開発・検証
-google_analytics:
-theme: bay_jekyll_theme
-# theme: jekyll-theme-slate
-# remote_theme: pages-themes/slate@v0.2.0
-remote_theme: eliottvincent/bay
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+title: Sandbar llc.
+description: >- # this means to ignore newlines until "baseurl:"
+  Bay is a minimal Jekyll Theme.
+baseurl: "/" # the subpath of the site
+url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/profile-pic.jpg
+google_analytics: "UA-121636368-3"
+
+
+footer:
+  show_powered_by: false
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-feed
+
+# Excluded items
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Used for defeating caching
+version: 1

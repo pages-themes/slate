@@ -1,0 +1,21 @@
+.blog-post-list {
+  .blog-post-date {
+    width: 6em;
+    color: #777;
+    display: block;
+    float: left;
+
+    @include media-query($on-mobile) {
+      display: block;
+      float: none;
+      color: #333;
+      font-size: 11px;
+      margin-top: 14px;
+    }
+  }
+
+  .blog-post-title {
+    font-size: 100%;
+    letter-spacing: normal;
+  }
+}

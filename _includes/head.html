@@ -1,0 +1,76 @@
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  {% assign page_is_article = false %}
+  {% if page.layout == "post" %}{% assign page_is_article = true %}{% endif %}
+
+  {% assign page_title = "" %}
+  {% if page.draft %}{% assign page_title = page_title | append: "[DRAFT] " %}{% endif %}
+  {% if page.title %}
+    {% assign page_title = page_title | append: site.title | append: " | " | append: page.title %}
+  {% else %}
+    {% assign page_title = site.title %}
+  {% endif %}
+
+  {% assign page_description = "" %}
+  {% if page.draft %}{% assign page_description = page_description | append: "[DRAFT] " %}{% endif %}
+  {% if page.blurb %}
+    {% assign page_description = page_description | append: page.blurb %}
+  {% else %}
+    {% assign page_description = site.description %}
+  {% endif %}
+
+  {% assign page_url = page.url | replace: "index.html","" | replace: ".html","" | prepend: site.baseurl | prepend: site.url %}
+
+  {% assign page_image = site.og_image | prepend: site.baseurl | prepend: site.url %}
+  {% if page.og_image %}
+    {% assign page_image = site.url + page.og_image %}
+  {% endif %}
+
+  {% for follow in site.footer.follow %}
+    {% if follow.name == 'Twitter' %}
+      {% assign twitter_username = follow.username %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- Primary Meta Tags -->
+  <title>{{ page_title }}</title>
+  <meta name="title" content="{{ page_title }}"/>
+  <meta name="description" content="{{ page_description }}"/>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:site_name" content="{{ page_title }}"/>
+  <meta property="og:type" content="{% if page_is_article %}article{% else %}website{% endif %}"/>
+  <meta property="og:url" content="{{ page_url }}"/>
+  <meta property="og:title" content="{{ page_title }}"/>
+  <meta property="og:description" content="{{ page_description }}"/>
+  <meta property="og:image" content="{{ page_image }}"/>
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:url" content="{{ page_url }}"/>
+  <meta property="twitter:title" content="{{ page_title }}"/>
+  <meta property="twitter:description" content="{{ page_description }}"/>
+  <meta property="twitter:image" content="{{ page_image }}"/>
+  {% if twitter_username %}
+    <meta property="twitter:creator" content="{{ twitter_username }}"/>
+    <meta property="twitter:site" content="{{ twitter_username }}"/>
+  {% endif %}
+
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"/>
+  <link rel="canonical" href="{{ page_url }}"/>
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}" type="image/x-icon"/>
+
+  <!-- Google Analytics -->
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', "{{ site.google_analytics }}", "auto");
+    ga('send', "pageview");
+  </script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+</head>

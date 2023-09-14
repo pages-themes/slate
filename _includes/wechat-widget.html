@@ -1,0 +1,16 @@
+{% for contact in site.footer.contact %}
+  {% if contact.name == 'WeChat' %}
+    {% assign wechat_username = contact.value %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if wechat_username %}
+  <div id="wechat-widget">
+    <p>
+      Find me on WeChat with the ID <strong>{{ wechat_username }}</strong>, or scan my QR code:
+    </p>
+
+    <img src="{{ "/assets/img/wechat-qr-code.png" | absolute_url }}" alt="QR code" id="qr-code" />
+  </div>
+{% endif %}

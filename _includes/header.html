@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="{{ "" | prepend: site.baseurl | prepend: site.url }}/">
+      <img src="{{ "/assets/img/title.png" | absolute_url }}" alt="{{ site.title }}" />
+    </a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon"></a>
+
+      <div class="menu">
+        {% for page in site.header.pages %}
+          {% if page.slug and page.slug != "" and page.slug != nil %}
+            {% assign page_link = page.slug %}
+          {% else %}
+            {% assign page_link = "/" | append: page.name | downcase %}
+          {% endif %}
+          {% assign page_link = page_link | absolute_url %}
+          <a class="page-link" href="{{ page_link }}">
+            {{ page.name }}
+          </a>
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
+</header>
