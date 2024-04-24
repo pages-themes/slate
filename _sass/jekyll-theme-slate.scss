@@ -166,6 +166,12 @@ pre, code {
   -webkit-border-radius: 2px;
 }
 
+/* restore theme's colors */
+pre.highlight code {
+  color: unset;
+  background-color: unset;
+}
+
 pre {
   padding: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
