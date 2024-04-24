@@ -166,6 +166,10 @@ pre, code {
   -webkit-border-radius: 2px;
 }
 
+div.highlight {
+  background-color: unset;
+}
+
 /* restore theme's colors */
 pre.highlight code {
   color: unset;
