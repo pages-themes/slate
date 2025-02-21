@@ -1,123 +1,50 @@
 ---
 layout: default
+title: 大模型工程师成长中心
+nav_order: 1
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+<div class="home-header">
+  <h1>大模型工程师90天冲刺计划</h1>
+  <div class="progress-bars">
+    <div class="progress">
+      <div class="progress-bar" style="width: 65%">论文精读 65%</div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 40%">代码实践 40%</div>
+    </div>
+  </div>
+</div>
 
-[Link to another page](./another-page.html).
+## 核心模块
+<div class="card-grid">
+  <div class="card">
+    <h2>📅 学习日程</h2>
+    <p>每日计划与周任务安排</p>
+    <a href="schedule.ics" download>下载日历文件</a>
+  </div>
 
-There should be whitespace between paragraphs.
+  <div class="card">
+    <h2>📚 论文追踪</h2>
+    <p>20篇核心论文进度表</p>
+    <a href="/paper-tracking">查看详情 →</a>
+  </div>
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+  <div class="card">
+    <h2>🔬 实验记录</h2>
+    <p>分布式训练性能分析</p>
+    <a href="/experiment-records">查看报告 →</a>
+  </div>
+</div>
 
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+```mermaid
+graph TD
+  A[当前阶段] --> B(基础夯实)
+  A --> C(专项突破)
+  A --> D(面试冲刺)
+  style B fill:#90EE90,stroke:#333
+  style C fill:#FFA500,stroke:#333
+  style D fill:#FFC0CB,stroke:#333
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+<script src="/assets/js/mermaid-loader.js"></script>
