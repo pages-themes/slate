@@ -1,5 +1,13 @@
-title: Slate theme
-description: Slate is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: 大模型工程师成长中心
 theme: jekyll-theme-slate
+plugins:
+
+jekyll-relative-links
+jekyll-redirect-from
+defaults:
+
+scope: path: "" values: layout: default
+exclude:
+
+Gemfile
+Gemfile.lock
