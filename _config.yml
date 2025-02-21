@@ -1,13 +1,13 @@
 title: 大模型工程师成长中心
 theme: jekyll-theme-slate
 plugins:
-
-jekyll-relative-links
-jekyll-redirect-from
+  jekyll-relative-links
+  jekyll-redirect-from
 defaults:
-
-scope: path: "" values: layout: default
+scope: 
+path: "" 
+values: 
+layout: default
 exclude:
-
-Gemfile
-Gemfile.lock
+  Gemfile
+  Gemfile.lock
