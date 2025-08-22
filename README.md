@@ -77,7 +77,7 @@ Google has released several iterations to their Google Analytics code over the y
 Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
 
 1. Look at [the template source](https://github.com/pages-themes/slate/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
-2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
+2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.zip_url`, you'd add the following:
     ```yml
     github:
       zip_url: http://example.com/download.zip
