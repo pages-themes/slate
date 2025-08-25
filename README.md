@@ -42,6 +42,17 @@ show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a d
 google_analytics: [Your Google Analytics tracking ID]
 ```
 
+### Show "View on GitHub" button
+
+Slate will show a button to navigate to the respective GitHub repsotiroy, if set in your site's `_config.yml`:
+
+```yml
+github:
+  is_project_page: true
+```
+
+Default is `false`.
+
 ### Stylesheet
 
 If you'd like to add your own custom styles:
