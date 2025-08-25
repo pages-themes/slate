@@ -40,6 +40,7 @@ Additionally, you may choose to set the following optional variables:
 ```yml
 show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
+google_analytics_v4: [Your Google Analytics version 4 (GA4) tracking ID]
 ```
 
 ### Stylesheet
@@ -69,6 +70,8 @@ If you'd like to change the theme's HTML layout:
 5. Customize the layout as you'd like
 
 ### Customizing Google Analytics code
+
+<!-- TODO: this section should be removed? -->
 
 Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
 
