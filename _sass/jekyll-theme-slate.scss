@@ -1,5 +1,3 @@
-@import "rouge-github";
-
 /*******************************************************************************
 MeyerWeb Reset
 *******************************************************************************/
@@ -164,6 +162,16 @@ pre, code {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
+}
+
+div.highlight {
+  background-color: unset;
+}
+
+/* restore theme's colors */
+pre.highlight code {
+  color: unset;
+  background-color: unset;
 }
 
 pre {
