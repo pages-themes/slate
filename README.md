@@ -64,6 +64,10 @@ publication month, source links, and a provisional summary. The News page draws
 the full citation from the reviewed bibliography, keeping bibliographic details
 in one place. See `how_to_write_news_post.txt` for the post format.
 
+The Software page reads `_data/software.yml`; add or revise packages there
+instead of editing card markup. AutoEIS documentation remains available at
+`https://autodiallab.ca/AutoEIS/` through its Software card.
+
 ## Updating media
 
 Original, full-resolution media belongs under `_media_sources/`. Files used by

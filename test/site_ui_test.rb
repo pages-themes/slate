@@ -12,6 +12,7 @@ class SiteUiTest < Minitest::Test
     "/" => "Home",
     "/news" => "News & Updates",
     "/publications" => "Publications",
+    "/software" => "Software",
     "/sdls" => "Self Driving Labs",
     "/group_members" => "Group Members and Alumni",
     "/openings" => "Openings",
@@ -141,6 +142,25 @@ class SiteUiTest < Minitest::Test
     browser.set_window(width: 375, height: 812)
     overflow = browser.execute("document.documentElement.scrollWidth > document.documentElement.clientWidth + 1")
     refute overflow, "News archive overflows a mobile viewport"
+  end
+
+  def test_software_catalog_on_mobile
+    navigate("/software")
+    browser.set_window(width: 375, height: 812)
+    state = browser.execute(<<~JS)
+      return {
+        viewport: document.documentElement.clientWidth,
+        scroll: document.documentElement.scrollWidth,
+        cards: document.querySelectorAll(".software-card").length,
+        autoeis: Boolean(document.querySelector('a[href="https://autodiallab.ca/AutoEIS/"]')),
+        brokenImages: Array.from(document.querySelectorAll(".software-card img"))
+          .filter((image) => !image.complete || image.naturalWidth === 0).length
+      };
+    JS
+    assert_operator state.fetch("scroll"), :<=, state.fetch("viewport") + 1
+    assert_equal 2, state.fetch("cards")
+    assert state.fetch("autoeis")
+    assert_equal 0, state.fetch("brokenImages")
   end
 
   def test_member_dialog_supports_mouse_and_backdrop_interactions

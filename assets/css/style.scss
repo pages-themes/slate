@@ -485,3 +485,20 @@
 .news-card__expanded[hidden] { display: none; }
 .news-card__links { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; margin-top: .8rem; }
 .news-feed .text-link { display: inline-block; font-weight: 700; margin-top: .35rem; }
+
+/* Curated Software page in the existing Slate layout. */
+.software-intro { margin-bottom: 2rem; }
+.software-intro h1 { margin-bottom: .6rem; }
+.software-intro .eyebrow, .software-card .eyebrow { color: #a6410d; font-size: .8rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.software-list { display: grid; gap: 1.25rem; }
+.software-card { border: 1px solid #d6d9da; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); overflow: hidden; }
+.software-card__visual { align-items: center; background: #f0f4f2; display: flex; justify-content: center; margin: 0; min-width: 0; padding: 1rem; }
+.software-card__visual img { display: block; height: auto; max-width: 100%; width: 100%; }
+.software-card__content { align-self: center; min-width: 0; padding: clamp(1.2rem, 3vw, 2rem); }
+.software-card__content h2 { margin: .3rem 0 1rem; }
+.software-card__summary { font-size: 1.05rem; line-height: 1.55; }
+.software-card__resources { display: flex; flex-wrap: wrap; gap: .6rem; list-style: none; margin: 1.2rem 0 0; padding: 0; }
+.software-card__resources li { margin: 0; }
+.software-card__resources a { border: 1px solid #b9c1c3; display: inline-block; font-weight: 700; min-height: 44px; padding: .5rem .7rem; text-decoration: none; }
+.software-card__resources a:hover, .software-card__resources a:focus-visible { border-color: #a6410d; text-decoration: underline; }
+@media (max-width: 850px) { .software-card { grid-template-columns: 1fr; } }

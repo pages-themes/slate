@@ -20,6 +20,10 @@ class RenderedSiteTest < Minitest::Test
       title: "Publications",
       description: "Reviewed research publications from the AutoDIAL group."
     },
+    "software.html" => {
+      title: "Software",
+      description: "Explore open-source scientific software developed by the AutoDIAL research group."
+    },
     "sdls.html" => {
       title: "Self Driving Labs",
       description: "Explore AutoDIAL self-driving laboratory platforms for corrosion mapping, electrochemistry, " \
@@ -43,6 +47,7 @@ class RenderedSiteTest < Minitest::Test
     "News" => "/news",
     "Self Driving Labs" => "/sdls",
     "Publications" => "/publications",
+    "Software" => "/software",
     "Group Members" => "/group_members",
     "Openings" => "/openings",
     "Contact" => "/contact"
@@ -108,6 +113,14 @@ class RenderedSiteTest < Minitest::Test
     ampere = document.at_css('.news-card[data-doi="10.1039/d4dd00203b"]')
     assert_equal "Daniel", ampere.at_css(".news-card__congratulations a").text.strip
     assert_includes ampere.at_css(".news-card__description").text, "Jehad Abed and Yang Bai"
+  end
+
+  def test_software_catalog_preserves_autoeis_documentation
+    document = Nokogiri::HTML(File.read(File.join(SITE_ROOT, "software.html")))
+    assert_equal 2, document.css(".software-card").length
+    assert document.at_css('a[href="https://autodiallab.ca/AutoEIS/"]')
+    assert document.at_css('img[src="/assets/images/software/autoeis.svg"]')
+    assert document.at_css('img[src="/assets/images/software/autorec.svg"]')
   end
 
   def test_interactive_controls_have_accessible_names_and_safe_new_tabs
