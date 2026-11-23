@@ -19,6 +19,8 @@ Alloys (AutoDIAL) research group.
 - Ruby and Bundler
 - ImageMagick (`convert` and `identify`)
 - FFmpeg (`ffmpeg` and `ffprobe`)
+- Python 3.9 or newer for publication updates and private previews
+- `zip` for creating a private review bundle
 - Firefox and Geckodriver for `make test` and `make test-ui`
 
 On Debian or Ubuntu, install the Ruby and media dependencies with:
@@ -46,6 +48,30 @@ make serve
 
 Jekyll will print the local address, normally
 <http://127.0.0.1:4000>. Stop the server with `Ctrl-C`.
+
+### Private review bundle
+
+To share a draft without publishing the branch, create a ZIP from the current
+checkout in a shell with the build dependencies installed:
+
+```sh
+./script/create-preview-bundle
+```
+
+The script runs `make check`, then writes a timestamped ZIP to `/tmp` and
+prints its SHA-256 checksum. To choose the output file, pass an absolute path
+in an existing directory; the file must not already exist:
+
+```sh
+./script/create-preview-bundle /tmp/autodial-colleague-review.zip
+```
+
+The ZIP contains the built site, a README, and `serve-preview.py`. Recipients
+can extract it and run `python3 serve-preview.py` on macOS/Linux or
+`py serve-preview.py` on Windows, then open <http://127.0.0.1:8000/>. The
+viewer needs Python 3.9 or newer and serves only on the recipient's computer.
+The bundle leaves out `CNAME` and internal review data. Share it privately;
+the publication selection and News copy still await scientific and PI review.
 
 Most page content is stored in the Markdown files in the repository root.
 Laboratory content is in `sdls.md`, and homepage content is in `index.md`.
