@@ -52,6 +52,13 @@ Laboratory content is in `sdls.md`, and homepage content is in `index.md`.
 Group-member records are maintained in `_data/members.yml`; reusable templates
 under `_includes/` generate their cards and biography dialogs.
 
+The Publications page reads reviewed records from `_data/publications.json`.
+Run `make publications-update` to discover candidates, review them with
+`make publications-review`, then run `make publications-build` after recording
+individual approval decisions. Discovery alone never adds a paper to the site.
+See [the Publications workflow](docs/PUBLICATIONS_WORKFLOW.md) for the full
+review process and source-verification rules.
+
 ## Updating media
 
 Original, full-resolution media belongs under `_media_sources/`. Files used by

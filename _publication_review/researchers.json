@@ -1,0 +1,17 @@
+{
+  "researchers": [
+    {
+      "name": "Jason Hattrick-Simpers",
+      "relationship": "pi",
+      "openalex_author_id": "A5073635313",
+      "orcid": "0000-0003-2937-3188",
+      "verification_url": "https://orcid.org/0000-0003-2937-3188",
+      "verification_sources": [
+        "https://openalex.org/authors/A5073635313",
+        "https://mse.utoronto.ca/faculty-staff/professors/jason-hattrick-simpers/"
+      ],
+      "verified": true,
+      "verified_by": "Codex public-source check, 2026-11-14"
+    }
+  ]
+}

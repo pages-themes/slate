@@ -1,0 +1,5689 @@
+{
+  "records": [
+    {
+      "id": "doi:10.1002/10.1021/acscombsci.8b00158",
+      "identifiers": [
+        "doi:10.1002/10.1021/acscombsci.8b00158",
+        "openalex:W2979872420"
+      ],
+      "doi": "10.1002/10.1021/acscombsci.8b00158",
+      "title": "An Inter-Laboratory Comparative High Throughput Experimental Materials Study of Zn-Sn-Ti-O Thin Films",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Zachary Trautt",
+        "Kamal Kumar Choudhary",
+        "Aaron Gilad Kusne",
+        "Yijun Feng",
+        "Martin L. Green",
+        "Sara C. Barron",
+        "Andriy Zakutayev",
+        "Nam V. Nguyen",
+        "Caleb T. Phillips",
+        "John D. Perkins",
+        "Ichiro Takeuchi",
+        "Apurva Mehta"
+      ],
+      "venue": "ACS Combinatorial Science",
+      "year": 2019,
+      "suggested_type": "journal",
+      "landing_page_url": "https://www.nist.gov/publications/inter-laboratory-comparative-high-throughput-experimental-materials-study-zn-sn-ti-o",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1002/9780470930915.ch23",
+      "identifiers": [
+        "doi:10.1002/9780470930915.ch23",
+        "openalex:W1557189314"
+      ],
+      "doi": "10.1002/9780470930915.ch23",
+      "title": "Recent Developments in Thermoelectric Metrology at NIST",
+      "authors": [
+        "Winnie Wong-Ng",
+        "Joshua B. Martin",
+        "E. L. Thomas",
+        "Makoto Otani",
+        "Nathan D. Lowhorn",
+        "M. Green",
+        "G. Liu",
+        "Y.G. Yan",
+        "Jason R. Hattrick-Simpers",
+        "Thanh‐Nhan Tran"
+      ],
+      "venue": "Ceramic transactions /Ceramic transactions",
+      "year": 2010,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1002/9780470930915.ch23",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1002/9781118144480.ch12",
+      "identifiers": [
+        "doi:10.1002/9781118144480.ch12",
+        "openalex:W1590898189"
+      ],
+      "doi": "10.1002/9781118144480.ch12",
+      "title": "Applications of High‐Throughput Screening Tools for Thermoelectric Materials",
+      "authors": [
+        "Winnie Wong-Ng",
+        "Howie Joress",
+        "Joshua B. Martin",
+        "Y. Yan",
+        "Jiong Yang",
+        "Makoto Otani",
+        "E. L. Thomas",
+        "M.L. Green",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Ceramic transactions /Ceramic transactions",
+      "year": 2011,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1002/9781118144480.ch12",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1002/advs.202200370",
+      "identifiers": [
+        "doi:10.1002/advs.202200370",
+        "openalex:W4229060164",
+        "pmid:35524640"
+      ],
+      "doi": "10.1002/advs.202200370",
+      "title": "Integrated High‐Throughput and Machine Learning Methods to Accelerate Discovery of Molten Salt Corrosion‐Resistant Alloys",
+      "authors": [
+        "Yafei Wang",
+        "Bonita Goh",
+        "Phalgun Nelaturu",
+        "Thien C. Duong",
+        "Najlaa Hassan",
+        "Raphaelle David",
+        "Michael J. Moorehead",
+        "Santanu Chaudhuri",
+        "Adam A. Creuziger",
+        "Jason R. Hattrick-Simpers",
+        "Dan J. Thoma",
+        "Kumar Sridharan",
+        "Adrien Couet"
+      ],
+      "venue": "Advanced Science",
+      "year": 2022,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1002/advs.202200370",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1002/chin.200532032",
+      "identifiers": [
+        "doi:10.1002/chin.200532032",
+        "openalex:W2084369596"
+      ],
+      "doi": "10.1002/chin.200532032",
+      "title": "Synthesis and Characterization of Sr3FeMoO6.88: An Oxygen‐Deficient 2D Analogue of the Double Perovskite Sr2FeMoO6.",
+      "authors": [
+        "Gabriel M. Veith",
+        "M. Greenblatt",
+        "Mark Croft",
+        "K.V. Ramanujachary",
+        "Jason R. Hattrick-Simpers",
+        "S. E. Lofland",
+        "I. Nowik"
+      ],
+      "venue": "ChemInform",
+      "year": 2005,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1002/chin.200532032",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1002/qsar.200740008",
+      "identifiers": [
+        "doi:10.1002/qsar.200740008",
+        "openalex:W2120020211"
+      ],
+      "doi": "10.1002/qsar.200740008",
+      "title": "Data Analysis in Combinatorial Experiments: Applying Supervised Principal Component Technique to Investigate the Relationship Between ToF‐SIMS Spectra and the Composition Distribution of Ternary Metallic Alloy Thin Films",
+      "authors": [
+        "Rossana Dell’Anna",
+        "Paolo Lazzeri",
+        "Roberto Canteri",
+        "Christian J. Long",
+        "Jason R. Hattrick-Simpers",
+        "Ichiro Takeuchi",
+        "Mariano Anderle"
+      ],
+      "venue": "QSAR & Combinatorial Science",
+      "year": 2008,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1002/qsar.200740008",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1007/s10562-014-1442-y",
+      "identifiers": [
+        "doi:10.1007/s10562-014-1442-y",
+        "openalex:W2060532150"
+      ],
+      "doi": "10.1007/s10562-014-1442-y",
+      "title": "The Materials Super Highway: Integrating High-Throughput Experimentation into Mapping the Catalysis Materials Genome",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Cun Wen",
+        "Jochen A. Lauterbach"
+      ],
+      "venue": "Catalysis Letters",
+      "year": 2014,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1007/s10562-014-1442-y",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1007/s10967-009-0058-y",
+      "identifiers": [
+        "doi:10.1007/s10967-009-0058-y",
+        "openalex:W2049046161"
+      ],
+      "doi": "10.1007/s10967-009-0058-y",
+      "title": "Combinatorial study of thin film metal hydride by prompt gamma activation analysis",
+      "authors": [
+        "L. R. Cao",
+        "Jason R. Hattrick-Simpers",
+        "R. Bindel",
+        "Bryan Tomlin",
+        "Rolf L. Zeisler",
+        "Rick L. Paul",
+        "Leonid A. Bendersky",
+        "Robert G. Downing"
+      ],
+      "venue": "Journal of Radioanalytical and Nuclear Chemistry",
+      "year": 2009,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1007/s10967-009-0058-y",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1007/s11837-014-1234-2",
+      "identifiers": [
+        "doi:10.1007/s11837-014-1234-2",
+        "openalex:W2039416959"
+      ],
+      "doi": "10.1007/s11837-014-1234-2",
+      "title": "A Semi-Empirical Model for Tilted-Gun Planar Magnetron Sputtering Accounting for Chimney Shadowing",
+      "authors": [
+        "Jonathan Kenneth Bunn",
+        "Christopher Metting",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "JOM",
+      "year": 2014,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1007/s11837-014-1234-2",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1007/s11837-016-2033-8",
+      "identifiers": [
+        "doi:10.1007/s11837-016-2033-8",
+        "openalex:W2490507458"
+      ],
+      "doi": "10.1007/s11837-016-2033-8",
+      "title": "Semi-Supervised Approach to Phase Identification from Combinatorial Sample Diffraction Patterns",
+      "authors": [
+        "Jonathan Kenneth Bunn",
+        "Jianjun Hu",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "JOM",
+      "year": 2016,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1007/s11837-016-2033-8",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1007/s11837-022-05367-0",
+      "identifiers": [
+        "doi:10.1007/s11837-022-05367-0",
+        "openalex:W4283275834"
+      ],
+      "doi": "10.1007/s11837-022-05367-0",
+      "title": "Towards Automated Design of Corrosion Resistant Alloy Coatings with an Autonomous Scanning Droplet Cell",
+      "authors": [
+        "Brian DeCost",
+        "Howie Joress",
+        "Suchismita Sarker",
+        "Apurva Mehta",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "JOM",
+      "year": 2022,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1007/s11837-022-05367-0",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1007/s40192-021-00213-8",
+      "identifiers": [
+        "doi:10.1007/s40192-021-00213-8",
+        "openalex:W3167373394"
+      ],
+      "doi": "10.1007/s40192-021-00213-8",
+      "title": "An Open Combinatorial Diffraction Dataset Including Consensus Human and Machine Learning Labels with Quantified Uncertainty for Training New Machine Learning Models",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Brian DeCost",
+        "Aaron Gilad Kusne",
+        "Howie Joress",
+        "Winnie Wong-Ng",
+        "Debra L. Kaiser",
+        "Andriy Zakutayev",
+        "Caleb T. Phillips",
+        "Shijing Sun",
+        "Janak Thapa",
+        "Heshan Yu",
+        "Ichiro Takeuchi",
+        "Tonio Buonassisi"
+      ],
+      "venue": "Integrating materials and manufacturing innovation",
+      "year": 2021,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1007/s40192-021-00213-8",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1007/s44210-023-00020-0",
+      "identifiers": [
+        "doi:10.1007/s44210-023-00020-0",
+        "openalex:W4388501342"
+      ],
+      "doi": "10.1007/s44210-023-00020-0",
+      "title": "An Experimental High-Throughput to High-Fidelity Study Towards Discovering Al–Cr Containing Corrosion-Resistant Compositionally Complex Alloys",
+      "authors": [
+        "Debashish Sur",
+        "Emily F. Holcombe",
+        "William H. Blades",
+        "Elaf A. Anber",
+        "Daniel L. Foley",
+        "Brian DeCost",
+        "Jing Liu",
+        "Jason R. Hattrick-Simpers",
+        "K. Sieradzki",
+        "Howie Joress",
+        "John R. Scully",
+        "Mitra L. Taheri"
+      ],
+      "venue": "High Entropy Alloys & Materials",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1007/s44210-023-00020-0",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.actamat.2009.12.045",
+      "identifiers": [
+        "doi:10.1016/j.actamat.2009.12.045",
+        "openalex:W2059977573"
+      ],
+      "doi": "10.1016/j.actamat.2009.12.045",
+      "title": "Phase transformation in an yttrium–hydrogen system studied by TEM",
+      "authors": [
+        "Ke Wang",
+        "Jason R. Hattrick-Simpers",
+        "Leonid A. Bendersky"
+      ],
+      "venue": "Acta Materialia",
+      "year": 2010,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.actamat.2009.12.045",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.apmt.2026.103178",
+      "identifiers": [
+        "doi:10.1016/j.apmt.2026.103178",
+        "openalex:W7134248659"
+      ],
+      "doi": "10.1016/j.apmt.2026.103178",
+      "title": "High-throughput validation of phase formability and simulation accuracy of cantor alloys",
+      "authors": [
+        "Changjun Cheng",
+        "Daniel Persaud",
+        "Kangming Li",
+        "Michael J. Moorehead",
+        "Natalie Page",
+        "C. Lavoie",
+        "Beatriz D. Moreno",
+        "Adrien Couet",
+        "S. E. Lofland",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Applied Materials Today",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.apmt.2026.103178",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1016/j.apsusc.2007.07.104",
+      "identifiers": [
+        "doi:10.1016/j.apsusc.2007.07.104",
+        "openalex:W2059864191"
+      ],
+      "doi": "10.1016/j.apsusc.2007.07.104",
+      "title": "High-throughput screening of magnetic properties of quenched metallic-alloy thin-film composition spreads",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Cui Jun",
+        "Makoto Murakami",
+        "Antonio Orozco",
+        "Lee A. Knauss",
+        "Robert J. Booth",
+        "Edward W. Greve",
+        "S. E. Lofland",
+        "Manfred R. Wuttig",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "Applied Surface Science",
+      "year": 2007,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.apsusc.2007.07.104",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.commatsci.2026.114517",
+      "identifiers": [
+        "doi:10.1016/j.commatsci.2026.114517",
+        "openalex:W7127047018"
+      ],
+      "doi": "10.1016/j.commatsci.2026.114517",
+      "title": "Perspective: Multi-shot LLMs are useful for literature summaries, but humans should remain in the loop",
+      "authors": [
+        "Edward Kim",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Computational Materials Science",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.commatsci.2026.114517",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.commatsci.2026.114625",
+      "identifiers": [
+        "doi:10.1016/j.commatsci.2026.114625",
+        "openalex:W7135052719"
+      ],
+      "doi": "10.1016/j.commatsci.2026.114625",
+      "title": "Assessment of different loss functions for fitting equivalent circuit models to electrochemical impedance spectroscopy data",
+      "authors": [
+        "Ali Jaberi",
+        "Mohammad Amin Sadeghi",
+        "Runze Zhang",
+        "Zhaoyang Zhao",
+        "Qiuyu Shi",
+        "Robert Black",
+        "Zoya Sadighi",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Computational Materials Science",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.commatsci.2026.114625",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1016/j.commatsci.2026.115242",
+      "identifiers": [
+        "doi:10.1016/j.commatsci.2026.115242",
+        "openalex:W7159679186"
+      ],
+      "doi": "10.1016/j.commatsci.2026.115242",
+      "title": "AutoREC: A reinforcement learning platform for equivalent circuit model generation",
+      "authors": [
+        "Ali Jaberi",
+        "Yonatan Kurniawan",
+        "Robert Black",
+        "Shayan Mousavi M.",
+        "Kabir Verma",
+        "Zoya Sadighi",
+        "Santiago Miret",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Computational Materials Science",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.commatsci.2026.115242",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [
+        "Crossref publication year differs from OpenAlex year"
+      ],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-21"
+    },
+    {
+      "id": "doi:10.1016/j.dib.2021.106758",
+      "identifiers": [
+        "doi:10.1016/j.dib.2021.106758",
+        "openalex:W3119462785",
+        "pmid:33537375"
+      ],
+      "doi": "10.1016/j.dib.2021.106758",
+      "title": "Characterization data of an (AlFeNiTiVZr)1-xCrx multi-principal element alloy continuous composition spread library",
+      "authors": [
+        "Benjamin Ruiz-Yi",
+        "Travis Williams",
+        "Jonathan Kenneth Bunn",
+        "Fang Ren",
+        "Naila Al Hasan",
+        "Ichiro Takeuchi",
+        "Jason R. Hattrick-Simpers",
+        "Apurva Mehta"
+      ],
+      "venue": "Data in Brief",
+      "year": 2021,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1016/j.dib.2021.106758",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.electacta.2022.140866",
+      "identifiers": [
+        "doi:10.1016/j.electacta.2022.140866",
+        "openalex:W4287150818"
+      ],
+      "doi": "10.1016/j.electacta.2022.140866",
+      "title": "Development of an automated millifluidic platform and data-analysis pipeline for rapid electrochemical corrosion measurements: A pH study on Zn-Ni",
+      "authors": [
+        "Howie Joress",
+        "Brian DeCost",
+        "Najlaa Hassan",
+        "Trevor Michael Braun",
+        "Justin M. Gorham",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Electrochimica Acta",
+      "year": 2022,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.electacta.2022.140866",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.ijheatmasstransfer.2025.127279",
+      "identifiers": [
+        "doi:10.1016/j.ijheatmasstransfer.2025.127279",
+        "openalex:W4410995793"
+      ],
+      "doi": "10.1016/j.ijheatmasstransfer.2025.127279",
+      "title": "Accurate and efficient predictions of keyhole dynamics in laser materials processing using machine learning-aided simulations",
+      "authors": [
+        "Jiahui Zhang",
+        "Runbo Jiang",
+        "Kangming Li",
+        "Pengyu Chen",
+        "Shengbo Bi",
+        "Xiao Shang",
+        "Zhiying Liu",
+        "Jason R. Hattrick-Simpers",
+        "Brian J. Simonds",
+        "Qianglong Wei",
+        "Hongze Wang",
+        "Tao Sun",
+        "Anthony D. Rollett",
+        "Yu Zou"
+      ],
+      "venue": "International Journal of Heat and Mass Transfer",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.ijheatmasstransfer.2025.127279",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.ijhydene.2010.02.101",
+      "identifiers": [
+        "doi:10.1016/j.ijhydene.2010.02.101",
+        "openalex:W1992865206"
+      ],
+      "doi": "10.1016/j.ijhydene.2010.02.101",
+      "title": "Raman spectroscopic observation of dehydrogenation in ball-milled LiNH2–LiBH4–MgH2 nanoparticles",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "James E. Maslar",
+        "Michael U. Niemann",
+        "Chun Chiu",
+        "Sesha S. Srinivasan",
+        "Elias K. Stefanakos",
+        "Leonid A. Bendersky"
+      ],
+      "venue": "International Journal of Hydrogen Energy",
+      "year": 2010,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.ijhydene.2010.02.101",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.ijhydene.2010.06.061",
+      "identifiers": [
+        "doi:10.1016/j.ijhydene.2010.06.061",
+        "openalex:W2080545910"
+      ],
+      "doi": "10.1016/j.ijhydene.2010.06.061",
+      "title": "Effects of nano additives on hydrogen storage behavior of the multinary complex hydride LiBH4/LiNH2/MgH2",
+      "authors": [
+        "Sesha S. Srinivasan",
+        "Michael U. Niemann",
+        "Jason R. Hattrick-Simpers",
+        "Kimberly McGrath",
+        "Prakash Chand Sharma",
+        "D. Yogi Goswami",
+        "Elias K. Stefanakos"
+      ],
+      "venue": "International Journal of Hydrogen Energy",
+      "year": 2010,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.ijhydene.2010.06.061",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.ijhydene.2013.03.069",
+      "identifiers": [
+        "doi:10.1016/j.ijhydene.2013.03.069",
+        "openalex:W1983357494"
+      ],
+      "doi": "10.1016/j.ijhydene.2013.03.069",
+      "title": "Synthesis of mono-disperse CoFe alloy nanoparticles with high activity toward NaBH4 hydrolysis",
+      "authors": [
+        "Cun Wen",
+        "Xin Zhang",
+        "S. E. Lofland",
+        "Jochen A. Lauterbach",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "International Journal of Hydrogen Energy",
+      "year": 2013,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.ijhydene.2013.03.069",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.ijhydene.2018.08.025",
+      "identifiers": [
+        "doi:10.1016/j.ijhydene.2018.08.025",
+        "openalex:W2889252055"
+      ],
+      "doi": "10.1016/j.ijhydene.2018.08.025",
+      "title": "Experimental assessment of thin film high pressure metal hydride material properties",
+      "authors": [
+        "Claudio Corgnale",
+        "Jason R. Hattrick-Simpers",
+        "Martin Sulic",
+        "John W. Weidner",
+        "Joseph Steven Lopata"
+      ],
+      "venue": "International Journal of Hydrogen Energy",
+      "year": 2018,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.ijhydene.2018.08.025",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.jallcom.2009.10.054",
+      "identifiers": [
+        "doi:10.1016/j.jallcom.2009.10.054",
+        "openalex:W1987414881"
+      ],
+      "doi": "10.1016/j.jallcom.2009.10.054",
+      "title": "Observation of phase transitions in hydrogenated Yttrium films via normalized infrared emissivity",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Ke Wang",
+        "Lei Raymond Cao",
+        "Chun Chiu",
+        "Edwin Jay Heilweil",
+        "Robert G. Downing",
+        "Leonid A. Bendersky"
+      ],
+      "venue": "Journal of Alloys and Compounds",
+      "year": 2009,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.jallcom.2009.10.054",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.jallcom.2020.158565",
+      "identifiers": [
+        "doi:10.1016/j.jallcom.2020.158565",
+        "openalex:W3115089459"
+      ],
+      "doi": "10.1016/j.jallcom.2020.158565",
+      "title": "Phase stabilization and oxidation of a continuous composition spread multi-principal element (AlFeNiTiVZr)1−xCrx alloy",
+      "authors": [
+        "Benjamin Ruiz-Yi",
+        "Travis Williams",
+        "Jonathan Kenneth Bunn",
+        "Fang Ren",
+        "Naila Al Hasan",
+        "Ichiro Takeuchi",
+        "Jason R. Hattrick-Simpers",
+        "Apurva Mehta"
+      ],
+      "venue": "Journal of Alloys and Compounds",
+      "year": 2020,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.jallcom.2020.158565",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.jmapro.2024.01.083",
+      "identifiers": [
+        "doi:10.1016/j.jmapro.2024.01.083",
+        "openalex:W4391797130"
+      ],
+      "doi": "10.1016/j.jmapro.2024.01.083",
+      "title": "A data-driven framework to improve the wear resistance of a low-alloy steel fabricated by laser powder bed fusion",
+      "authors": [
+        "Jiahui Zhang",
+        "Sagar R. Patel",
+        "Zhiying Liu",
+        "Tianyi Lyu",
+        "Yuhao Wang",
+        "Yujie Hua",
+        "Wandong Wang",
+        "Jason R. Hattrick-Simpers",
+        "Mihaela Vlasea",
+        "Yu Zou"
+      ],
+      "venue": "Journal of Manufacturing Processes",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.jmapro.2024.01.083",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.joule.2025.102213",
+      "identifiers": [
+        "doi:10.1016/j.joule.2025.102213",
+        "openalex:W4416520292"
+      ],
+      "doi": "10.1016/j.joule.2025.102213",
+      "title": "Accelerated discovery of CO2-to-C3-hydrocarbon electrocatalysts with human-in-the-loop",
+      "authors": [
+        "Jiheon Kim",
+        "Suhas Mahesh",
+        "Hyeon Seok Lee",
+        "Roham Dorakhan",
+        "Yang Bai",
+        "Muhammad Imran",
+        "Kangming Li",
+        "Yutong Liu",
+        "Dongha Kim",
+        "Sungjin Park",
+        "Ali Shayesteh Zeraati",
+        "Hyun Sik Moon",
+        "Xiaodong Li",
+        "Fatemeh Arabyarmohammadi",
+        "Jehad Abed",
+        "Brook Wander",
+        "Chengqian Wu",
+        "Shijie Liu",
+        "Yurou Celine Xiao",
+        "Rui Kai Miao",
+        "Sjoerd Hoogland",
+        "Jason R. Hattrick-Simpers",
+        "Edward Hartley Sargent",
+        "David A. Sinton"
+      ],
+      "venue": "Joule",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.joule.2025.102213",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.matdes.2025.115211",
+      "identifiers": [
+        "doi:10.1016/j.matdes.2025.115211",
+        "openalex:W4416589306"
+      ],
+      "doi": "10.1016/j.matdes.2025.115211",
+      "title": "Design criteria for single-phase non-equiatomic refractory multiprincipal element alloys from the Nb-Ti-Zr system",
+      "authors": [
+        "Sebastian Lech",
+        "Jason R. Hattrick-Simpers",
+        "Elaf A. Anber",
+        "Michael J. Waters",
+        "Howie Joress",
+        "Debashish Sur",
+        "Emily Holcombe",
+        "James M. Rondinelli",
+        "John R. Scully",
+        "Mitra L. Taheri"
+      ],
+      "venue": "Materials & Design",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.matdes.2025.115211",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.matt.2021.06.036",
+      "identifiers": [
+        "doi:10.1016/j.matt.2021.06.036",
+        "openalex:W3183861986"
+      ],
+      "doi": "10.1016/j.matt.2021.06.036",
+      "title": "Autonomous experimentation systems for materials development: A community perspective",
+      "authors": [
+        "Eric A. Stach",
+        "Brian DeCost",
+        "Aaron Gilad Kusne",
+        "Jason R. Hattrick-Simpers",
+        "Keith A. Brown",
+        "Kristofer G. Reyes",
+        "Joshua Schrier",
+        "Simon J. L. Billinge",
+        "Tonio Buonassisi",
+        "Ian T Foster",
+        "Carla Pedro Gomes",
+        "John M. Gregoire",
+        "Apurva Mehta",
+        "Joseph H. Montoya",
+        "Elsa Olivetti",
+        "Chiwoo Park",
+        "Eli Rotenberg",
+        "Semion K. Saikin",
+        "Sylvia Smullin",
+        "Valentin Stanev",
+        "Benji Maruyama"
+      ],
+      "venue": "Matter",
+      "year": 2021,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.matt.2021.06.036",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.matt.2022.05.035",
+      "identifiers": [
+        "doi:10.1016/j.matt.2022.05.035",
+        "openalex:W4286946622"
+      ],
+      "doi": "10.1016/j.matt.2022.05.035",
+      "title": "Reaching critical MASS: Crowdsourcing designs for the next generation of materials acceleration platforms",
+      "authors": [
+        "Martin T. Seifrid",
+        "Jason R. Hattrick-Simpers",
+        "Alán Aspuru‐Guzik",
+        "Tom Kalil",
+        "Steven W. Cranford"
+      ],
+      "venue": "Matter",
+      "year": 2022,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.matt.2022.05.035",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.matt.2023.03.028",
+      "identifiers": [
+        "doi:10.1016/j.matt.2023.03.028",
+        "openalex:W4367840460"
+      ],
+      "doi": "10.1016/j.matt.2023.03.028",
+      "title": "Machine learning for materials science: Barriers to broader adoption",
+      "authors": [
+        "Brad L. Boyce",
+        "Rémi Dingreville",
+        "Saaketh Desai",
+        "Elise Walker",
+        "Troy Shilt",
+        "Kimberly L. Bassett",
+        "Ryan R. Wixom",
+        "Aaron P. Stebner",
+        "Raymundo Arróyave",
+        "Jason R. Hattrick-Simpers",
+        "James A. Warren"
+      ],
+      "venue": "Matter",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.matt.2023.03.028",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.matt.2023.09.010",
+      "identifiers": [
+        "doi:10.1016/j.matt.2023.09.010",
+        "openalex:W4387675468"
+      ],
+      "doi": "10.1016/j.matt.2023.09.010",
+      "title": "Why is EXAFS for complex concentrated alloys so hard? Challenges and opportunities for measuring ordering with X-ray absorption spectroscopy",
+      "authors": [
+        "Howie Joress",
+        "Bruce Ravel",
+        "Elaf A. Anber",
+        "Jonathan D. Hollenbach",
+        "Debashish Sur",
+        "Jason R. Hattrick-Simpers",
+        "Mitra L. Taheri",
+        "Brian DeCost"
+      ],
+      "venue": "Matter",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.matt.2023.09.010",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.matt.2023.10.027",
+      "identifiers": [
+        "doi:10.1016/j.matt.2023.10.027",
+        "openalex:W4389373151"
+      ],
+      "doi": "10.1016/j.matt.2023.10.027",
+      "title": "A call for caution in the era of AI-accelerated materials science",
+      "authors": [
+        "Kangming Li",
+        "Edward Kim",
+        "Yao Fehlis",
+        "Daniel Persaud",
+        "Brian DeCost",
+        "Michael Greenwood",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Matter",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.matt.2023.10.027",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.matt.2024.05.004",
+      "identifiers": [
+        "doi:10.1016/j.matt.2024.05.004",
+        "openalex:W4399056681"
+      ],
+      "doi": "10.1016/j.matt.2024.05.004",
+      "title": "Nobility vs. mobility: Insights into molten salt corrosion mechanisms of high-entropy alloys via high-throughput experiments and machine learning",
+      "authors": [
+        "Bonita Goh",
+        "Yafei Wang",
+        "Phalgun Nelaturu",
+        "Hongliang Zhang",
+        "Michael J. Moorehead",
+        "Thien Duong",
+        "Pikee Priya",
+        "Dan J. Thoma",
+        "Santanu Chaudhuri",
+        "Jason R. Hattrick-Simpers",
+        "Kumar Sridharan",
+        "Adrien Couet"
+      ],
+      "venue": "Matter",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.matt.2024.05.004",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.mee.2007.04.128",
+      "identifiers": [
+        "doi:10.1016/j.mee.2007.04.128",
+        "openalex:W2085974255"
+      ],
+      "doi": "10.1016/j.mee.2007.04.128",
+      "title": "Application of combinatorial methodologies for work function engineering of metal gate/high-κ advanced gate stacks",
+      "authors": [
+        "M. L. Green",
+        "Kao‐Shuo Chang",
+        "S. DeGendt",
+        "Tom Schram",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Microelectronic Engineering",
+      "year": 2007,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.mee.2007.04.128",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.memsci.2023.121673",
+      "identifiers": [
+        "doi:10.1016/j.memsci.2023.121673",
+        "openalex:W4366166416"
+      ],
+      "doi": "10.1016/j.memsci.2023.121673",
+      "title": "Data-science-based reconstruction of 3-D membrane pore structure using a single 2-D micrograph",
+      "authors": [
+        "Hooman Chamani",
+        "Arash Rabbani",
+        "Kaitlyn P. Russell",
+        "Andrew L. Zydney",
+        "Enrique Daniel Gomez",
+        "Jason R. Hattrick-Simpers",
+        "Jay R. Werber"
+      ],
+      "venue": "Journal of Membrane Science",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.memsci.2023.121673",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.memsci.2025.124804",
+      "identifiers": [
+        "doi:10.1016/j.memsci.2025.124804",
+        "openalex:W4415505094"
+      ],
+      "doi": "10.1016/j.memsci.2025.124804",
+      "title": "Developing and validating a high-throughput robotic system for the accelerated development of porous membranes",
+      "authors": [
+        "Hongchen Wang",
+        "Sima Zeinali Danalou",
+        "Jiahao Zhu",
+        "Kenneth Sulimro",
+        "Chaewon Lim",
+        "Smita Basak",
+        "Aimée Tai",
+        "Usan Siriwardana",
+        "Jason R. Hattrick-Simpers",
+        "Jay R. Werber"
+      ],
+      "venue": "Journal of Membrane Science",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.memsci.2025.124804",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.memsci.2026.125435",
+      "identifiers": [
+        "doi:10.1016/j.memsci.2026.125435",
+        "openalex:W7140201488"
+      ],
+      "doi": "10.1016/j.memsci.2026.125435",
+      "title": "Digital generation of the 3-D pore architecture of isotropic membranes using 2-D cross-sectional scanning electron microscopy images",
+      "authors": [
+        "Sima Zeinali Danalou",
+        "Hooman Chamani",
+        "Arash Rabbani",
+        "Patrick C. Lee",
+        "Jason R. Hattrick-Simpers",
+        "Jay R. Werber"
+      ],
+      "venue": "Journal of Membrane Science",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.memsci.2026.125435",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.memsci.2026.125593",
+      "identifiers": [
+        "doi:10.1016/j.memsci.2026.125593",
+        "openalex:W7160167296"
+      ],
+      "doi": "10.1016/j.memsci.2026.125593",
+      "title": "Corrigendum to ‘Digital generation of the 3-D pore architecture of isotropic membranes using 2-D cross-sectional scanning electron microscopy images’ [J. Membr. Sci. 749 (2026) 125435]",
+      "authors": [
+        "Sima Zeinali Danalou",
+        "Hooman Chamani",
+        "Arash Rabbani",
+        "Patrick C. Lee",
+        "Jason R. Hattrick-Simpers",
+        "Jay R. Werber"
+      ],
+      "venue": "Journal of Membrane Science",
+      "year": 2026,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1016/j.memsci.2026.125593",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.msea.2023.145945",
+      "identifiers": [
+        "doi:10.1016/j.msea.2023.145945",
+        "openalex:W4389101205"
+      ],
+      "doi": "10.1016/j.msea.2023.145945",
+      "title": "Multi-principal element alloy discovery using directed energy deposition and machine learning",
+      "authors": [
+        "Phalgun Nelaturu",
+        "Jason R. Hattrick-Simpers",
+        "Michael J. Moorehead",
+        "Vrishank Jambur",
+        "Izabela Szlufarska",
+        "Adrien Couet",
+        "Dan J. Thoma"
+      ],
+      "venue": "Materials Science and Engineering A",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.msea.2023.145945",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.nimb.2014.05.002",
+      "identifiers": [
+        "doi:10.1016/j.nimb.2014.05.002",
+        "openalex:W1996660060"
+      ],
+      "doi": "10.1016/j.nimb.2014.05.002",
+      "title": "Characterization of magnetic degradation mechanism in a high-neutron-flux environment",
+      "authors": [
+        "Adib J. Samin",
+        "Jie Qiu",
+        "Jason R. Hattrick-Simpers",
+        "Liyang Dai-Hattrick",
+        "Yuan F. Zheng",
+        "Lei Raymond Cao"
+      ],
+      "venue": "Nuclear Instruments and Methods in Physics Research Section B Beam Interactions with Materials and Atoms",
+      "year": 2014,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.nimb.2014.05.002",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.nimb.2014.12.058",
+      "identifiers": [
+        "doi:10.1016/j.nimb.2014.12.058",
+        "openalex:W2039998105"
+      ],
+      "doi": "10.1016/j.nimb.2014.12.058",
+      "title": "Effects of neutron and gamma radiation on lithium-ion batteries",
+      "authors": [
+        "Jie Ming Qiu",
+        "Dandan He",
+        "Mingzhai Sun",
+        "Shimeng Li",
+        "Cun Wen",
+        "Jason R. Hattrick-Simpers",
+        "Yuan F. Zheng",
+        "Lei Raymond Cao"
+      ],
+      "venue": "Nuclear Instruments and Methods in Physics Research Section B Beam Interactions with Materials and Atoms",
+      "year": 2015,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.nimb.2014.12.058",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/j.xcrp.2022.101200",
+      "identifiers": [
+        "doi:10.1016/j.xcrp.2022.101200",
+        "openalex:W4311686787"
+      ],
+      "doi": "10.1016/j.xcrp.2022.101200",
+      "title": "Designing durable, sustainable, high-performance materials for clean energy infrastructure",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Kangming Li",
+        "Michael Greenwood",
+        "Robert W. Black",
+        "Julia Witt",
+        "Mark Kozdras",
+        "Xin Pang",
+        "Özlem Özcan"
+      ],
+      "venue": "Cell Reports Physical Science",
+      "year": 2022,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/j.xcrp.2022.101200",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1016/s0304-8853(03)00231-2",
+      "identifiers": [
+        "doi:10.1016/s0304-8853(03)00231-2",
+        "openalex:W2004006238"
+      ],
+      "doi": "10.1016/s0304-8853(03)00231-2",
+      "title": "Magnetic properties of crystals of La5Mo4−xTxO16",
+      "authors": [
+        "S. E. Lofland",
+        "Jason R. Hattrick-Simpers",
+        "K.V. Ramanujachary",
+        "William H. McCarroll"
+      ],
+      "venue": "Journal of Magnetism and Magnetic Materials",
+      "year": 2003,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1016/s0304-8853(03)00231-2",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acs.analchem.2c03325",
+      "identifiers": [
+        "doi:10.1021/acs.analchem.2c03325",
+        "openalex:W4309842457",
+        "pmid:36419231"
+      ],
+      "doi": "10.1021/acs.analchem.2c03325",
+      "title": "High-Throughput Electrochemistry to Study Materials Degradation in Extreme Environments",
+      "authors": [
+        "Yafei Wang",
+        "Bonita Goh",
+        "Michael J. Moorehead",
+        "Jason R. Hattrick-Simpers",
+        "Adrien Couet"
+      ],
+      "venue": "Analytical Chemistry",
+      "year": 2022,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1021/acs.analchem.2c03325",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acs.est.6c02708",
+      "identifiers": [
+        "doi:10.1021/acs.est.6c02708",
+        "openalex:W7170060149",
+        "pmid:42485517"
+      ],
+      "doi": "10.1021/acs.est.6c02708",
+      "title": "Increased Support Layer Hydraulic Resistance Partially Explains Permeability Loss in High-Pressure Reverse Osmosis",
+      "authors": [
+        "Sima Zeinali Danalou",
+        "Hongchen Wang",
+        "Niher R. Sarker",
+        "Nan Zhang",
+        "Jordan Fidelino",
+        "J ZHU",
+        "Fiona Chang",
+        "Gawtham Senthilvelan",
+        "Patrick Lee",
+        "Jason R. Hattrick-Simpers",
+        "Jay R. Werber"
+      ],
+      "venue": "Environmental Science & Technology",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/acs.est.6c02708",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acs.iecr.5b04196",
+      "identifiers": [
+        "doi:10.1021/acs.iecr.5b04196",
+        "openalex:W2233341473"
+      ],
+      "doi": "10.1021/acs.iecr.5b04196",
+      "title": "Development of an Optimization Procedure for Magnetron-Sputtered Thin Films to Facilitate Combinatorial Materials Research",
+      "authors": [
+        "Jonathan Kenneth Bunn",
+        "Richard Voepel",
+        "Zhiyong Wang",
+        "Edward P. Gatzke",
+        "Jochen A. Lauterbach",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Industrial & Engineering Chemistry Research",
+      "year": 2016,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/acs.iecr.5b04196",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acscombsci.0c00159",
+      "identifiers": [
+        "doi:10.1021/acscombsci.0c00159",
+        "openalex:W3094978055",
+        "pmid:33146510"
+      ],
+      "doi": "10.1021/acscombsci.0c00159",
+      "title": "Exploring the First High-Entropy Thin Film Libraries: Composition Spread-Controlled Crystalline Structure",
+      "authors": [
+        "Van Thanh Nguyen",
+        "Yen‐Hsun Su",
+        "Jason R. Hattrick-Simpers",
+        "Howie Joress",
+        "Takahiro Nagata",
+        "Kao‐Shuo Chang",
+        "Suchismita Sarker",
+        "Apurva Mehta",
+        "Jyh‐Ming Ting"
+      ],
+      "venue": "ACS Combinatorial Science",
+      "year": 2020,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/acscombsci.0c00159",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acscombsci.6b00077",
+      "identifiers": [
+        "doi:10.1021/acscombsci.6b00077",
+        "openalex:W2484724322",
+        "pmid:27494349"
+      ],
+      "doi": "10.1021/acscombsci.6b00077",
+      "title": "The Different Roles of Entropy and Solubility in High Entropy Alloy Stability",
+      "authors": [
+        "Benjamin Ruiz-Yi",
+        "Jonathan Kenneth Bunn",
+        "Drew Stasak",
+        "Apurva Mehta",
+        "M.F. Besser",
+        "Matthew Joseph Kramer",
+        "Ichiro Takeuchi",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "ACS Combinatorial Science",
+      "year": 2016,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/acscombsci.6b00077",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acscombsci.6b00121",
+      "identifiers": [
+        "doi:10.1021/acscombsci.6b00121",
+        "openalex:W2581368587",
+        "pmid:28125201"
+      ],
+      "doi": "10.1021/acscombsci.6b00121",
+      "title": "Automated Phase Segmentation for Large-Scale X-ray Diffraction Data Using a Graph-Based Phase Segmentation (GPhase) Algorithm",
+      "authors": [
+        "Zheng Xiong",
+        "Yinyan He",
+        "Jason R. Hattrick-Simpers",
+        "Jianjun Hu"
+      ],
+      "venue": "ACS Combinatorial Science",
+      "year": 2017,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/acscombsci.6b00121",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acscombsci.8b00158",
+      "identifiers": [
+        "doi:10.1021/acscombsci.8b00158",
+        "openalex:W2924276817",
+        "pmid:30888788"
+      ],
+      "doi": "10.1021/acscombsci.8b00158",
+      "title": "An Inter-Laboratory Study of Zn–Sn–Ti–O Thin Films using High-Throughput Experimental Methods",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Andriy Zakutayev",
+        "Sara C. Barron",
+        "Zachary Trautt",
+        "Nam Nguyen Van",
+        "Kamal Kumar Choudhary",
+        "Brian DeCost",
+        "Caleb T. Phillips",
+        "Aaron Gilad Kusne",
+        "Feng Yi",
+        "Apurva Mehta",
+        "Ichiro Takeuchi",
+        "John D. Perkins",
+        "Martin L. Green"
+      ],
+      "venue": "ACS Combinatorial Science",
+      "year": 2019,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/acscombsci.8b00158",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acscombsci.9b00215",
+      "identifiers": [
+        "doi:10.1021/acscombsci.9b00215",
+        "openalex:W2995600412",
+        "pmid:32496755"
+      ],
+      "doi": "10.1021/acscombsci.9b00215",
+      "title": "A High-Throughput Structural and Electrochemical Study of Metallic Glass Formation in Ni–Ti–Al",
+      "authors": [
+        "Howie Joress",
+        "Brian DeCost",
+        "Suchismita Sarker",
+        "Trevor M. Braun",
+        "Sidra Jilani",
+        "Ryan Smith",
+        "Logan Ward",
+        "Kevin James Laws",
+        "Apurva Mehta",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "ACS Combinatorial Science",
+      "year": 2020,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/acscombsci.9b00215",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acsenergylett.1c02608",
+      "identifiers": [
+        "doi:10.1021/acsenergylett.1c02608",
+        "openalex:W4200440857"
+      ],
+      "doi": "10.1021/acsenergylett.1c02608",
+      "title": "NGenE 2021: Electrochemistry Is Everywhere",
+      "authors": [
+        "Jordi Cabana",
+        "Thomas Aláan",
+        "George W. Crabtree",
+        "Marta C. Hatzell",
+        "Karthish Manthiram",
+        "Daniel A. Steingart",
+        "Iryna V. Zenyuk",
+        "Feng Jiao",
+        "Aleksandra Vojvodić",
+        "Jenny Y. Yang",
+        "Nitash P. Balsara",
+        "Kristin Aslaug Persson",
+        "Donald J. Siegel",
+        "Christy L. Haynes",
+        "Janine Mauzeroll",
+        "Mei Shen",
+        "B. Jill Venton",
+        "Nina Balke",
+        "Joaquín Rodríguez‐López",
+        "Debra R. Rolison",
+        "Reza Shahbazian‐Yassar",
+        "Venkat Srinivasan",
+        "Santanu Chaudhuri",
+        "Adrien Couet",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "ACS Energy Letters",
+      "year": 2021,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1021/acsenergylett.1c02608",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/acsenergylett.6c01856",
+      "identifiers": [
+        "doi:10.1021/acsenergylett.6c01856",
+        "openalex:W7160373606"
+      ],
+      "doi": "10.1021/acsenergylett.6c01856",
+      "title": "Building a Physics-Aware AI Ecosystem for Solid-State Hydrogen Storage Materials",
+      "authors": [
+        "Seong‐Hoon Jang",
+        "Yiwen Yao",
+        "Chuanyu Liu",
+        "Linda Zhang",
+        "Di Zhang",
+        "Xue Jia",
+        "Hung Ba Tran",
+        "Eric Jianfeng Cheng",
+        "Ryuhei Sato",
+        "Yusuke Ohashi",
+        "Toyoto Sato",
+        "Yusuke Hashimoto",
+        "Mark D. Allendorf",
+        "Nongnuch Artrith",
+        "Marcello Baricco",
+        "Andreas Borgschulte",
+        "Darren P. Broom",
+        "Ang Cao",
+        "Benjamin W. J. Chen",
+        "Lixin Chen",
+        "Ping Chen",
+        "Eun Seon Cho",
+        "Stefano Deledda",
+        "Zhu Ding",
+        "Martin Dornheim",
+        "Michael Felderhoff",
+        "Yaroslav E. Filinchuk",
+        "George E. Froudakis",
+        "Mingxia Gao",
+        "Thomas Gennett",
+        "Zaiping Guo",
+        "Ikutaro Hamada",
+        "Jason R. Hattrick-Simpers",
+        "Bjørn C. Hauback",
+        "Michael Hirscher",
+        "Torben R. Jensen",
+        "Baohua Jia",
+        "Hyoung Seop Kim",
+        "Takahiro Kondo",
+        "Kentaro Kutsukake",
+        "Xiao-Yan Li",
+        "Tongliang Liu",
+        "Piao Ma",
+        "Jianfeng Mao",
+        "Rana Mohtadi",
+        "Hyunchul Oh",
+        "Mark Paskevicius",
+        "Chris J. Pickard",
+        "Astrid Pundt",
+        "Anibal Javier Ramirez-Cuesta",
+        "Hiroyuki Saitoh",
+        "Kaihang Shi",
+        "Aloysius Soon",
+        "Chenghua Sun",
+        "Chris M. Wolverton",
+        "Hiroshi Yabu",
+        "Weijie Yang",
+        "Zhenpeng Yao",
+        "Xuebin Yu",
+        "Jianxin Zou",
+        "Hu S",
+        "Panpan Zhou",
+        "Xi Lin",
+        "Zhigang Hu",
+        "Zhenhao Zhou",
+        "Pengfei Ou",
+        "Jiayu Peng",
+        "Shin‐ichi Orimo",
+        "Hao Li"
+      ],
+      "venue": "ACS Energy Letters",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/acsenergylett.6c01856",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/cm048839r",
+      "identifiers": [
+        "doi:10.1021/cm048839r",
+        "openalex:W2088369117"
+      ],
+      "doi": "10.1021/cm048839r",
+      "title": "Synthesis and Characterization of Sr3FeMoO6.88: An Oxygen-Deficient 2D Analogue of the Double Perovskite Sr2FeMoO6",
+      "authors": [
+        "Gabriel M. Veith",
+        "M. Greenblatt",
+        "Mark Croft",
+        "Kandalam V. Ramanujachary",
+        "Jason R. Hattrick-Simpers",
+        "S. E. Lofland",
+        "I. Nowik"
+      ],
+      "venue": "Chemistry of Materials",
+      "year": 2005,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/cm048839r",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/co300033n",
+      "identifiers": [
+        "doi:10.1021/co300033n",
+        "openalex:W2018229982",
+        "pmid:22571518"
+      ],
+      "doi": "10.1021/co300033n",
+      "title": "Development of a High - Throughput Methodology for Screening Coking Resistance of Modified Thin - Film Catalysts",
+      "authors": [
+        "Kaijian Yang",
+        "John E. Bedenbaugh",
+        "Hang Li",
+        "Michael Peralta",
+        "Jonathan Kenneth Bunn",
+        "Jochen A. Lauterbach",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "ACS Combinatorial Science",
+      "year": 2012,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/co300033n",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/co3000902",
+      "identifiers": [
+        "doi:10.1021/co3000902",
+        "openalex:W2021550432",
+        "pmid:23697965"
+      ],
+      "doi": "10.1021/co3000902",
+      "title": "Combinatorial Approach to Turbine Bond Coat Discovery",
+      "authors": [
+        "Christopher Metting",
+        "Jonathan Kenneth Bunn",
+        "Ellen Underwood",
+        "Stephen Smoak",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "ACS Combinatorial Science",
+      "year": 2013,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/co3000902",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1021/jacs.6c07890",
+      "identifiers": [
+        "doi:10.1021/jacs.6c07890",
+        "openalex:W7164185521",
+        "pmid:42265827"
+      ],
+      "doi": "10.1021/jacs.6c07890",
+      "title": "Entropy-Enabled Stabilization and Activity Enhancement of Ruthenium Oxides for Acidic Oxygen Evolution",
+      "authors": [
+        "Xue Yao",
+        "Linke Huang",
+        "Yutong Liu",
+        "Robert Black",
+        "Alex Whittingham",
+        "Zahra Teimouri",
+        "Drew Christopher Higgins",
+        "Jason R. Hattrick-Simpers",
+        "Chandra Veer Singh"
+      ],
+      "venue": "Journal of the American Chemical Society",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1021/jacs.6c07890",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1038/ncomms1529",
+      "identifiers": [
+        "doi:10.1038/ncomms1529",
+        "openalex:W1968878852",
+        "pmid:22044997"
+      ],
+      "doi": "10.1038/ncomms1529",
+      "title": "Giant magnetostriction in annealed Co1−xFex thin-films",
+      "authors": [
+        "Dwight Hunter",
+        "William Osborn",
+        "Ke Wang",
+        "Nataliya V. Kazantseva",
+        "Jason R. Hattrick-Simpers",
+        "Richard Suchoski",
+        "Ryota Takahashi",
+        "Marcus L. Young",
+        "Apurva Mehta",
+        "Leonid A. Bendersky",
+        "S. E. Lofland",
+        "Manfred R. Wuttig",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "Nature Communications",
+      "year": 2011,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/ncomms1529",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1038/s41467-020-19597-w",
+      "identifiers": [
+        "doi:10.1038/s41467-020-19597-w",
+        "openalex:W3034954837",
+        "pmid:33235197"
+      ],
+      "doi": "10.1038/s41467-020-19597-w",
+      "title": "On-the-fly closed-loop materials discovery via Bayesian active learning",
+      "authors": [
+        "A. Gilad Kusne",
+        "Heshan Yu",
+        "Changming Wu",
+        "Huairuo Zhang",
+        "Jason R. Hattrick-Simpers",
+        "Brian DeCost",
+        "Suchismita Sarker",
+        "Corey Oses",
+        "Cormac Toher",
+        "Stefano Curtarolo",
+        "Albert V. Davydov",
+        "Ritesh Agarwal",
+        "Leonid A. Bendersky",
+        "Mo Li",
+        "Apurva Mehta",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "Nature Communications",
+      "year": 2020,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41467-020-19597-w",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1038/s41467-023-42992-y",
+      "identifiers": [
+        "doi:10.1038/s41467-023-42992-y",
+        "openalex:W4388567027",
+        "pmid:37949845"
+      ],
+      "doi": "10.1038/s41467-023-42992-y",
+      "title": "Exploiting redundancy in large materials datasets for efficient machine learning with less data",
+      "authors": [
+        "Kangming Li",
+        "Daniel Persaud",
+        "Kamal Kumar Choudhary",
+        "Brian DeCost",
+        "Michael Greenwood",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Nature Communications",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41467-023-42992-y",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1038/s41467-023-44462-x",
+      "identifiers": [
+        "doi:10.1038/s41467-023-44462-x",
+        "openalex:W4390579708",
+        "pmid:38177139"
+      ],
+      "doi": "10.1038/s41467-023-44462-x",
+      "title": "Publisher Correction: Exploiting redundancy in large materials datasets for efficient machine learning with less data",
+      "authors": [
+        "Kangming Li",
+        "Daniel Persaud",
+        "Kamal Kumar Choudhary",
+        "Brian DeCost",
+        "Michael Greenwood",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Nature Communications",
+      "year": 2024,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1038/s41467-023-44462-x",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1038/s41524-020-00440-1",
+      "identifiers": [
+        "doi:10.1038/s41524-020-00440-1",
+        "openalex:W3039596418"
+      ],
+      "doi": "10.1038/s41524-020-00440-1",
+      "title": "The joint automated repository for various integrated simulations (JARVIS) for data-driven materials design",
+      "authors": [
+        "Kamal Choudhary",
+        "Kevin F. Garrity",
+        "Andrew C. E. Reid",
+        "Brian DeCost",
+        "Adam J. Biacchi",
+        "Angela R. Hight Walker",
+        "Zachary Trautt",
+        "Jason R. Hattrick-Simpers",
+        "A. Gilad Kusne",
+        "Andrea Centrone",
+        "Albert Davydov",
+        "Jie Jiang",
+        "Ruth Pachter",
+        "Gowoon Cheon",
+        "Evan J. Reed",
+        "Ankit Agrawal",
+        "Xiaofeng Qian",
+        "Vinit Sharma",
+        "Houlong Zhuang",
+        "Sergei V. Kalinin",
+        "Bobby G. Sumpter",
+        "Ghanshyam Pilania",
+        "Pinar Acar",
+        "Subhasish Mandal",
+        "Kristjan Haule",
+        "David H. Vanderbilt",
+        "Karin Rabe",
+        "Francesca Tavazza"
+      ],
+      "venue": "npj Computational Materials",
+      "year": 2020,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41524-020-00440-1",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1038/s41524-023-01012-9",
+      "identifiers": [
+        "doi:10.1038/s41524-023-01012-9",
+        "openalex:W4362700002"
+      ],
+      "doi": "10.1038/s41524-023-01012-9",
+      "title": "A critical examination of robustness and generalizability of machine learning prediction of materials properties",
+      "authors": [
+        "Kangming Li",
+        "Brian DeCost",
+        "Kamal Kumar Choudhary",
+        "Michael Greenwood",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "npj Computational Materials",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41524-023-01012-9",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1038/s41524-024-01259-w",
+      "identifiers": [
+        "doi:10.1038/s41524-024-01259-w",
+        "openalex:W4396706898"
+      ],
+      "doi": "10.1038/s41524-024-01259-w",
+      "title": "JARVIS-Leaderboard: a large scale benchmark of materials design methods",
+      "authors": [
+        "Kamal Kumar Choudhary",
+        "Daniel Wines",
+        "Kangming Li",
+        "Kevin F. Garrity",
+        "Vishu Gupta",
+        "Aldo Humberto Romero",
+        "Jaron T. Krogel",
+        "Kayahan Saritas",
+        "Addis Fuhr",
+        "Panchapakesan Ganesh",
+        "Paul R. C. Kent",
+        "Keqiang Yan",
+        "Yuchao Lin",
+        "Shuiwang Ji",
+        "Ben J. Blaiszik",
+        "Patrick Reiser",
+        "Pascal Friederich",
+        "Ankit Agrawal",
+        "Pratyush Tiwary",
+        "Eric R. Beyerle",
+        "Peter Minch",
+        "Trevor David Rhone",
+        "Ichiro Takeuchi",
+        "Robert B. Wexler",
+        "Arun Mannodi‐Kanakkithodi",
+        "Elif Ertekin",
+        "Avanish Mishra",
+        "Nithin Mathew",
+        "Mitchell A. Wood",
+        "Andrew Rohskopf",
+        "Jason R. Hattrick-Simpers",
+        "Shih‐Han Wang",
+        "Luke E. K. Achenie",
+        "Hongliang Xin",
+        "Maureen E. Williams",
+        "Adam J. Biacchi",
+        "Francesca Tavazza"
+      ],
+      "venue": "npj Computational Materials",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41524-024-01259-w",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1038/s41524-026-02136-4",
+      "identifiers": [
+        "doi:10.1038/s41524-026-02136-4",
+        "openalex:W4417095246"
+      ],
+      "doi": "10.1038/s41524-026-02136-4",
+      "title": "Training-free active learning framework in materials science with large language models",
+      "authors": [
+        "Hongchen Wang",
+        "Rafael Espinosa Castañeda",
+        "Jay R. Werber",
+        "Yao Fehlis",
+        "Edward Kim",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "npj Computational Materials",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41524-026-02136-4",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1038/s41524-026-02368-4",
+      "identifiers": [
+        "doi:10.1038/s41524-026-02368-4",
+        "openalex:W7106672453"
+      ],
+      "doi": "10.1038/s41524-026-02368-4",
+      "title": "When active learning fails, uncalibrated out of distribution uncertainty quantification might be the problem",
+      "authors": [
+        "Ashley S. Dale",
+        "Kangming Li",
+        "Brian DeCost",
+        "Hao Wan",
+        "Yuchen Han",
+        "Yao Fehlis",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "npj Computational Materials",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41524-026-02368-4",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1038/s41529-024-00537-8",
+      "identifiers": [
+        "doi:10.1038/s41529-024-00537-8",
+        "openalex:W4404830940"
+      ],
+      "doi": "10.1038/s41529-024-00537-8",
+      "title": "Bayesian assessment of commonly used equivalent circuit models for corrosion analysis in electrochemical impedance spectroscopy",
+      "authors": [
+        "Runze Zhang",
+        "Debashish Sur",
+        "Kangming Li",
+        "Julia Witt",
+        "Robert Black",
+        "Alexander W. H. Whittingham",
+        "John R. Scully",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "npj Materials Degradation",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41529-024-00537-8",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1038/s41529-026-00822-8",
+      "identifiers": [
+        "doi:10.1038/s41529-026-00822-8",
+        "openalex:W7163579160",
+        "pmid:42718626"
+      ],
+      "doi": "10.1038/s41529-026-00822-8",
+      "title": "Materials Acceleration Platform for Electrochemistry: a Platform for Autonomous Electrochemistry",
+      "authors": [
+        "Daniel Persaud",
+        "Mike Werezak",
+        "Mark Xu",
+        "Melyne Zhou",
+        "Frank Benkel",
+        "Xin Pang",
+        "Vahid Attari",
+        "Brian DeCost",
+        "Ashley S. Dale",
+        "Nicholas A. Senior",
+        "Gabriel Birsan",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "npj Materials Degradation",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41529-026-00822-8",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1038/s41929-025-01463-x",
+      "identifiers": [
+        "doi:10.1038/s41929-025-01463-x",
+        "openalex:W7118306186"
+      ],
+      "doi": "10.1038/s41929-025-01463-x",
+      "title": "Stable acidic oxygen-evolving catalyst discovery through mixed accelerations",
+      "authors": [
+        "Yang Bai",
+        "Kangming Li",
+        "Ning Han",
+        "Jiheon Kim",
+        "Runze Zhang",
+        "Suhas Mahesh",
+        "Ali Shayesteh Zeraati",
+        "Brandon R. Sutherland",
+        "Kelvin Chow",
+        "Yongxiang Liang",
+        "Sjoerd Hoogland",
+        "Jianan Erick Huang",
+        "David A. Sinton",
+        "Edward Hartley Sargent",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Nature Catalysis",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s41929-025-01463-x",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1038/s43246-022-00283-x",
+      "identifiers": [
+        "doi:10.1038/s43246-022-00283-x",
+        "openalex:W4293567371"
+      ],
+      "doi": "10.1038/s43246-022-00283-x",
+      "title": "Why big data and compute are not necessarily the path to big materials science",
+      "authors": [
+        "Naohiro Fujinuma",
+        "Brian DeCost",
+        "Jason R. Hattrick-Simpers",
+        "S. E. Lofland"
+      ],
+      "venue": "Communications Materials",
+      "year": 2022,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s43246-022-00283-x",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1038/s43246-024-00731-w",
+      "identifiers": [
+        "doi:10.1038/s43246-024-00731-w",
+        "openalex:W4406284830"
+      ],
+      "doi": "10.1038/s43246-024-00731-w",
+      "title": "Probing out-of-distribution generalization in machine learning for materials",
+      "authors": [
+        "Kangming Li",
+        "Andre Niyongabo Rubungo",
+        "Xiangyun Lei",
+        "Daniel Persaud",
+        "Kamal Kumar Choudhary",
+        "Brian DeCost",
+        "Adji Bousso Dieng",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Communications Materials",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s43246-024-00731-w",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1038/s43246-025-00867-3",
+      "identifiers": [
+        "doi:10.1038/s43246-025-00867-3",
+        "openalex:W4412178010"
+      ],
+      "doi": "10.1038/s43246-025-00867-3",
+      "title": "Kernel learning assisted synthesis condition exploration for ternary spinel",
+      "authors": [
+        "Yutong Liu",
+        "Mehrad Ansari",
+        "Robert Black",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Communications Materials",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s43246-025-00867-3",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1038/s44334-026-00098-5",
+      "identifiers": [
+        "doi:10.1038/s44334-026-00098-5",
+        "openalex:W7165649011",
+        "pmid:42889146"
+      ],
+      "doi": "10.1038/s44334-026-00098-5",
+      "title": "Active learning for the accelerated discovery of complex concentrated NiCoCr alloys in additive manufacturing",
+      "authors": [
+        "Ajay Talbot",
+        "Soumya S. Dash",
+        "Jialu Li",
+        "Changjun Cheng",
+        "Madhi Ramesh",
+        "Xiao Shang",
+        "Jiahui Zhang",
+        "Cristian Victor Cojocaru",
+        "Jason R. Hattrick-Simpers",
+        "Yu Zou"
+      ],
+      "venue": "npj Advanced Manufacturing",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1038/s44334-026-00098-5",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1039/c3cp54495h",
+      "identifiers": [
+        "doi:10.1039/c3cp54495h",
+        "openalex:W2003941814",
+        "pmid:24394495"
+      ],
+      "doi": "10.1039/c3cp54495h",
+      "title": "One-step production of long-chain hydrocarbons from waste-biomass-derived chemicals using bi-functional heterogeneous catalysts",
+      "authors": [
+        "Cun Wen",
+        "Elizabeth Barrow",
+        "Jason R. Hattrick-Simpers",
+        "Jochen A. Lauterbach"
+      ],
+      "venue": "Physical Chemistry Chemical Physics",
+      "year": 2014,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/c3cp54495h",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/c4cc01021c",
+      "identifiers": [
+        "doi:10.1039/c4cc01021c",
+        "openalex:W2047790078",
+        "pmid:24668124"
+      ],
+      "doi": "10.1039/c4cc01021c",
+      "title": "Self-healing catalysts: Co 3 O 4 nanorods for Fischer–Tropsch synthesis",
+      "authors": [
+        "Cun Wen",
+        "Darrius Dunbar",
+        "Xin Zhang",
+        "Jochen A. Lauterbach",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Chemical Communications",
+      "year": 2014,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/c4cc01021c",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/c8me00005k",
+      "identifiers": [
+        "doi:10.1039/c8me00005k",
+        "openalex:W2802477443"
+      ],
+      "doi": "10.1039/c8me00005k",
+      "title": "A simple constrained machine learning model for predicting high-pressure-hydrogen-compressor materials",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Kamal Kumar Choudhary",
+        "Claudio Corgnale"
+      ],
+      "venue": "Molecular Systems Design & Engineering",
+      "year": 2018,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/c8me00005k",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/c8me00012c",
+      "identifiers": [
+        "doi:10.1039/c8me00012c",
+        "openalex:W2885048850"
+      ],
+      "doi": "10.1039/c8me00012c",
+      "title": "Can machine learning identify the next high-temperature superconductor? Examining extrapolation performance for materials discovery",
+      "authors": [
+        "Bryce Meredig",
+        "Erin Antono",
+        "Carena Church",
+        "Maxwell Hutchinson",
+        "Julia Ling",
+        "Sean P. Paradiso",
+        "Ben J. Blaiszik",
+        "Ian T Foster",
+        "Brenna M. Gibbons",
+        "Jason R. Hattrick-Simpers",
+        "Apurva Mehta",
+        "Logan T. Ward"
+      ],
+      "venue": "Molecular Systems Design & Engineering",
+      "year": 2018,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/c8me00012c",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/c9me00138g",
+      "identifiers": [
+        "doi:10.1039/c9me00138g",
+        "openalex:W3005354126"
+      ],
+      "doi": "10.1039/c9me00138g",
+      "title": "Comment on “A simple constrained machine learning model for predicting high-pressure-hydrogen-compressor materials” by Hattrick-Simpers, et al. , Molecular Systems Design & Engineering , 2018, 3 , 509",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Brian DeCost"
+      ],
+      "venue": "Molecular Systems Design & Engineering",
+      "year": 2020,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/c9me00138g",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/d3dd00199g",
+      "identifiers": [
+        "doi:10.1039/d3dd00199g",
+        "openalex:W4390948539"
+      ],
+      "doi": "10.1039/d3dd00199g",
+      "title": "Reproducibility in materials informatics: lessons from ‘A general-purpose machine learning framework for predicting properties of inorganic materials’",
+      "authors": [
+        "Daniel Persaud",
+        "Logan T. Ward",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Digital Discovery",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d3dd00199g",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1039/d3dd00199g/v2/response1",
+      "identifiers": [
+        "doi:10.1039/d3dd00199g/v2/response1",
+        "openalex:W4402934799"
+      ],
+      "doi": "10.1039/d3dd00199g/v2/response1",
+      "title": "Author response for \"Reproducibility in materials informatics: lessons from 'A general-purpose machine learning framework for predicting properties of inorganic materials'\"",
+      "authors": [
+        "Daniel Persaud",
+        "Logan T. Ward",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Publons reviews and discussion",
+      "year": 2023,
+      "suggested_type": "other",
+      "landing_page_url": "http://dx.doi.org/10.1039/d3dd00199g/v2/response1",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/d3dd00211j",
+      "identifiers": [
+        "doi:10.1039/d3dd00211j",
+        "openalex:W4390941527"
+      ],
+      "doi": "10.1039/d3dd00211j",
+      "title": "Autonomous cementitious materials formulation platform for critical infrastructure repair",
+      "authors": [
+        "Howie Joress",
+        "Rachel Cook",
+        "Austin McDannald",
+        "Mark Kozdras",
+        "Jason R. Hattrick-Simpers",
+        "Aron E. Newman",
+        "Scott Z. Jones"
+      ],
+      "venue": "Digital Discovery",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d3dd00211j",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/d4dd00064a",
+      "identifiers": [
+        "doi:10.1039/d4dd00064a",
+        "openalex:W4396524105"
+      ],
+      "doi": "10.1039/d4dd00064a",
+      "title": "A reproducibility study of atomistic line graph neural networks for materials property prediction",
+      "authors": [
+        "Kangming Li",
+        "Brian DeCost",
+        "Kamal Kumar Choudhary",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Digital Discovery",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d4dd00064a",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1039/d4dd00064a/v2/response1",
+      "identifiers": [
+        "doi:10.1039/d4dd00064a/v2/response1",
+        "openalex:W4402934795"
+      ],
+      "doi": "10.1039/d4dd00064a/v2/response1",
+      "title": "Author response for \"A reproducibility study of atomistic line graph neural networks for materials property prediction\"",
+      "authors": [
+        "Kangming Li",
+        "Brian DeCost",
+        "Kamal Kumar Choudhary",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Publons reviews and discussion",
+      "year": 2024,
+      "suggested_type": "other",
+      "landing_page_url": "http://dx.doi.org/10.1039/d4dd00064a/v2/response1",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/d4dd00159a",
+      "identifiers": [
+        "doi:10.1039/d4dd00159a",
+        "openalex:W4403381599"
+      ],
+      "doi": "10.1039/d4dd00159a",
+      "title": "Artificial intelligence-enabled optimization of battery-grade lithium carbonate production",
+      "authors": [
+        "S. Shayan Mousavi Masouleh",
+        "Corey A. Sanz",
+        "Ryan P. Jansonius",
+        "Samuel Shi",
+        "Maria J. Gendron Romero",
+        "Jason E. Hein",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Digital Discovery",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d4dd00159a",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/d4dd00203b",
+      "identifiers": [
+        "doi:10.1039/d4dd00203b",
+        "openalex:W4402887949"
+      ],
+      "doi": "10.1039/d4dd00203b",
+      "title": "AMPERE: automated modular platform for expedited and reproducible electrochemical testing",
+      "authors": [
+        "Jehad Abed",
+        "Yang Bai",
+        "Daniel Persaud",
+        "Jiheon Kim",
+        "Julia Witt",
+        "Jason R. Hattrick-Simpers",
+        "Edward H. Sargent"
+      ],
+      "venue": "Digital Discovery",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d4dd00203b",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1039/d4ta00982g",
+      "identifiers": [
+        "doi:10.1039/d4ta00982g",
+        "openalex:W4393212539"
+      ],
+      "doi": "10.1039/d4ta00982g",
+      "title": "Efficient first principles based modeling via machine learning: from simple representations to high entropy materials",
+      "authors": [
+        "Kangming Li",
+        "Kamal Kumar Choudhary",
+        "Brian DeCost",
+        "Michael Greenwood",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Journal of Materials Chemistry A",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d4ta00982g",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/d5dd00090d",
+      "identifiers": [
+        "doi:10.1039/d5dd00090d",
+        "openalex:W4410830098"
+      ],
+      "doi": "10.1039/d5dd00090d",
+      "title": "Evaluating the performance and robustness of LLMs in materials science Q&A and property predictions",
+      "authors": [
+        "Hongchen Wang",
+        "Kangming Li",
+        "Scott Ramsay",
+        "Yao Fehlis",
+        "Edward Kim",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Digital Discovery",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d5dd00090d",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1039/d5dd00090d/v2/response1",
+      "identifiers": [
+        "doi:10.1039/d5dd00090d/v2/response1",
+        "openalex:W4410846819"
+      ],
+      "doi": "10.1039/d5dd00090d/v2/response1",
+      "title": "Author response for \"Evaluating the performance and robustness of LLMs in materials science Q&A and property predictions\"",
+      "authors": [
+        "Hongchen Wang",
+        "Kangming Li",
+        "Scott Ramsay",
+        "Yao Fehlis",
+        "Edward Kim",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Publons reviews and discussion",
+      "year": 2025,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1039/d5dd00090d/v2/response1",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/d5dd00180c",
+      "identifiers": [
+        "doi:10.1039/d5dd00180c",
+        "openalex:W4413027967"
+      ],
+      "doi": "10.1039/d5dd00180c",
+      "title": "AMPERE-2: an open-hardware, robotic platform for automated electrodeposition and electrochemical validation",
+      "authors": [
+        "Nis Fisker‐Bødker",
+        "Daniel Persaud",
+        "Yang Bai",
+        "Mark Kozdras",
+        "Tejs Vegge",
+        "Jason R. Hattrick-Simpers",
+        "Jin Hyun Chang"
+      ],
+      "venue": "Digital Discovery",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d5dd00180c",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1039/d5dd00285k",
+      "identifiers": [
+        "doi:10.1039/d5dd00285k",
+        "openalex:W4414729867"
+      ],
+      "doi": "10.1039/d5dd00285k",
+      "title": "Human-AI synergy in adaptive active learning for continuous lithium carbonate crystallization optimization",
+      "authors": [
+        "S. Shayan Mousavi Masouleh",
+        "Corey A. Sanz",
+        "Ryan P. Jansonius",
+        "Cara Cronin",
+        "Jason E. Hein",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Digital Discovery",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d5dd00285k",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/d6dd00063k",
+      "identifiers": [
+        "doi:10.1039/d6dd00063k",
+        "openalex:W7155774382",
+        "pmid:42052246"
+      ],
+      "doi": "10.1039/d6dd00063k",
+      "title": "Autonomous sampling and SHAP interpretation of deposition-rates in bipolar HiPIMS",
+      "authors": [
+        "Alexander Wieczorek",
+        "Nathan Rodkey",
+        "Jan Sommerhäuser",
+        "Jason R. Hattrick-Simpers",
+        "Sebastian Siol"
+      ],
+      "venue": "Digital Discovery",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1039/d6dd00063k",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1039/d6dd00063k/v2/response1",
+      "identifiers": [
+        "doi:10.1039/d6dd00063k/v2/response1",
+        "openalex:W7156366492"
+      ],
+      "doi": "10.1039/d6dd00063k/v2/response1",
+      "title": "Author response for \"Autonomous Sampling and SHAP Interpretation of Deposition-Rates in Bipolar HiPIMS\"",
+      "authors": [
+        "Alexander Wieczorek",
+        "Nathan Rodkey",
+        "Jan Sommerhäuser",
+        "Jason R. Hattrick-Simpers",
+        "Sebastian Siol"
+      ],
+      "venue": "Publons reviews and discussion",
+      "year": 2026,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1039/d6dd00063k/v2/response1",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.1427438",
+      "identifiers": [
+        "doi:10.1063/1.1427438",
+        "openalex:W1596093498"
+      ],
+      "doi": "10.1063/1.1427438",
+      "title": "Multimode quantitative scanning microwave microscopy of in situ grown epitaxial Ba1−xSrxTiO3 composition spreads",
+      "authors": [
+        "Kao‐Shuo Chang",
+        "Maria A. Aronova",
+        "Olugbenga O. Famodu",
+        "Ichiro Takeuchi",
+        "S. E. Lofland",
+        "Jason R. Hattrick-Simpers",
+        "Huibin Chang"
+      ],
+      "venue": "Applied Physics Letters",
+      "year": 2001,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.1427438",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.1699474",
+      "identifiers": [
+        "doi:10.1063/1.1699474",
+        "openalex:W2030224571"
+      ],
+      "doi": "10.1063/1.1699474",
+      "title": "Exploration of artificial multiferroic thin-film heterostructures using composition spreads",
+      "authors": [
+        "Kao‐Shuo Chang",
+        "Maria A. Aronova",
+        "Chia‐Ching Lin",
+        "Makoto Murakami",
+        "M.-H. Yu",
+        "Jason R. Hattrick-Simpers",
+        "Olugbenga O. Famodu",
+        "S. Y. Lee",
+        "R. Ramesh",
+        "Manfred R. Wuttig",
+        "Ichiro Takeuchi",
+        "Cunxu Gao",
+        "Leonid A. Bendersky"
+      ],
+      "venue": "Applied Physics Letters",
+      "year": 2004,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.1699474",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.1927079",
+      "identifiers": [
+        "doi:10.1063/1.1927079",
+        "openalex:W2080436248"
+      ],
+      "doi": "10.1063/1.1927079",
+      "title": "Data management and visualization of x-ray diffraction spectra from thin film ternary composition spreads",
+      "authors": [
+        "Ichiro Takeuchi",
+        "Christian J. Long",
+        "Olugbenga O. Famodu",
+        "Makoto Murakami",
+        "Jason R. Hattrick-Simpers",
+        "Gary W. Rubloff",
+        "Michael Stukowski",
+        "Krishna Rajan"
+      ],
+      "venue": "Review of Scientific Instruments",
+      "year": 2005,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.1927079",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.2042529",
+      "identifiers": [
+        "doi:10.1063/1.2042529",
+        "openalex:W2010131558"
+      ],
+      "doi": "10.1063/1.2042529",
+      "title": "Interphase exchange coupling in Fe∕Sm–Co bilayers with gradient Fe thickness",
+      "authors": [
+        "Minghui Yu",
+        "Jason R. Hattrick-Simpers",
+        "Ichiro Takeuchi",
+        "Jing Li",
+        "Zhong Lin Wang",
+        "J. Ping Liu",
+        "S. E. Lofland",
+        "Somdev Tyagi",
+        "J. W. Freeland",
+        "D. Giubertoni",
+        "Massimo Bersani",
+        "Mariano Anderle"
+      ],
+      "venue": "Journal of Applied Physics",
+      "year": 2005,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.2042529",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.2357011",
+      "identifiers": [
+        "doi:10.1063/1.2357011",
+        "openalex:W2076532996"
+      ],
+      "doi": "10.1063/1.2357011",
+      "title": "Combinatorial study of Ni–Ti–Pt ternary metal gate electrodes on HfO2 for the advanced gate stack",
+      "authors": [
+        "Kao‐Shuo Chang",
+        "M. L. Green",
+        "John S. Suehle",
+        "Eric M. Vogel",
+        "Hao D. Xiong",
+        "Jason R. Hattrick-Simpers",
+        "Ichiro Takeuchi",
+        "Olugbenga O. Famodu",
+        "Kenji Ohmori",
+        "Parhat Ahmet",
+        "Toyohiro Chikyow",
+        "P. Majhi",
+        "B.H. Lee",
+        "M. Gardner"
+      ],
+      "venue": "Applied Physics Letters",
+      "year": 2006,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.2357011",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.2755487",
+      "identifiers": [
+        "doi:10.1063/1.2755487",
+        "openalex:W2040188924",
+        "pmid:17672748"
+      ],
+      "doi": "10.1063/1.2755487",
+      "title": "Rapid structural mapping of ternary metallic alloy systems using the combinatorial approach and cluster analysis",
+      "authors": [
+        "Christian J. Long",
+        "Jason R. Hattrick-Simpers",
+        "Makoto Murakami",
+        "Ramesh Chandra Srivastava",
+        "Ichiro Takeuchi",
+        "Vicky Lynn Karen",
+        "Xiangli Li"
+      ],
+      "venue": "Review of Scientific Instruments",
+      "year": 2007,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.2755487",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.2777197",
+      "identifiers": [
+        "doi:10.1063/1.2777197",
+        "openalex:W2002117949",
+        "pmid:17979459"
+      ],
+      "doi": "10.1063/1.2777197",
+      "title": "Demonstration of magnetoelectric scanning probe microscopy",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Liyang Dai",
+        "Manfred R. Wuttig",
+        "Ichiro Takeuchi",
+        "Eckhard Quandt"
+      ],
+      "venue": "Review of Scientific Instruments",
+      "year": 2007,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.2777197",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.2831665",
+      "identifiers": [
+        "doi:10.1063/1.2831665",
+        "openalex:W2030988198"
+      ],
+      "doi": "10.1063/1.2831665",
+      "title": "Enhanced dielectric properties in single crystal-like BiFeO3 thin films grown by flux-mediated epitaxy",
+      "authors": [
+        "S. H. Lim",
+        "Makoto Murakami",
+        "Jiaqian Yang",
+        "S.-Y. Young",
+        "Jason R. Hattrick-Simpers",
+        "Manfred R. Wuttig",
+        "L. Salamanca‐Riba",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "Applied Physics Letters",
+      "year": 2008,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.2831665",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.2980034",
+      "identifiers": [
+        "doi:10.1063/1.2980034",
+        "openalex:W1986350962"
+      ],
+      "doi": "10.1063/1.2980034",
+      "title": "Combinatorial investigation of magnetostriction in Fe–Ga and Fe–Ga–Al",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Dwight Hunter",
+        "Corneliu Marius Crăciunescu",
+        "Kyu Sung Jang",
+        "Makoto Murakami",
+        "J. R. Cullen",
+        "Manfred R. Wuttig",
+        "Ichiro Takeuchi",
+        "S. E. Lofland",
+        "Leonid Benderksy",
+        "Noble C. Woo",
+        "Robert Bruce Van Dover",
+        "T. Takahashi",
+        "Yasubumi Furuya"
+      ],
+      "venue": "Applied Physics Letters",
+      "year": 2008,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.2980034",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.2982091",
+      "identifiers": [
+        "doi:10.1063/1.2982091",
+        "openalex:W2019427715"
+      ],
+      "doi": "10.1063/1.2982091",
+      "title": "High-throughput screening of shape memory alloy thin-film spreads using nanoindentation",
+      "authors": [
+        "Arpit Dwivedi",
+        "Thomas J. Wyrobek",
+        "Oden L. Warren",
+        "Jason R. Hattrick-Simpers",
+        "Olubenga O. Famodu",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "Journal of Applied Physics",
+      "year": 2008,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.2982091",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.3068330",
+      "identifiers": [
+        "doi:10.1063/1.3068330",
+        "openalex:W1988846790"
+      ],
+      "doi": "10.1063/1.3068330",
+      "title": "The effect of CoPt crystallinity and grain texturing on properties of exchange-coupled Fe/CoPt systems",
+      "authors": [
+        "Hiroyuki Oguchi",
+        "A. Zambano",
+        "Miao Yu",
+        "Jason R. Hattrick-Simpers",
+        "D. Banerjee",
+        "Yuzi Liu",
+        "Zhong Lin Wang",
+        "J. Ping Liu",
+        "S. E. Lofland",
+        "D. Josell",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "Journal of Applied Physics",
+      "year": 2009,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.3068330",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.3184024",
+      "identifiers": [
+        "doi:10.1063/1.3184024",
+        "openalex:W2066067757",
+        "pmid:19655956"
+      ],
+      "doi": "10.1063/1.3184024",
+      "title": "An infrared imaging method for high-throughput combinatorial investigation of hydrogenation-dehydrogenation and new phase formation of thin films",
+      "authors": [
+        "Hiroyuki Oguchi",
+        "Jason R. Hattrick-Simpers",
+        "Ichiro Takeuchi",
+        "Edwin Jay Heilweil",
+        "Leonid A. Bendersky"
+      ],
+      "venue": "Review of Scientific Instruments",
+      "year": 2009,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.3184024",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.3428788",
+      "identifiers": [
+        "doi:10.1063/1.3428788",
+        "openalex:W1996060738"
+      ],
+      "doi": "10.1063/1.3428788",
+      "title": "Physical and chemical characterization of combinatorial metal gate electrode Ta–C–N library film",
+      "authors": [
+        "Kao‐Shuo Chang",
+        "M. L. Green",
+        "Igor Levin",
+        "Jason R. Hattrick-Simpers",
+        "Cherno Jaye",
+        "Daniel A. Fischer",
+        "Ichiro Takeuchi",
+        "Stefan De Gendt"
+      ],
+      "venue": "Applied Physics Letters",
+      "year": 2010,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.3428788",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.3558693",
+      "identifiers": [
+        "doi:10.1063/1.3558693",
+        "openalex:W2030562727",
+        "pmid:21456714"
+      ],
+      "doi": "10.1063/1.3558693",
+      "title": "Optical cell for combinatorial in situ Raman spectroscopic measurements of hydrogen storage materials at high pressures and temperatures",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Wilbur S. Hurst",
+        "Sesha S. Srinivasan",
+        "James E. Maslar"
+      ],
+      "venue": "Review of Scientific Instruments",
+      "year": 2011,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.3558693",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.4795831",
+      "identifiers": [
+        "doi:10.1063/1.4795831",
+        "openalex:W2032888605",
+        "pmid:23556863"
+      ],
+      "doi": "10.1063/1.4795831",
+      "title": "Note: A simple thermal gradient annealing unit for the treatment of thin films",
+      "authors": [
+        "Christopher Metting",
+        "Jonathan Kenneth Bunn",
+        "J. Fadimba",
+        "Ellen Underwood",
+        "Y. Zhu",
+        "Goutam Koley",
+        "Thomas Crawford",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Review of Scientific Instruments",
+      "year": 2013,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.4795831",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.4803530",
+      "identifiers": [
+        "doi:10.1063/1.4803530",
+        "openalex:W2059920936"
+      ],
+      "doi": "10.1063/1.4803530",
+      "title": "Applications of high throughput (combinatorial) methodologies to electronic, magnetic, optical, and energy-related materials",
+      "authors": [
+        "Martin L. Green",
+        "Ichiro Takeuchi",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Journal of Applied Physics",
+      "year": 2013,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.4803530",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.4950995",
+      "identifiers": [
+        "doi:10.1063/1.4950995",
+        "openalex:W2396196938"
+      ],
+      "doi": "10.1063/1.4950995",
+      "title": "Perspective: Composition–structure–property mapping in high-throughput experiments: Turning data into knowledge",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "John M. Gregoire",
+        "Aaron Gilad Kusne"
+      ],
+      "venue": "APL Materials",
+      "year": 2016,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.4950995",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/1.4977487",
+      "identifiers": [
+        "doi:10.1063/1.4977487",
+        "openalex:W2600236415"
+      ],
+      "doi": "10.1063/1.4977487",
+      "title": "Fulfilling the promise of the materials genome initiative with high-throughput experimental methodologies",
+      "authors": [
+        "M. L. Green",
+        "Charina L. Choi",
+        "Jason R. Hattrick-Simpers",
+        "A. M. Joshi",
+        "Ichiro Takeuchi",
+        "Sara C. Barron",
+        "Eva M. Campo",
+        "T. P. Chiang",
+        "S. A. Empedocles",
+        "John M. Gregoire",
+        "Aaron Gilad Kusne",
+        "J. Martin",
+        "Apurva Mehta",
+        "Kristin Aslaug Persson",
+        "Zachary Trautt",
+        "Jeroen van Duren",
+        "Andriy Zakutayev"
+      ],
+      "venue": "Applied Physics Reviews",
+      "year": 2017,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/1.4977487",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/5.0039368",
+      "identifiers": [
+        "doi:10.1063/5.0039368",
+        "openalex:W3150905408"
+      ],
+      "doi": "10.1063/5.0039368",
+      "title": "Optical spectra and interfacial band offsets of pulse-laser-deposited metal-oxides: SnO2, TiO2, and ZnO",
+      "authors": [
+        "Nhan V. Nguyen",
+        "Nam Nguyen Van",
+        "Jason R. Hattrick-Simpers",
+        "Oleg A. Kirillov",
+        "Martin L. Green"
+      ],
+      "venue": "Applied Physics Letters",
+      "year": 2021,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/5.0039368",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/5.0050885",
+      "identifiers": [
+        "doi:10.1063/5.0050885",
+        "openalex:W3192075081",
+        "pmid:34364331"
+      ],
+      "doi": "10.1063/5.0050885",
+      "title": "Aggressively optimizing validation statistics can degrade interpretability of data-driven materials models",
+      "authors": [
+        "Katherine Lei",
+        "Howie Joress",
+        "Nils E. Persson",
+        "Jason R. Hattrick-Simpers",
+        "Brian DeCost"
+      ],
+      "venue": "The Journal of Chemical Physics",
+      "year": 2021,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/5.0050885",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1063/5.0068207",
+      "identifiers": [
+        "doi:10.1063/5.0068207",
+        "openalex:W4205897997"
+      ],
+      "doi": "10.1063/5.0068207",
+      "title": "Discovering exceptionally hard and wear-resistant metallic glasses by combining machine-learning with high throughput experimentation",
+      "authors": [
+        "Suchismita Sarker",
+        "Robert Tang‐Kong",
+        "Rachel L. Schoeppner",
+        "Logan T. Ward",
+        "Naila Al Hasan",
+        "Douglas G. Van Campen",
+        "Ichiro Takeuchi",
+        "Jason R. Hattrick-Simpers",
+        "Andriy Zakutayev",
+        "Corinne E. Packard",
+        "Apurva Mehta"
+      ],
+      "venue": "Applied Physics Reviews",
+      "year": 2022,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1063/5.0068207",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1088/0957-4484/26/27/274003",
+      "identifiers": [
+        "doi:10.1088/0957-4484/26/27/274003",
+        "openalex:W2123460578",
+        "pmid:26086841"
+      ],
+      "doi": "10.1088/0957-4484/26/27/274003",
+      "title": "A high-throughput investigation of Fe–Cr–Al as a novel high-temperature coating for nuclear cladding materials",
+      "authors": [
+        "Jonathan Kenneth Bunn",
+        "Randy L. Fang",
+        "Mark R. Albing",
+        "Apurva Mehta",
+        "Matthew Joseph Kramer",
+        "M.F. Besser",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Nanotechnology",
+      "year": 2015,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1088/0957-4484/26/27/274003",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1088/1361-651x/ad4d0d",
+      "identifiers": [
+        "doi:10.1088/1361-651x/ad4d0d",
+        "openalex:W4396991528"
+      ],
+      "doi": "10.1088/1361-651x/ad4d0d",
+      "title": "Roadmap on data-centric materials science",
+      "authors": [
+        "Stefan Bauer",
+        "Peter Benner",
+        "Tristan Bereau",
+        "Volker Blüm",
+        "Mario Boley",
+        "Christian Carbogno",
+        "C. Richard A. Catlow",
+        "Gerhard Dehm",
+        "Sebastian Eibl",
+        "Ralph Ernstorfer",
+        "Ádám Fekete",
+        "Lucas Foppa",
+        "Peter Fratzl",
+        "Christoph Freysoldt",
+        "Baptiste Gault",
+        "Luca M. Ghiringhelli",
+        "Sajal Kumar Giri",
+        "Anton Gladyshev",
+        "Pawan Goyal",
+        "Jason R. Hattrick-Simpers",
+        "Lara Kabalan",
+        "Petr Karpov",
+        "Mohammad Sarkari Khorrami",
+        "Christoph T. Koch",
+        "Sebastian Kokott",
+        "Thomas Kosch",
+        "Igor Kowalec",
+        "Kurt Kremer",
+        "Andreas Leitherer",
+        "Yue Li",
+        "Christian H. Liebscher",
+        "Andrew James Logsdail",
+        "Zhongwei Lu",
+        "Phuc Luong",
+        "Andreas Marek",
+        "Florian Merz",
+        "Jaber Rezaei Mianroodi",
+        "Jörg Neugebauer",
+        "Zongrui Pei",
+        "Thomas A. R. Purcell",
+        "Dierk Raabe",
+        "Markus Rampp",
+        "Mariana Rossi",
+        "Jan Michael Rost",
+        "James E. Saal",
+        "Ulf Saalmann",
+        "Kasturi Narasimha Sasidhar",
+        "Alaukik Saxena",
+        "Luigi Sbailò",
+        "Markus Scheidgen",
+        "Marcel Schloz",
+        "Daniel Francis Schmidt",
+        "Simon Teshuva",
+        "Annette Trunschke",
+        "Ye Wei",
+        "Gerhard Weikum",
+        "Rui Patrick Xian",
+        "Yiyu Y. Yao",
+        "Junqi Yin",
+        "Meng Zhao",
+        "Matthias Scheffler"
+      ],
+      "venue": "Modelling and Simulation in Materials Science and Engineering",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1088/1361-651x/ad4d0d",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1088/1468-6996/12/5/054207",
+      "identifiers": [
+        "doi:10.1088/1468-6996/12/5/054207",
+        "openalex:W2092729342",
+        "pmid:27877434"
+      ],
+      "doi": "10.1088/1468-6996/12/5/054207",
+      "title": "A combinatorial characterization scheme for high-throughput investigations of hydrogen storage materials",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Zhuopeng Tan",
+        "Hiroyuki Oguchi",
+        "Chun Chiu",
+        "Edwin Jay Heilweil",
+        "James E. Maslar",
+        "Leonid A. Bendersky"
+      ],
+      "venue": "Science and Technology of Advanced Materials",
+      "year": 2011,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1088/1468-6996/12/5/054207",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1088/2632-2153/ab9a20",
+      "identifiers": [
+        "doi:10.1088/2632-2153/ab9a20",
+        "openalex:W3010708275",
+        "pmid:33655211"
+      ],
+      "doi": "10.1088/2632-2153/ab9a20",
+      "title": "Scientific AI in materials science: a path to a sustainable and scalable paradigm",
+      "authors": [
+        "Brian DeCost",
+        "Jason R. Hattrick-Simpers",
+        "Zachary Trautt",
+        "Aaron Gilad Kusne",
+        "Eva M. Campo",
+        "ML Green"
+      ],
+      "venue": "Machine Learning Science and Technology",
+      "year": 2020,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1088/2632-2153/ab9a20",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1088/2632-2153/add3bb",
+      "identifiers": [
+        "doi:10.1088/2632-2153/add3bb",
+        "openalex:W4410022944"
+      ],
+      "doi": "10.1088/2632-2153/add3bb",
+      "title": "LLM4Mat-bench: benchmarking large language models for materials property prediction",
+      "authors": [
+        "Andre Niyongabo Rubungo",
+        "Kangming Li",
+        "Jason R. Hattrick-Simpers",
+        "Adji Bousso Dieng"
+      ],
+      "venue": "Machine Learning Science and Technology",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1088/2632-2153/add3bb",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1088/2632-2153/ae04c1",
+      "identifiers": [
+        "doi:10.1088/2632-2153/ae04c1",
+        "openalex:W4414050276"
+      ],
+      "doi": "10.1088/2632-2153/ae04c1",
+      "title": "High- T c superconductor candidates proposed by machine learning",
+      "authors": [
+        "Siwoo Lee",
+        "Jason R. Hattrick-Simpers",
+        "Young‐June Kim",
+        "O. Anatole von Lilienfeld"
+      ],
+      "venue": "Machine Learning Science and Technology",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1088/2632-2153/ae04c1",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1088/2632-2153/ae466f",
+      "identifiers": [
+        "doi:10.1088/2632-2153/ae466f",
+        "openalex:W7129105395"
+      ],
+      "doi": "10.1088/2632-2153/ae466f",
+      "title": "Exploring the limitations of kNN noisy feature detection and recovery for self-driving labs",
+      "authors": [
+        "Qiuyu Shi",
+        "Kangming Li",
+        "Yao Fehlis",
+        "RUNZE ZHANG",
+        "Daniel Persaud",
+        "Robert W. Black",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Machine Learning Science and Technology",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1088/2632-2153/ae466f",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1093/mam/ozae044.647",
+      "identifiers": [
+        "doi:10.1093/mam/ozae044.647",
+        "openalex:W4401006737"
+      ],
+      "doi": "10.1093/mam/ozae044.647",
+      "title": "High-Throughput Screening and Design Guidelines for Single-Phase Refractory High Entropy Alloys from the Nb-Ti-Zr System",
+      "authors": [
+        "Sebastian Lech",
+        "Elaf A. Anber",
+        "Emily Holcombe",
+        "Jason R. Hattrick-Simpers",
+        "Howie Joress",
+        "Mitra L. Taheri"
+      ],
+      "venue": "Microscopy and Microanalysis",
+      "year": 2024,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1093/mam/ozae044.647",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1093/mam/ozag053.1004",
+      "identifiers": [
+        "doi:10.1093/mam/ozag053.1004",
+        "openalex:W7171410110"
+      ],
+      "doi": "10.1093/mam/ozag053.1004",
+      "title": "Synthetic Micrograph Generation: A Discrete Approach to Enforce Morphological Consistency using Masked Generative Image Transformer",
+      "authors": [
+        "Kevin Zhang",
+        "Robert A. McLeod",
+        "JM Howe",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Microscopy and Microanalysis",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1093/mam/ozag053.1004",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1109/ted.2008.2003091",
+      "identifiers": [
+        "doi:10.1109/ted.2008.2003091",
+        "openalex:W2113201978"
+      ],
+      "doi": "10.1109/ted.2008.2003091",
+      "title": "Determination of Work Functions in the $\\hbox{Ta}_{1 - x}\\hbox{Al}_{x}\\hbox{N}_{y}/\\hbox{HfO}_{2}$ Advanced Gate Stack Using Combinatorial Methodology",
+      "authors": [
+        "Kao‐Shuo Chang",
+        "M. L. Green",
+        "Jason R. Hattrick-Simpers",
+        "Ichiro Takeuchi",
+        "John S. Suehle",
+        "O. Celik",
+        "Stefan De Gendt"
+      ],
+      "venue": "IEEE Transactions on Electron Devices",
+      "year": 2008,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1109/ted.2008.2003091",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1126/sciadv.aaq1566",
+      "identifiers": [
+        "doi:10.1126/sciadv.aaq1566",
+        "openalex:W2788500979",
+        "pmid:29662953"
+      ],
+      "doi": "10.1126/sciadv.aaq1566",
+      "title": "Accelerated discovery of metallic glasses through iteration of machine learning and high-throughput experiments",
+      "authors": [
+        "Fang Ren",
+        "Logan T. Ward",
+        "Travis Williams",
+        "Kevin James Laws",
+        "Christopher Wolverton",
+        "Jason R. Hattrick-Simpers",
+        "Apurva Mehta"
+      ],
+      "venue": "Science Advances",
+      "year": 2018,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1126/sciadv.aaq1566",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1149/1.2908627",
+      "identifiers": [
+        "doi:10.1149/1.2908627",
+        "openalex:W2321146441"
+      ],
+      "doi": "10.1149/1.2908627",
+      "title": "Combinatorial Methodology for the Exploration of Metal Gate Electrodes on HfO2 for the Advanced Gate Stack",
+      "authors": [
+        "Kao-Shuo Chang",
+        "Martin Andrew Green",
+        "John S. Suehle",
+        "Jason R. Hattrick-Simpers",
+        "Ichiro Takeuchi",
+        "Kenji Ohmori",
+        "Toyohiro Chikyow",
+        "Stefan De Gendt",
+        "Prashant Majhi"
+      ],
+      "venue": "ECS Transactions",
+      "year": 2008,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1149/1.2908627",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1149/1945-7111/aceab2",
+      "identifiers": [
+        "doi:10.1149/1945-7111/aceab2",
+        "openalex:W4387648920"
+      ],
+      "doi": "10.1149/1945-7111/aceab2",
+      "title": "Editors’ Choice—AutoEIS: Automated Bayesian Model Selection and Analysis for Electrochemical Impedance Spectroscopy",
+      "authors": [
+        "Runze Zhang",
+        "Robert Black",
+        "Debashish Sur",
+        "Parisa Karimi",
+        "Kangming Li",
+        "Brian DeCost",
+        "John R. Scully",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Journal of The Electrochemical Society",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1149/1945-7111/aceab2",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.1149/1945-7111/aceeb8",
+      "identifiers": [
+        "doi:10.1149/1945-7111/aceeb8",
+        "openalex:W4385691179"
+      ],
+      "doi": "10.1149/1945-7111/aceeb8",
+      "title": "A High Throughput Aqueous Passivation Testing Methodology for Compositionally Complex Alloys Using a Scanning Droplet Cell",
+      "authors": [
+        "Debashish Sur",
+        "Howie Joress",
+        "Jason R. Hattrick-Simpers",
+        "John R. Scully"
+      ],
+      "venue": "Journal of The Electrochemical Society",
+      "year": 2023,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1149/1945-7111/aceeb8",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1149/ma2008-01/18/712",
+      "identifiers": [
+        "doi:10.1149/ma2008-01/18/712",
+        "openalex:W4230994875"
+      ],
+      "doi": "10.1149/ma2008-01/18/712",
+      "title": "Combinatorial Methodology for the Exploration of Metal Gate Electrodes on HfO2 for the Advanced Gate Stack",
+      "authors": [
+        "Kao‐Shuo Chang",
+        "Martin Andrew Green",
+        "John S. Suehle",
+        "Jason R. Hattrick-Simpers",
+        "Ichiro Takeuchi",
+        "Kenji Ohmori",
+        "Toyohiro Chikyow",
+        "Stefan De Gendt",
+        "Prashant Majhi"
+      ],
+      "venue": "ECS Meeting Abstracts",
+      "year": 2008,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1149/ma2008-01/18/712",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1149/ma2017-02/1/46",
+      "identifiers": [
+        "doi:10.1149/ma2017-02/1/46",
+        "openalex:W4251915905"
+      ],
+      "doi": "10.1149/ma2017-02/1/46",
+      "title": "Hybrid Thermo-Electrochemical System for Efficient and Low Cost High Pressure Hydrogen Compression",
+      "authors": [
+        "Claudio Corgnale",
+        "Scott D. Greenway",
+        "Martin Sulic",
+        "Theodore Motyka",
+        "Bruce J. Hardy",
+        "Trent Molten",
+        "Daryl Ludlow",
+        "Jason R. Hattrick-Simpers",
+        "Travis Williams",
+        "Jochen A. Lauterbach",
+        "John W. Weidner"
+      ],
+      "venue": "ECS Meeting Abstracts",
+      "year": 2017,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1149/ma2017-02/1/46",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1149/ma2022-0212760mtgabs",
+      "identifiers": [
+        "doi:10.1149/ma2022-0212760mtgabs",
+        "openalex:W4309811569"
+      ],
+      "doi": "10.1149/ma2022-0212760mtgabs",
+      "title": "A High Throughput Experimentation & Material Informatics Platform for the Discovery of Molten Salt Reactor Candidate Structural Materials",
+      "authors": [
+        "Bonita Goh",
+        "Yafei Wang",
+        "Phalgun Nelaturu",
+        "Michael J. Moorehead",
+        "Dimitris Papailiopoulous",
+        "Dan J. Thoma",
+        "Santanu Chaudhuri",
+        "Jason R. Hattrick-Simpers",
+        "Kumar Sridharan",
+        "Adrien Couet"
+      ],
+      "venue": "ECS Meeting Abstracts",
+      "year": 2022,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1149/ma2022-0212760mtgabs",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1149/ma2025-01182mtgabs",
+      "identifiers": [
+        "doi:10.1149/ma2025-01182mtgabs",
+        "openalex:W4412510372"
+      ],
+      "doi": "10.1149/ma2025-01182mtgabs",
+      "title": "Autoeis: Automated Bayesian Model Selection and Analysis for Electrochemical Impedance Spectroscopy",
+      "authors": [
+        "Runze Zhang",
+        "Debashish Sur",
+        "Robert W. Black",
+        "Kangming Li",
+        "Julia Witt",
+        "Parisa Karimi",
+        "Alexander W. H. Whittingham",
+        "Brian DeCost",
+        "John R. Scully",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "ECS Meeting Abstracts",
+      "year": 2025,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1149/ma2025-01182mtgabs",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1149/ma2025-01197mtgabs",
+      "identifiers": [
+        "doi:10.1149/ma2025-01197mtgabs",
+        "openalex:W4412510305"
+      ],
+      "doi": "10.1149/ma2025-01197mtgabs",
+      "title": "A New Metric to Assess the Fit Quality for Equivalent Circuit Models in Electrochemical Impedance Spectroscopy",
+      "authors": [
+        "Ali Jaberi",
+        "Mohammad Amin Sadeghi",
+        "Runze Zhang",
+        "Zhaoyang Zhao",
+        "Qiuyu Shi",
+        "Robert W. Black",
+        "Zoya Sadighi",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "ECS Meeting Abstracts",
+      "year": 2025,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1149/ma2025-01197mtgabs",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1149/ma2025-01381828mtgabs",
+      "identifiers": [
+        "doi:10.1149/ma2025-01381828mtgabs",
+        "openalex:W4412511642"
+      ],
+      "doi": "10.1149/ma2025-01381828mtgabs",
+      "title": "(Invited) AI-Hte Accelerated the Discovery of Reaction Mechanisms for Green Technologies",
+      "authors": [
+        "Ning Han",
+        "Zhaoyang Zhao",
+        "Yan Yu",
+        "Runze Zhang",
+        "Bai Yang",
+        "Kareem Abdel Hafez",
+        "Lizhou Fan",
+        "Jianan Erick Huang",
+        "Jiheon Kim",
+        "Oleksandr Voznyy",
+        "Jason R. Hattrick-Simpers",
+        "David A. Sinton",
+        "Edward Hartley Sargent"
+      ],
+      "venue": "ECS Meeting Abstracts",
+      "year": 2025,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1149/ma2025-01381828mtgabs",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1149/ma2026-016662mtgabs",
+      "identifiers": [
+        "doi:10.1149/ma2026-016662mtgabs",
+        "openalex:W7168643874"
+      ],
+      "doi": "10.1149/ma2026-016662mtgabs",
+      "title": "(Invited) Ampere a Self-Driving Lab for Electrocatalyst Discovery",
+      "authors": [
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "ECS Meeting Abstracts",
+      "year": 2026,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.1149/ma2026-016662mtgabs",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1557/jmr.2015.80",
+      "identifiers": [
+        "doi:10.1557/jmr.2015.80",
+        "openalex:W2502274212"
+      ],
+      "doi": "10.1557/jmr.2015.80",
+      "title": "Generalized machine learning technique for automatic phase attribution in time variant high-throughput experimental studies",
+      "authors": [
+        "Jonathan Kenneth Bunn",
+        "Shizhong Han",
+        "Yan Zhang",
+        "Yan Tong",
+        "Jianjun Hu",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Journal of materials research/Pratt's guide to venture capital sources",
+      "year": 2015,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1557/jmr.2015.80",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1557/mrc.2017.76",
+      "identifiers": [
+        "doi:10.1557/mrc.2017.76",
+        "openalex:W2752584754"
+      ],
+      "doi": "10.1557/mrc.2017.76",
+      "title": "On-the-fly segmentation approaches for x-ray diffraction datasets for metallic glasses",
+      "authors": [
+        "Fang Ren",
+        "Travis Williams",
+        "Jason R. Hattrick-Simpers",
+        "Apurva Mehta"
+      ],
+      "venue": "MRS Communications",
+      "year": 2017,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1557/mrc.2017.76",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1557/mrc.2019.95",
+      "identifiers": [
+        "doi:10.1557/mrc.2019.95",
+        "openalex:W2963899413",
+        "pmid:32166045"
+      ],
+      "doi": "10.1557/mrc.2019.95",
+      "title": "Materials science in the artificial intelligence age: high-throughput library generation, machine learning, and a pathway from correlations to the underpinning physics",
+      "authors": [
+        "Rama Krishnan Vasudevan",
+        "Kamal Kumar Choudhary",
+        "Apurva Mehta",
+        "Ryan P. Smith",
+        "Aaron Gilad Kusne",
+        "Francesca Tavazza",
+        "Lukáš Vlček",
+        "Maxim A Ziatdinov",
+        "Sergei V. Kalinin",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "MRS Communications",
+      "year": 2019,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1557/mrc.2019.95",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1557/proc-1000-l09-04",
+      "identifiers": [
+        "doi:10.1557/proc-1000-l09-04",
+        "openalex:W3171282782"
+      ],
+      "doi": "10.1557/proc-1000-l09-04",
+      "title": "Fabrication of antiferromagnetic Co/Cr2O3 bilayer thin films for exchange bias studies — Control of exchange bias and dual loops in [Co/PI]3 /Cr2O3 multilayer thin films using magnetic and electric field cool",
+      "authors": [
+        "Sung Hwan Lim",
+        "Makoto Murakami",
+        "S. E. Lofland",
+        "Jason R. Hattrick-Simpers",
+        "S. Fujino",
+        "J. S. Higgins",
+        "Manfred R. Wuttig",
+        "R. L. Greene",
+        "L. Salamanca‐Riba",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "MRS Proceedings",
+      "year": 2007,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1557/proc-1000-l09-04",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1557/proc-1216-w04-02",
+      "identifiers": [
+        "doi:10.1557/proc-1216-w04-02",
+        "openalex:W2120571167"
+      ],
+      "doi": "10.1557/proc-1216-w04-02",
+      "title": "Phase Formation and Hydrogen Ordering in Yttrium-Hydrogen System",
+      "authors": [
+        "Ke Wang",
+        "Jason R. Hattrick-Simpers",
+        "Leonid A. Bendersky"
+      ],
+      "venue": "MRS Proceedings",
+      "year": 2009,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1557/proc-1216-w04-02",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1557/proc-1216-w08-32",
+      "identifiers": [
+        "doi:10.1557/proc-1216-w08-32",
+        "openalex:W2138487356"
+      ],
+      "doi": "10.1557/proc-1216-w08-32",
+      "title": "Development of Combined Optical Cell and Sieverts-type Apparatus for in-situ Measurement of Hydrogen Storage Materials",
+      "authors": [
+        "Chun Chiu",
+        "Jason R. Hattrick-Simpers",
+        "Edwin Jay Heilweil",
+        "Leonid A. Bendersky"
+      ],
+      "venue": "MRS Proceedings",
+      "year": 2009,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1557/proc-1216-w08-32",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1557/proc-700-s3.6",
+      "identifiers": [
+        "doi:10.1557/proc-700-s3.6",
+        "openalex:W2127952261"
+      ],
+      "doi": "10.1557/proc-700-s3.6",
+      "title": "Fabrication and characterization of in-situ grown epitaxial Ba1-xSrxTiO3 composition spreads",
+      "authors": [
+        "Kao‐Shuo Chang",
+        "Maria A. Aronova",
+        "Olugbenga O. Famodu",
+        "Jason R. Hattrick-Simpers",
+        "S. E. Lofland",
+        "Ichiro Takeuchi",
+        "Chaojing Lu",
+        "Leonid A. Bendersky",
+        "Huibin Chang"
+      ],
+      "venue": "MRS Proceedings",
+      "year": 2001,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1557/proc-700-s3.6",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1557/proc-853-i2.4",
+      "identifiers": [
+        "doi:10.1557/proc-853-i2.4",
+        "openalex:W2334835853"
+      ],
+      "doi": "10.1557/proc-853-i2.4",
+      "title": "Systematic Investigation of Exchange Coupling in Thickness Gradient Fe/Sm-Co and Co/Sm-Co Magnetic Bilayers",
+      "authors": [
+        "Miao Yu",
+        "Jason R. Hattrick-Simpers",
+        "Ichiro Takeuchi",
+        "J. Ping Liu"
+      ],
+      "venue": "MRS Proceedings",
+      "year": 2004,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1557/proc-853-i2.4",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.1557/s43577-022-00466-4",
+      "identifiers": [
+        "doi:10.1557/s43577-022-00466-4",
+        "openalex:W4318975565"
+      ],
+      "doi": "10.1557/s43577-022-00466-4",
+      "title": "Artificial intelligence for materials research at extremes",
+      "authors": [
+        "Benji Maruyama",
+        "Jason R. Hattrick-Simpers",
+        "William D. Musinski",
+        "Lori L. Graham-Brady",
+        "Kangming Li",
+        "Jonathan D. Hollenbach",
+        "A. Singh",
+        "Mitra L. Taheri"
+      ],
+      "venue": "MRS Bulletin",
+      "year": 2022,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.1557/s43577-022-00466-4",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.20517/aiagent.2026.31",
+      "identifiers": [
+        "doi:10.20517/aiagent.2026.31",
+        "openalex:W7214623827"
+      ],
+      "doi": "10.20517/aiagent.2026.31",
+      "title": "When code does not run: reproducibility challenges in materials machine learning benchmarks",
+      "authors": [
+        "Bohui Lyu",
+        "John Bonini",
+        "Mao Zhang",
+        "Amin Sadeghi",
+        "Ali Jaberi",
+        "Jason R. Hattrick-Simpers",
+        "Kamal Choudhary",
+        "Daniel Wines",
+        "Kangming Li"
+      ],
+      "venue": "AI Agent",
+      "year": 2026,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.20517/aiagent.2026.31",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.21105/joss.06256",
+      "identifiers": [
+        "doi:10.21105/joss.06256",
+        "openalex:W4410446250"
+      ],
+      "doi": "10.21105/joss.06256",
+      "title": "AutoEIS: Automated equivalent circuit modeling from electrochemical impedance spectroscopy data using statistical machine learning",
+      "authors": [
+        "Mohammad Amin Sadeghi",
+        "Runze Zhang",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "The Journal of Open Source Software",
+      "year": 2025,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.21105/joss.06256",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.2139/ssrn.4075907",
+      "identifiers": [
+        "doi:10.2139/ssrn.4075907",
+        "openalex:W4226249948"
+      ],
+      "doi": "10.2139/ssrn.4075907",
+      "title": "Development of an Automated Millifluidic Platform and Data-Analysis Pipeline for Rapid Electrochemical Corrosion Measurements: A Ph Study on Zn-Ni",
+      "authors": [
+        "Howard Joress",
+        "Brian DeCost",
+        "Najlaa Hassan",
+        "Trevor Michael Braun",
+        "Justin M. Gorham",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "SSRN Electronic Journal",
+      "year": 2022,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://doi.org/10.2139/ssrn.4075907",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.2139/ssrn.5744656",
+      "identifiers": [
+        "doi:10.2139/ssrn.5744656",
+        "openalex:W7105609471"
+      ],
+      "doi": "10.2139/ssrn.5744656",
+      "title": "High-throughput validation of phase formability and simulation accuracy of Cantor alloys",
+      "authors": [
+        "Changjun Cheng",
+        "daniel persaud",
+        "Kangming Li",
+        "Michael Moorehead",
+        "Natalie Page",
+        "Christian Lavoie",
+        "Beatriz D. Moreno",
+        "Adrien Couet",
+        "Samuel Lofland",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "SSRN Electronic Journal",
+      "year": 2025,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://doi.org/10.2139/ssrn.5744656",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14"
+    },
+    {
+      "id": "doi:10.2172/1487152",
+      "identifiers": [
+        "doi:10.2172/1487152",
+        "openalex:W2914545342"
+      ],
+      "doi": "10.2172/1487152",
+      "title": "Metal Hydride Material Development for High Efficiency and Low Cost Hydrogen Compressors",
+      "authors": [
+        "Greenway Energy, Aiken, SC (United States)",
+        "Claudio Corgnale",
+        "USDOE",
+        "Jason R. Hattrick-Simpers",
+        "Martin Sulic",
+        "Bruce Hardy",
+        "John W. Weidner",
+        "Joseph Steven Lopata"
+      ],
+      "venue": "OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)",
+      "year": 2018,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.2172/1487152",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.2172/1922610",
+      "identifiers": [
+        "doi:10.2172/1922610",
+        "openalex:W4391623967"
+      ],
+      "doi": "10.2172/1922610",
+      "title": "Accelerated Materials Design for Molten Salt Technologies Using Innovative High-Throughput Methods",
+      "authors": [
+        "Wang Yafei",
+        "Bonita Goh",
+        "Phalgun Nelaturu",
+        "Thien Duong",
+        "Najlaa Hassan",
+        "Raphaelle David",
+        "Michael J. Moorehead",
+        "Pikee Priya",
+        "Santanu Chaudhuri",
+        "Adam A. Creuziger",
+        "Jason R. Hattrick-Simpers",
+        "Dan J. Thoma",
+        "Kumar Sridharan",
+        "Adrien Couet"
+      ],
+      "venue": "OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)",
+      "year": 2023,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.2172/1922610",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.2320/matertrans.45.173",
+      "identifiers": [
+        "doi:10.2320/matertrans.45.173",
+        "openalex:W2103591926"
+      ],
+      "doi": "10.2320/matertrans.45.173",
+      "title": "Combinatorial Investigation of Ferromagnetic Shape-Memory Alloys in the Ni-Mn-Al Ternary System Using a Composition Spread Technique",
+      "authors": [
+        "Olugbenga O. Famodu",
+        "Jason R. Hattrick-Simpers",
+        "Maria A. Aronova",
+        "Kao‐Shuo Chang",
+        "Makoto Murakami",
+        "Manfred R. Wuttig",
+        "Teiko Okazaki",
+        "Yasubumi Furuya",
+        "Lee A. Knauss",
+        "Leonid A. Bendersky",
+        "Frank S. Biancaniello",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "MATERIALS TRANSACTIONS",
+      "year": 2004,
+      "suggested_type": "journal",
+      "landing_page_url": "https://doi.org/10.2320/matertrans.45.173",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.26434/chemrxiv-2024-m9sk0-v2",
+      "identifiers": [
+        "doi:10.26434/chemrxiv-2024-m9sk0-v2",
+        "openalex:W4392124033"
+      ],
+      "doi": "10.26434/chemrxiv-2024-m9sk0-v2",
+      "title": "Roadmap on Data-Centric Materials Science",
+      "authors": [
+        "Matthias Scheffler",
+        "Stefan Bauer",
+        "Peter Benner",
+        "Tristan Bereau",
+        "Volker Blüm",
+        "Mario Boley",
+        "Christian Carbogno",
+        "C. Richard A. Catlow",
+        "Gerhard Dehm",
+        "Sebastian Eibl",
+        "Ralph Ernstorfer",
+        "Ádám Fekete",
+        "Lucas Foppa",
+        "Peter Fratzl",
+        "Christoph Freysoldt",
+        "Baptiste Gault",
+        "Luca M. Ghiringhelli",
+        "Sajal Kumar Giri",
+        "Anton Gladyshev",
+        "Pawan Goyal",
+        "Jason R. Hattrick-Simpers",
+        "Lara Kabalan",
+        "Petr Karpov",
+        "Mohammad Sarkari Khorrami",
+        "Christoph T. Koch",
+        "Sebastian Kokott",
+        "Thomas Kosch",
+        "Igor Kowalec",
+        "Kurt Kremer",
+        "Andreas Leitherer",
+        "Yue Li",
+        "Christian H. Liebscher",
+        "Andrew James Logsdail",
+        "Zhongwei Lu",
+        "Phuc Luong",
+        "Andreas Marek",
+        "Florian Merz",
+        "Jaber Rezaei Mianroodi",
+        "Jörg Neugebauer",
+        "Thomas A. R. Purcell",
+        "Dierk Raabe",
+        "Markus Rampp",
+        "Mariana Rossi",
+        "Jan Michael Rost",
+        "Ulf Saalmann",
+        "Alaukik Saxena",
+        "Luigi Sbailò",
+        "Markus Scheidgen",
+        "Marcel Schloz",
+        "Daniel Francis Schmidt",
+        "Simon Teshuva",
+        "Annette Trunschke",
+        "Ye Wei",
+        "Gerhard Weikum",
+        "Rui Patrick Xian",
+        "Yiyu Y. Yao",
+        "Meng Zhao"
+      ],
+      "venue": "ChemRxiv",
+      "year": 2024,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://doi.org/10.26434/chemrxiv-2024-m9sk0-v2",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.26434/chemrxiv-2024-m9sk0-v3",
+      "identifiers": [
+        "doi:10.26434/chemrxiv-2024-m9sk0-v3",
+        "openalex:W4392281618"
+      ],
+      "doi": "10.26434/chemrxiv-2024-m9sk0-v3",
+      "title": "Roadmap on Data-Centric Materials Science",
+      "authors": [
+        "Matthias Scheffler",
+        "Stefan Bauer",
+        "Peter Benner",
+        "Tristan Bereau",
+        "Volker Blüm",
+        "Mario Boley",
+        "Christian Carbogno",
+        "C. Richard A. Catlow",
+        "Gerhard Dehm",
+        "Sebastian Eibl",
+        "Ralph Ernstorfer",
+        "Ádám Fekete",
+        "Lucas Foppa",
+        "Peter Fratzl",
+        "Christoph Freysoldt",
+        "Baptiste Gault",
+        "Luca M. Ghiringhelli",
+        "Sajal Kumar Giri",
+        "Anton Gladyshev",
+        "Pawan Goyal",
+        "Jason R. Hattrick-Simpers",
+        "Lara Kabalan",
+        "Petr Karpov",
+        "Mohammad Sarkari Khorrami",
+        "Christoph T. Koch",
+        "Sebastian Kokott",
+        "Thomas Kosch",
+        "Igor Kowalec",
+        "Kurt Kremer",
+        "Andreas Leitherer",
+        "Yue Li",
+        "Christian H. Liebscher",
+        "Andrew James Logsdail",
+        "Zhongwei Lu",
+        "Phuc Luong",
+        "Andreas Marek",
+        "Florian Merz",
+        "Jaber Rezaei Mianroodi",
+        "Jörg Neugebauer",
+        "Zongrui Pei",
+        "Thomas A. R. Purcell",
+        "Dierk Raabe",
+        "Markus Rampp",
+        "Mariana Rossi",
+        "Jan Michael Rost",
+        "James E. Saal",
+        "Ulf Saalmann",
+        "Kasturi Narasimha Sasidhar",
+        "Alaukik Saxena",
+        "Luigi Sbailò",
+        "Markus Scheidgen",
+        "Marcel Schloz",
+        "Daniel Francis Schmidt",
+        "Simon Teshuva",
+        "Annette Trunschke",
+        "Ye Wei",
+        "Gerhard Weikum",
+        "Rui Patrick Xian",
+        "Yiyu Y. Yao",
+        "Junqi Yin",
+        "Meng Zhao"
+      ],
+      "venue": "ChemRxiv",
+      "year": 2024,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://doi.org/10.26434/chemrxiv-2024-m9sk0-v3",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.26434/chemrxiv-2024-m9sk0-v4",
+      "identifiers": [
+        "doi:10.26434/chemrxiv-2024-m9sk0-v4",
+        "openalex:W4392385153"
+      ],
+      "doi": "10.26434/chemrxiv-2024-m9sk0-v4",
+      "title": "Roadmap on Data-Centric Materials Science",
+      "authors": [
+        "Matthias Scheffler",
+        "Stefan Bauer",
+        "Peter Benner",
+        "Tristan Bereau",
+        "Volker Blüm",
+        "Mario Boley",
+        "Christian Carbogno",
+        "C. Richard A. Catlow",
+        "Gerhard Dehm",
+        "Sebastian Eibl",
+        "Ralph Ernstorfer",
+        "Ádám Fekete",
+        "Lucas Foppa",
+        "Peter Fratzl",
+        "Christoph Freysoldt",
+        "Baptiste Gault",
+        "Luca M. Ghiringhelli",
+        "Sajal Kumar Giri",
+        "Anton Gladyshev",
+        "Pawan Goyal",
+        "Jason R. Hattrick-Simpers",
+        "Lara Kabalan",
+        "Petr Karpov",
+        "Mohammad Sarkari Khorrami",
+        "Christoph T. Koch",
+        "Sebastian Kokott",
+        "Thomas Kosch",
+        "Igor Kowalec",
+        "Kurt Kremer",
+        "Andreas Leitherer",
+        "Yue Li",
+        "Christian H. Liebscher",
+        "Andrew James Logsdail",
+        "Zhongwei Lu",
+        "Phuc Luong",
+        "Andreas Marek",
+        "Florian Merz",
+        "Jaber Rezaei Mianroodi",
+        "Jörg Neugebauer",
+        "Zongrui Pei",
+        "Thomas A. R. Purcell",
+        "Dierk Raabe",
+        "Markus Rampp",
+        "Mariana Rossi",
+        "Jan Michael Rost",
+        "James E. Saal",
+        "Ulf Saalmann",
+        "Kasturi Narasimha Sasidhar",
+        "Alaukik Saxena",
+        "Luigi Sbailò",
+        "Markus Scheidgen",
+        "Marcel Schloz",
+        "Daniel Francis Schmidt",
+        "Simon Teshuva",
+        "Annette Trunschke",
+        "Ye Wei",
+        "Gerhard Weikum",
+        "Rui Patrick Xian",
+        "Yiyu Y. Yao",
+        "Junqi Yin",
+        "Meng Zhao"
+      ],
+      "venue": "ChemRxiv",
+      "year": 2024,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://doi.org/10.26434/chemrxiv-2024-m9sk0-v4",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "verified",
+      "crossref_checked_on": "2026-11-14",
+      "version_relations": [
+        {
+          "type": "has-version",
+          "doi": "10.26434/chemrxiv-2024-m9sk0-v3"
+        },
+        {
+          "type": "has-version",
+          "doi": "10.26434/chemrxiv-2024-m9sk0-v2"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.26434/chemrxiv.10001836/v1",
+      "identifiers": [
+        "doi:10.26434/chemrxiv.10001836/v1",
+        "openalex:W7127093293"
+      ],
+      "doi": "10.26434/chemrxiv.10001836/v1",
+      "title": "On the Need for Autonomous Science Instruments: A Call to Action",
+      "authors": [
+        "Milad Abolhasani",
+        "Mahshid Ahmadi",
+        "Sterling G. Baird",
+        "Curtis P. Berlinguette",
+        "Keith A. Brown",
+        "David P. Fenning",
+        "Ian T Foster",
+        "Willi Gottstein",
+        "Sergio Pablo‐García",
+        "Gabe Gomes",
+        "Jason R. Hattrick-Simpers",
+        "Jason E. Hein",
+        "Taro Hitosugi",
+        "Sergei V. Kalinin",
+        "Benji Maruyama",
+        "Joshua Schrier",
+        "Martin T. Seifrid",
+        "Taylor D. Sparks",
+        "Shijing Sun",
+        "Brandon R. Sutherland",
+        "Nathan J. Szymanski",
+        "Dean Thomas",
+        "Lauren N. Walters",
+        "Jie Xu",
+        "Yan Zeng",
+        "Charles Yang"
+      ],
+      "venue": "ChemRxiv",
+      "year": 2026,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://doi.org/10.26434/chemrxiv.10001836/v1",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.29363/nanoge.matsus.2024.151",
+      "identifiers": [
+        "doi:10.29363/nanoge.matsus.2024.151",
+        "openalex:W4392704564"
+      ],
+      "doi": "10.29363/nanoge.matsus.2024.151",
+      "title": "Prediction Robustness and Data Redundancy in Machine Learning for Materials Science",
+      "authors": [
+        "Kangming Li",
+        "Daniel Persaud",
+        "Kamal Kumar Choudhary",
+        "Brian DeCost",
+        "Michael Greenwood",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "MATSUS Spring Conference",
+      "year": 2023,
+      "suggested_type": "other",
+      "landing_page_url": "http://dx.doi.org/10.29363/nanoge.matsus.2024.151",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2411.11783",
+      "identifiers": [
+        "doi:10.48550/arxiv.2411.11783",
+        "openalex:W4404571293",
+        "arxiv:2411.11783"
+      ],
+      "doi": "10.48550/arxiv.2411.11783",
+      "title": "Open Catalyst Experiments 2024 (OCx24): Bridging Experiments and Computational Models",
+      "authors": [
+        "Jehad Abed",
+        "Jiheon Kim",
+        "Muhammed Shuaibi",
+        "Brook Wander",
+        "Boris Duijf",
+        "Suhas Mahesh",
+        "Hyeonseok Lee",
+        "Vahe Gharakhanyan",
+        "Sjoerd Hoogland",
+        "Erdem Irtem",
+        "Janice Lan",
+        "Niels Schouten",
+        "Anagha Usha Vijayakumar",
+        "Jason R. Hattrick-Simpers",
+        "John R. Kitchin",
+        "Zachary W. Ulissi",
+        "Aaike van Vugt",
+        "Edward Hartley Sargent",
+        "David A. Sinton",
+        "C. Lawrence Zitnick"
+      ],
+      "venue": "arXiv (Cornell University)",
+      "year": 2024,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://arxiv.org/abs/2411.11783",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked",
+      "arxiv_id": "2411.11783"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2512.01080",
+      "identifiers": [
+        "doi:10.48550/arxiv.2512.01080",
+        "openalex:W4416980156",
+        "arxiv:2512.01080"
+      ],
+      "doi": "10.48550/arxiv.2512.01080",
+      "title": "Building Trustworthy AI for Materials Discovery: From Autonomous Laboratories to Z-scores",
+      "authors": [
+        "Benhour Amirian",
+        "Ashley S. Dale",
+        "Sergei Kalinin",
+        "Jason Hattrick-Simpers"
+      ],
+      "venue": "arXiv",
+      "year": 2025,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://arxiv.org/abs/2512.01080",
+      "discovered_from": [
+        "Jason Hattrick-Simpers",
+        "arXiv known ID: Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_required",
+      "arxiv_id": "2512.01080",
+      "arxiv_updated": "2025-11-30T21:02:00Z",
+      "identity_status": "needs_review",
+      "arxiv_versions": [
+        1
+      ]
+    },
+    {
+      "id": "doi:10.48550/arxiv.2601.05287",
+      "identifiers": [
+        "doi:10.48550/arxiv.2601.05287",
+        "openalex:W7119610578",
+        "arxiv:2601.05287"
+      ],
+      "doi": "10.48550/arxiv.2601.05287",
+      "title": "Autonomous Sampling and SHAP Interpretation of Deposition-Rates in Bipolar HiPIMS",
+      "authors": [
+        "Alexander Wieczorek",
+        "Nathan Rodkey",
+        "Jan Sommerhäuser",
+        "Jason R. Hattrick-Simpers",
+        "Sebastian Siol"
+      ],
+      "venue": "arXiv (Cornell University)",
+      "year": 2026,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://arxiv.org/abs/2601.05287",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked",
+      "arxiv_id": "2601.05287"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2604.27266",
+      "identifiers": [
+        "doi:10.48550/arxiv.2604.27266",
+        "openalex:W7159679186",
+        "arxiv:2604.27266"
+      ],
+      "doi": "10.48550/arxiv.2604.27266",
+      "title": "AutoREC: A reinforcement learning platform for equivalent circuit model generation",
+      "authors": [
+        "Ali Jaberi",
+        "Yonatan Kurniawan",
+        "Robert Black",
+        "Shayan Mousavi M.",
+        "Kabir Verma",
+        "Zoya Sadighi",
+        "Santiago Miret",
+        "Jason Hattrick-Simpers"
+      ],
+      "venue": "arXiv",
+      "year": 2026,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://arxiv.org/abs/2604.27266",
+      "discovered_from": [
+        "Jason Hattrick-Simpers",
+        "arXiv known ID: Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_required",
+      "arxiv_id": "2604.27266",
+      "arxiv_updated": "2026-11-05T19:39:59Z",
+      "identity_status": "needs_review",
+      "arxiv_versions": [
+        4
+      ],
+      "version_relations": [
+        {
+          "type": "is-preprint-of",
+          "doi": "10.1016/j.commatsci.2026.115242"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.48550/arxiv.2605.05104",
+      "identifiers": [
+        "doi:10.48550/arxiv.2605.05104",
+        "openalex:W7160523724",
+        "arxiv:2605.05104"
+      ],
+      "doi": "10.48550/arxiv.2605.05104",
+      "title": "Diversity-Aware Active Learning Builds Materials Datasets for Current and Future Objectives",
+      "authors": [
+        "Rafael Espinosa Castañeda",
+        "Ashley Dale",
+        "Hongchen Wang",
+        "Yonatan Kurniawan",
+        "Hao Wan",
+        "Runze Zhang",
+        "Adji Bousso Dieng",
+        "Kangming Li",
+        "Jason Hattrick-Simpers"
+      ],
+      "venue": "arXiv",
+      "year": 2026,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://arxiv.org/abs/2605.05104",
+      "discovered_from": [
+        "Jason Hattrick-Simpers",
+        "arXiv known ID: Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_required",
+      "arxiv_id": "2605.05104",
+      "arxiv_updated": "2026-10-17T01:14:20Z",
+      "identity_status": "needs_review",
+      "arxiv_versions": [
+        2
+      ]
+    },
+    {
+      "id": "doi:10.48550/arxiv.2606.13414",
+      "identifiers": [
+        "doi:10.48550/arxiv.2606.13414",
+        "openalex:W7164568588",
+        "arxiv:2606.13414"
+      ],
+      "doi": "10.48550/arxiv.2606.13414",
+      "title": "Physics-informed time-series forecasting of perovskite photoluminescence stability",
+      "authors": [
+        "Alexander Wieczorek",
+        "Manuel Kober‐Czerny",
+        "Fábio Lopes",
+        "Austin G. Kuba",
+        "Leon Muller",
+        "Christian M. Wolff",
+        "Jason R. Hattrick-Simpers",
+        "Sebastian Siol"
+      ],
+      "venue": "arXiv (Cornell University)",
+      "year": 2026,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://arxiv.org/abs/2606.13414",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked",
+      "arxiv_id": "2606.13414"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2607.19307",
+      "identifiers": [
+        "doi:10.48550/arxiv.2607.19307",
+        "openalex:W7170039699",
+        "arxiv:2607.19307"
+      ],
+      "doi": "10.48550/arxiv.2607.19307",
+      "title": "Accelerating Electrochemical Impedance Spectroscopy Measurements by Reducing Reliance on Noisy Low-Frequency Data",
+      "authors": [
+        "Qiuyu Shi",
+        "Naohiro Fujinuma",
+        "Yonatan Kurniawan",
+        "Runze Zhang",
+        "Ali Jaberi",
+        "Ashley Dale",
+        "Jason Hattrick-Simpers"
+      ],
+      "venue": "arXiv",
+      "year": 2026,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://arxiv.org/abs/2607.19307",
+      "discovered_from": [
+        "Jason Hattrick-Simpers",
+        "arXiv known ID: Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_required",
+      "arxiv_id": "2607.19307",
+      "arxiv_updated": "2026-07-21T17:22:32Z",
+      "identity_status": "needs_review",
+      "arxiv_versions": [
+        1
+      ]
+    },
+    {
+      "id": "doi:10.48550/arxiv.2609.22411",
+      "identifiers": [
+        "doi:10.48550/arxiv.2609.22411",
+        "openalex:W7214038735",
+        "arxiv:2609.22411"
+      ],
+      "doi": "10.48550/arxiv.2609.22411",
+      "title": "AutoRASOR: Autonomous Rapid Scanning Electron Microscope Operator",
+      "authors": [
+        "Kevin Zhang",
+        "Mohammad Taha",
+        "Rafael Espinosa Castañeda",
+        "Yutong Liu",
+        "Yin Zhu",
+        "Lotan Portal",
+        "Robert A. Mcleod",
+        "Vahid Attari",
+        "Jane Y. Howe",
+        "Jason Hattrick-Simpers"
+      ],
+      "venue": "arXiv",
+      "year": 2026,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://arxiv.org/abs/2609.22411",
+      "discovered_from": [
+        "Jason Hattrick-Simpers",
+        "arXiv known ID: Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_required",
+      "arxiv_id": "2609.22411",
+      "arxiv_updated": "2026-09-18T17:06:01Z",
+      "identity_status": "needs_review",
+      "arxiv_versions": [
+        1
+      ]
+    },
+    {
+      "id": "doi:10.48550/arxiv.2611.19050",
+      "identifiers": [
+        "doi:10.48550/arxiv.2611.19050",
+        "openalex:W7235342964",
+        "arxiv:2611.19050"
+      ],
+      "doi": "10.48550/arxiv.2611.19050",
+      "title": "SPARC: Evidence-guided adaptive model composition for materials discovery",
+      "authors": [
+        "Sissi Feng",
+        "Yuchen Han",
+        "Runze Zhang",
+        "Jiaru Bai",
+        "Brandon Sutherland",
+        "Ali Shayesteh Zeraati",
+        "Jason Hattrick-Simpers",
+        "Varinia Bernales",
+        "Alán Aspuru-Guzik",
+        "Yang Bai"
+      ],
+      "venue": "arXiv",
+      "year": 2026,
+      "suggested_type": "preprint",
+      "landing_page_url": "https://arxiv.org/abs/2611.19050",
+      "discovered_from": [
+        "Jason Hattrick-Simpers",
+        "arXiv known ID: Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_required",
+      "arxiv_id": "2611.19050",
+      "arxiv_versions": [
+        1
+      ],
+      "arxiv_updated": "2026-11-14T00:46:05Z",
+      "identity_status": "needs_review"
+    },
+    {
+      "id": "doi:10.5281/zenodo.18495401",
+      "identifiers": [
+        "doi:10.5281/zenodo.18495401",
+        "openalex:W7127907170"
+      ],
+      "doi": "10.5281/zenodo.18495401",
+      "title": "Raw Data pertaining to publication of Autonomous Sampling and SHAP Interpretation of Bipolar HiPIMS Deposition Rates",
+      "authors": [
+        "Alexander Wiezcorek",
+        "Nathan Rodkey",
+        "Jan Sommerhäuser",
+        "Jason R. Hattrick-Simpers",
+        "Sebastian Siol"
+      ],
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "year": 2026,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.5281/zenodo.18495401",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.5281/zenodo.19987299",
+      "identifiers": [
+        "doi:10.5281/zenodo.19987299",
+        "openalex:W7159870819"
+      ],
+      "doi": "10.5281/zenodo.19987299",
+      "title": "Data supporting the results in the AutoREC paper",
+      "authors": [
+        "Yonatan Kurniawan",
+        "Ali Jaberi",
+        "Robert Black",
+        "S. Shayan Mousavi Masouleh",
+        "Kabir Verma",
+        "Zoya Sadighi",
+        "Santiago Miret",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "year": 2026,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.5281/zenodo.19987299",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.5281/zenodo.20754200",
+      "identifiers": [
+        "doi:10.5281/zenodo.20754200",
+        "openalex:W7165557570"
+      ],
+      "doi": "10.5281/zenodo.20754200",
+      "title": "When Active Learning Fails, Uncalibrated Out of Distribution Uncertainty Quantification Might Be the Problem Data and Model Artifacts",
+      "authors": [
+        "Ashley S. Dale",
+        "Kangming Li",
+        "Brian DeCost",
+        "Hao Wan",
+        "Yuchen Han",
+        "Yao Fehlis",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "year": 2026,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.5281/zenodo.20754200",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.5281/zenodo.22048945",
+      "identifiers": [
+        "doi:10.5281/zenodo.22048945",
+        "openalex:W7203905436"
+      ],
+      "doi": "10.5281/zenodo.22048945",
+      "title": "Thermodynamic Modeling of NaOH Neutralization in Metal Sulfate Leachates: Code and Simulation Data",
+      "authors": [
+        "Vahid Attari",
+        "Cara Cronin",
+        "Ryan P. Jansonius",
+        "Michael Greenwood",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "year": 2026,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.5281/zenodo.22048945",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.5281/zenodo.7659268",
+      "identifiers": [
+        "doi:10.5281/zenodo.7659268",
+        "openalex:W4393771070"
+      ],
+      "doi": "10.5281/zenodo.7659268",
+      "title": "Materials Datasets with 273 compositional and structural features extracted from Matminer",
+      "authors": [
+        "Kangming Li",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "year": 2023,
+      "suggested_type": "other",
+      "landing_page_url": "https://doi.org/10.5281/zenodo.7659268",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.6084/m9.figshare.19706659",
+      "identifiers": [
+        "doi:10.6084/m9.figshare.19706659",
+        "openalex:W4394199562"
+      ],
+      "doi": "10.6084/m9.figshare.19706659",
+      "title": "Autonomous scanning droplet cell supporting datasets",
+      "authors": [
+        "Brian DeCost",
+        "Howie Joress",
+        "Suchismita Sarker",
+        "Apurva Mehta",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "Figshare",
+      "year": 2022,
+      "suggested_type": "other",
+      "landing_page_url": "https://figshare.com/articles/dataset/Autonomous_scanning_droplet_cell_supporting_datasets/19706659",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "doi:10.6084/m9.figshare.7221707",
+      "identifiers": [
+        "doi:10.6084/m9.figshare.7221707",
+        "openalex:W4394118803"
+      ],
+      "doi": "10.6084/m9.figshare.7221707",
+      "title": "Glass Ternary High Throughput Data",
+      "authors": [
+        "Fang Ren",
+        "Logan T. Ward",
+        "Travis Williams",
+        "Kevin James Laws",
+        "Christopher Wolverton",
+        "Jason R. Hattrick-Simpers",
+        "Apurva Mehta",
+        "Hacking Materials"
+      ],
+      "venue": "Figshare",
+      "year": 2018,
+      "suggested_type": "other",
+      "landing_page_url": "https://figshare.com/articles/dataset/Glass_Ternary_High_Throughput_Data/7221707",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W1507528194",
+      "identifiers": [
+        "openalex:W1507528194"
+      ],
+      "doi": null,
+      "title": "Combinatorial Investigation of Magnetostrictive Materials",
+      "authors": [
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "University Libraries (University of Maryland)",
+      "year": 2007,
+      "suggested_type": "other",
+      "landing_page_url": "http://hdl.handle.net/1903/7407",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W1609626865",
+      "identifiers": [
+        "openalex:W1609626865"
+      ],
+      "doi": null,
+      "title": "Development of a Room Temperature High Sensitivity Magnetoelectric Scanning Microscope",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Liyang Dai",
+        "Ichiro Takeuchi",
+        "Manfred R. Wuttig"
+      ],
+      "venue": "Bulletin of the American Physical Society",
+      "year": 2006,
+      "suggested_type": "other",
+      "landing_page_url": "http://absimage.aps.org/image/MAR06/MWS_MAR06-2005-007326.pdf",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W1655647119",
+      "identifiers": [
+        "openalex:W1655647119"
+      ],
+      "doi": null,
+      "title": "Systematic Investigation of Exchange Coupled Fe$_{x}$Co$_{1-x}$/CoPt Magnetic Bilayers Using the High-Throughput Approach",
+      "authors": [
+        "Hiroyuki Oguchi",
+        "Mingpeng Yu",
+        "Jason R. Hattrick-Simpers",
+        "A. Zambano",
+        "Ichiro Takeuchi",
+        "S. E. Lofland",
+        "D. Josell",
+        "Leonid A. Bendersky",
+        "J.P. Li"
+      ],
+      "venue": "Bulletin of the American Physical Society",
+      "year": 2006,
+      "suggested_type": "other",
+      "landing_page_url": "http://absimage.aps.org/image/MAR06/MWS_MAR06-2005-020155.pdf",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W1677492704",
+      "identifiers": [
+        "openalex:W1677492704"
+      ],
+      "doi": null,
+      "title": "Exchange bias between ferromagnetic metals and multiferroic BiFeO$_{3}$, LuMnO$_{3}$, and TbMnO$_{3}$",
+      "authors": [
+        "Makoto Murakami",
+        "Shigehiro Fujino",
+        "Jason R. Hattrick-Simpers",
+        "Sung‐Hwan Lim",
+        "L. Salamanca‐Riba",
+        "D. C. Kundaliya",
+        "Satishchandra Ogale",
+        "Thirumalai Venkatesan",
+        "J. S. Higgins",
+        "Manfred R. Wuttig",
+        "Ichiro Takeuchi",
+        "S. E. Lofland",
+        "Sang‐Wook Cheong"
+      ],
+      "venue": "Bulletin of the American Physical Society",
+      "year": 2007,
+      "suggested_type": "other",
+      "landing_page_url": "http://absimage.aps.org/image/MAR07/MWS_MAR07-2006-005198.pdf",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W2243633544",
+      "identifiers": [
+        "openalex:W2243633544"
+      ],
+      "doi": null,
+      "title": "Combinatorial Exploration of Magnetostriction of Fe$_{1-x-y}$Ga$_{x}$M$_{y}$ Ternary Alloys",
+      "authors": [
+        "Jason R. Hattrick-Simpers",
+        "Kyu Sung Jang",
+        "S. E. Lofland",
+        "Noble C. Woo",
+        "Bruce Van Dover",
+        "Manfred R. Wuttig",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "Bulletin of the American Physical Society",
+      "year": 2007,
+      "suggested_type": "other",
+      "landing_page_url": "http://absimage.aps.org/image/MAR07/MWS_MAR07-2006-005787.pdf",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W2555447743",
+      "identifiers": [
+        "openalex:W2555447743"
+      ],
+      "doi": null,
+      "title": "In-Situ High-Throughput Synchrotron Diffraction Data of Multiple Principle Component Alloy Thin Films",
+      "authors": [
+        "Benjamin Ruiz-Yi",
+        "Jonathan Kenneth Bunn",
+        "Drew Stasak",
+        "Apurva Mehta",
+        "M.F. Besser",
+        "Matthew Joseph Kramer",
+        "Ichiro Takeuchi",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "",
+      "year": 2016,
+      "suggested_type": "other",
+      "landing_page_url": "https://materialsdata.nist.gov/handle/11256/834",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [
+        "Missing venue"
+      ],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W2589175225",
+      "identifiers": [
+        "openalex:W2589175225"
+      ],
+      "doi": null,
+      "title": "High-throughput Diffraction and Spectroscopic Data for Fe-Cr-Al Oxidation Studies",
+      "authors": [
+        "Jonathan Kenneth Bunn",
+        "Randy L. Fang",
+        "Mark R. Albing",
+        "Apurva Mehta",
+        "Matt J. Kramer",
+        "Matt F. Besser",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "",
+      "year": 2015,
+      "suggested_type": "other",
+      "landing_page_url": "https://materialsdata.nist.gov/handle/11256/836",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [
+        "Missing venue"
+      ],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W2735003433",
+      "identifiers": [
+        "openalex:W2735003433"
+      ],
+      "doi": null,
+      "title": "Synchrotron Diffraction and Composition Data Sets of Co-Fe-Zr Metallic Glasses",
+      "authors": [
+        "Fang Ren",
+        "Apurva Mehta",
+        "Travis Williams",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "",
+      "year": 2017,
+      "suggested_type": "other",
+      "landing_page_url": "https://materialsdata.nist.gov/handle/11256/945",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [
+        "Missing venue"
+      ],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W2776860630",
+      "identifiers": [
+        "openalex:W2776860630"
+      ],
+      "doi": null,
+      "title": "Discovery of giant magnetostriction in annealed Co1-xFex thin-films | NIST",
+      "authors": [
+        "Dwight Hunter",
+        "William Osborn",
+        "Ke Wang",
+        "Nataliya V. Kazantseva",
+        "Jason R. Hattrick-Simpers",
+        "Richard Suchoski",
+        "Ryota Takahashi",
+        "Marcus L. Young",
+        "Apurva Mehta",
+        "Leonid A. Bendersky",
+        "S. E. Lofland",
+        "Manfred R. Wuttig",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "Nature Materials",
+      "year": 2011,
+      "suggested_type": "journal",
+      "landing_page_url": "https://www.nist.gov/publications/discovery-giant-magnetostriction-annealed-co1-xfex-thin-films",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W2786998563",
+      "identifiers": [
+        "openalex:W2786998563"
+      ],
+      "doi": null,
+      "title": "Active Machine Learning for Combinatorial Exploration of Metal-Insulator Transitions",
+      "authors": [
+        "Brian DeCost",
+        "Jason R. Hattrick-Simpers",
+        "Yangang Liang",
+        "Ichiro Takeuchi",
+        "Aaron Gilad Kusne"
+      ],
+      "venue": "Bulletin of the American Physical Society",
+      "year": 2018,
+      "suggested_type": "other",
+      "landing_page_url": "https://meetings.aps.org/Meeting/MAR18/Session/X34.10",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W2921298209",
+      "identifiers": [
+        "openalex:W2921298209"
+      ],
+      "doi": null,
+      "title": "Autonomous Quantum Materials Research: Phase Mapping",
+      "authors": [
+        "Aaron Gilad Kusne",
+        "Tieren Gao",
+        "Brian DeCost",
+        "Jason R. Hattrick-Simpers",
+        "Apurva Mehta",
+        "Ichiro Takeuchi"
+      ],
+      "venue": "Bulletin of the American Physical Society",
+      "year": 2019,
+      "suggested_type": "other",
+      "landing_page_url": "https://meetings.aps.org/Meeting/MAR19/Session/C62.4",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W3006108535",
+      "identifiers": [
+        "openalex:W3006108535"
+      ],
+      "doi": null,
+      "title": "Torque Magnetometry of La_5Mo_4O_16",
+      "authors": [
+        "Theodore H. Scabarozi",
+        "Jason R. Hattrick-Simpers",
+        "Kandala V. R. Chary",
+        "S. E. Lofland",
+        "William H. McCarroll"
+      ],
+      "venue": "APS",
+      "year": 2001,
+      "suggested_type": "other",
+      "landing_page_url": "https://ui.adsabs.harvard.edu/abs/2001APS..MAR.E8002S/abstract",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W3010689242",
+      "identifiers": [
+        "openalex:W3010689242"
+      ],
+      "doi": null,
+      "title": "Exploration of magnetoelectric materials using thin film composition spreads",
+      "authors": [
+        "Ichiro Takeuchi",
+        "Kao‐Shuo Chang",
+        "Makoto Murakami",
+        "Maria A. Aronova",
+        "Chuanlong Lin",
+        "Jason R. Hattrick-Simpers",
+        "S. E. Lofland"
+      ],
+      "venue": "APS",
+      "year": 2004,
+      "suggested_type": "other",
+      "landing_page_url": "http://ui.adsabs.harvard.edu/abs/2004APS..MARP21003T/abstract",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    },
+    {
+      "id": "openalex:W3081339952",
+      "identifiers": [
+        "openalex:W3081339952"
+      ],
+      "doi": null,
+      "title": "Dielectric Characterization of (Ba,Sr)TiO3 Films at 1-20 GHz using a Scanning Evanescent Microwave Microscope",
+      "authors": [
+        "Ichiro Takeuchi",
+        "S. E. Lofland",
+        "Kao‐Shuo Chang",
+        "Jason R. Hattrick-Simpers"
+      ],
+      "venue": "APS March Meeting Abstracts",
+      "year": 2001,
+      "suggested_type": "other",
+      "landing_page_url": "http://ui.adsabs.harvard.edu/abs/2001APS..MAR.Z8005T/abstract",
+      "discovered_from": [
+        "Jason Hattrick-Simpers"
+      ],
+      "metadata_warnings": [],
+      "crossref_status": "not_checked"
+    }
+  ]
+}

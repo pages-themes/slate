@@ -17,7 +17,19 @@ collections:
 plugins:
   - jekyll-feed
 
-# Full-resolution source media is retained for reproducible optimization but
-# must not be copied into the published site.
+# Keep source media, development tools, and local environments out of the site.
+# These files remain in the repository for maintenance and review.
 exclude:
   - _media_sources
+  - docs
+  - script
+  - test
+  - autodial
+  - .venv
+  - venv
+  - README.md
+  - LICENSE
+  - Makefile
+  - how_to_write_news_post.txt
+  - jekyll-theme-slate.gemspec
+  - "*.gem"

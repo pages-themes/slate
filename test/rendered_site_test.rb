@@ -16,6 +16,10 @@ class RenderedSiteTest < Minitest::Test
       title: "News & Updates",
       description: "News, research updates, publications, and group activities from AutoDIAL."
     },
+    "publications.html" => {
+      title: "Publications",
+      description: "Reviewed research publications from the AutoDIAL group."
+    },
     "sdls.html" => {
       title: "Self Driving Labs",
       description: "Explore AutoDIAL self-driving laboratory platforms for corrosion mapping, electrochemistry, " \
@@ -38,6 +42,7 @@ class RenderedSiteTest < Minitest::Test
     "Home" => "/",
     "News" => "/news",
     "Self Driving Labs" => "/sdls",
+    "Publications" => "/publications",
     "Group Members" => "/group_members",
     "Openings" => "/openings",
     "Contact" => "/contact"

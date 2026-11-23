@@ -6,3 +6,20 @@ Gemfile.lock
 .bundle/
 vendor/
 .DS_Store
+__pycache__/
+*.pyc
+
+# Local Python environments and test/tool output
+autodial/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editor scratch files
+*.swp
+*~
+.#*
+\#*\#

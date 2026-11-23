@@ -11,6 +11,7 @@ class SiteUiTest < Minitest::Test
   PRIMARY_ROUTES = {
     "/" => "Home",
     "/news" => "News & Updates",
+    "/publications" => "Publications",
     "/sdls" => "Self Driving Labs",
     "/group_members" => "Group Members and Alumni",
     "/openings" => "Openings",
@@ -89,6 +90,32 @@ class SiteUiTest < Minitest::Test
       JS
     end
     assert result, "Skip link did not move keyboard focus to the main content"
+  end
+
+  def test_publications_search_and_mobile_layout
+    navigate("/publications")
+    result = browser.execute(<<~JS)
+      const search = document.querySelector("#publication-search");
+      search.value = "AutoREC";
+      search.dispatchEvent(new Event("input", { bubbles: true }));
+      return {
+        total: document.querySelectorAll(".publication-card").length,
+        visible: document.querySelectorAll(".publication-card:not([hidden])").length,
+        title: document.querySelector(".publication-card:not([hidden]) h3")?.textContent || ""
+      };
+    JS
+    assert_operator result.fetch("total"), :>, 1
+    assert_equal 1, result.fetch("visible")
+    assert_includes result.fetch("title"), "AutoREC"
+
+    browser.set_window(width: 375, height: 812)
+    layout = browser.execute(<<~JS)
+      return {
+        viewport: document.documentElement.clientWidth,
+        scroll: document.documentElement.scrollWidth
+      };
+    JS
+    assert_operator layout.fetch("scroll"), :<=, layout.fetch("viewport") + 1
   end
 
   def test_member_dialog_supports_mouse_and_backdrop_interactions

@@ -440,3 +440,27 @@
     max-width: 280px !important;
   }
 }
+
+/* Publications: scoped to the bibliography so the existing Slate pages keep their layout. */
+.publications-intro { margin-bottom: 2rem; }
+.publications-intro h1 { margin-bottom: .6rem; }
+.publications-intro .eyebrow, .publication-card__type { color: #a6410d; font-size: .8rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.publication-filters { align-items: end; background: #f7f8f8; border: 1px solid #d6d9da; display: grid; gap: .8rem; grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr)) auto; padding: 1rem; }
+.publication-filters[hidden], .publication-no-results[hidden], .publication-year[hidden], .publication-card[hidden] { display: none; }
+.publication-filters label { display: grid; font-weight: 700; gap: .3rem; min-width: 0; }
+.publication-filters input, .publication-filters select, .publication-filters button { box-sizing: border-box; min-height: 44px; padding: .45rem .6rem; width: 100%; }
+.publication-filters input, .publication-filters select { background: #fff; border: 1px solid #aab2b5; }
+.publication-filters button { background: #fff; border: 1px solid #a6410d; color: #8b350c; cursor: pointer; }
+.publication-count { font-size: .9rem; margin: .8rem 0; }
+.publication-year { margin-top: 2rem; }
+.publication-year h2 { border-bottom: 1px solid #d6d9da; padding-bottom: .4rem; }
+.publication-card { border-bottom: 1px solid #d6d9da; display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr) auto; padding: 1.3rem 0; }
+.publication-card h3 { font-size: 1.25rem; margin: .2rem 0 .5rem; overflow-wrap: anywhere; }
+.publication-card p { margin: .4rem 0; }
+.publication-card__doi { overflow-wrap: anywhere; }
+.publication-card__links { display: flex; flex-wrap: wrap; gap: .4rem 1rem; list-style: none; padding: 0; }
+.publication-card__figure { margin: 0; max-width: 220px; }
+.publication-card__figure img { display: block; height: auto; max-width: 100%; }
+.publication-no-results, .publication-empty { background: #f7f8f8; padding: 1rem; }
+@media (max-width: 900px) { .publication-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .publication-filters, .publication-card { grid-template-columns: 1fr; } .publication-card__figure { max-width: 100%; } }
