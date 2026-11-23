@@ -118,6 +118,31 @@ class SiteUiTest < Minitest::Test
     assert_operator layout.fetch("scroll"), :<=, layout.fetch("viewport") + 1
   end
 
+  def test_publication_news_expands_and_links_to_the_bibliography
+    navigate("/news")
+    state = browser.execute(<<~JS)
+      const card = document.querySelector('.news-card[data-doi="10.1039/d4dd00203b"]');
+      const button = card.querySelector(".news-card__toggle");
+      button.click();
+      return {
+        month: card.querySelector("time").textContent.trim(),
+        expanded: button.getAttribute("aria-expanded"),
+        citationVisible: !card.querySelector(".news-card__expanded").hidden,
+        memberHref: card.querySelector(".news-card__congratulations a")?.getAttribute("href"),
+        publicationHref: card.querySelector('.news-card__links a')?.getAttribute("href")
+      };
+    JS
+    assert_equal "September 2024", state.fetch("month")
+    assert_equal "true", state.fetch("expanded")
+    assert state.fetch("citationVisible")
+    assert_equal "/group_members#daniel-persaud", state.fetch("memberHref")
+    assert_match(%r{\A/publications#publication-}, state.fetch("publicationHref"))
+
+    browser.set_window(width: 375, height: 812)
+    overflow = browser.execute("document.documentElement.scrollWidth > document.documentElement.clientWidth + 1")
+    refute overflow, "News archive overflows a mobile viewport"
+  end
+
   def test_member_dialog_supports_mouse_and_backdrop_interactions
     navigate("/group_members")
     browser.click('[data-member-id="yutong-liu"]')
@@ -221,7 +246,7 @@ class SiteUiTest < Minitest::Test
 
   def test_news_navigation_and_video_playback
     navigate("/news")
-    browser.click(".blog-title a")
+    browser.click(".news-card--post .news-card__title a")
     news = browser.execute(<<~JS)
       return {
         path: location.pathname,
@@ -229,7 +254,7 @@ class SiteUiTest < Minitest::Test
       };
     JS
     assert_match(%r{\A/news/}, news.fetch("path"))
-    assert_equal "Welcome to Our Research Group", news.fetch("heading")
+    assert_equal "Welcome to the AutoDIAL Website", news.fetch("heading")
 
     navigate("/sdls")
     metadata = browser.execute_async(<<~JS)

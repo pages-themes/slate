@@ -1,4 +1,4 @@
-<article class="person-card{% if include.featured %} person-card--featured{% endif %}">
+<article class="person-card{% if include.featured %} person-card--featured{% endif %}" id="{{ include.member.id | escape }}">
   <button
     type="button"
     class="person-trigger"

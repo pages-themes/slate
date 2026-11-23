@@ -464,3 +464,24 @@
 .publication-no-results, .publication-empty { background: #f7f8f8; padding: 1rem; }
 @media (max-width: 900px) { .publication-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .publication-filters, .publication-card { grid-template-columns: 1fr; } .publication-card__figure { max-width: 100%; } }
+
+/* Publication announcements in the existing News archive. */
+.news-feed { margin: 0 auto; max-width: 850px; }
+.news-feed__heading { margin-bottom: 2rem; }
+.news-feed__heading .eyebrow { color: #a6410d; font-size: .8rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.news-card { background: #fff; border: 1px solid #d6d9da; border-left: 4px solid #c05219; box-sizing: border-box; margin-bottom: 1rem; padding: clamp(1.15rem, 3vw, 1.8rem); }
+.news-card time { color: #8b350c; display: block; font-size: .82rem; font-weight: 700; margin-bottom: .4rem; text-transform: uppercase; }
+.news-card__title { font-size: 1.4rem; margin: .2rem 0 .7rem; }
+.news-card__title a { color: inherit; text-decoration: none; }
+.news-card__title a:hover { text-decoration: underline; }
+.news-card__congratulations { margin: .4rem 0 .7rem; }
+.news-card__description { margin: .6rem 0; }
+.news-has-js .news-card:not(.news-card--expanded) .news-card__description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
+.news-card__toggle { background: none; border: 0; color: #8b350c; cursor: pointer; display: none; font: inherit; font-weight: 700; min-height: 44px; padding: .3rem 0; }
+.news-has-js .news-card__toggle { display: inline-block; }
+.news-card__toggle:hover { text-decoration: underline; }
+.news-card__toggle:focus-visible { outline: 3px solid #c05219; outline-offset: 3px; }
+.news-card__expanded { border-top: 1px solid #d6d9da; padding-top: .8rem; }
+.news-card__expanded[hidden] { display: none; }
+.news-card__links { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; margin-top: .8rem; }
+.news-feed .text-link { display: inline-block; font-weight: 700; margin-top: .35rem; }

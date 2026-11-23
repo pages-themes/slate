@@ -59,6 +59,11 @@ individual approval decisions. Discovery alone never adds a paper to the site.
 See [the Publications workflow](docs/PUBLICATIONS_WORKFLOW.md) for the full
 review process and source-verification rules.
 
+Publication News posts live in `_news/publications/`. Each post records a DOI,
+publication month, source links, and a provisional summary. The News page draws
+the full citation from the reviewed bibliography, keeping bibliographic details
+in one place. See `how_to_write_news_post.txt` for the post format.
+
 ## Updating media
 
 Original, full-resolution media belongs under `_media_sources/`. Files used by

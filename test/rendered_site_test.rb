@@ -95,6 +95,21 @@ class RenderedSiteTest < Minitest::Test
     end
   end
 
+  def test_publication_news_links_to_approved_papers
+    document = Nokogiri::HTML(File.read(File.join(SITE_ROOT, "news.html")))
+    cards = document.css(".news-card--publication")
+    assert_equal 17, cards.length
+    cards.each do |card|
+      doi = card["data-doi"]
+      refute_nil doi
+      assert card.at_css('a[href^="/publications#publication-"]'), "Missing bibliography link for #{doi}"
+      assert card.at_css('a[href^="https://doi.org/"]'), "Missing DOI link for #{doi}"
+    end
+    ampere = document.at_css('.news-card[data-doi="10.1039/d4dd00203b"]')
+    assert_equal "Daniel", ampere.at_css(".news-card__congratulations a").text.strip
+    assert_includes ampere.at_css(".news-card__description").text, "Jehad Abed and Yang Bai"
+  end
+
   def test_interactive_controls_have_accessible_names_and_safe_new_tabs
     each_primary_page do |path, document, _expected|
       document.css("a, button").each do |control|
