@@ -1,4 +1,4 @@
-<article class="person-card{% if include.featured %} person-card--featured{% endif %}" id="{{ include.member.id | escape }}">
+<article class="person-card{% if include.featured %} person-card--featured{% endif %}">
   <button
     type="button"
     class="person-trigger"
@@ -9,8 +9,8 @@
   >
     <img
       class="person-photo"
-      src="{{ '/assets/images/people/' | append: include.member.photo | append: '-300.webp' | relative_url }}"
-      srcset="{{ '/assets/images/people/' | append: include.member.photo | append: '-300.webp' | relative_url }} 300w, {{ '/assets/images/people/' | append: include.member.photo | append: '-600.webp' | relative_url }} 600w"
+      src="/assets/images/people/{{ include.member.photo }}-300.webp"
+      srcset="/assets/images/people/{{ include.member.photo }}-300.webp 300w, /assets/images/people/{{ include.member.photo }}-600.webp 600w"
       sizes="180px"
       width="300"
       height="300"

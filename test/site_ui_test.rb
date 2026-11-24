@@ -11,8 +11,6 @@ class SiteUiTest < Minitest::Test
   PRIMARY_ROUTES = {
     "/" => "Home",
     "/news" => "News & Updates",
-    "/publications" => "Publications",
-    "/software" => "Software",
     "/sdls" => "Self Driving Labs",
     "/group_members" => "Group Members and Alumni",
     "/openings" => "Openings",
@@ -91,76 +89,6 @@ class SiteUiTest < Minitest::Test
       JS
     end
     assert result, "Skip link did not move keyboard focus to the main content"
-  end
-
-  def test_publications_search_and_mobile_layout
-    navigate("/publications")
-    result = browser.execute(<<~JS)
-      const search = document.querySelector("#publication-search");
-      search.value = "AutoREC";
-      search.dispatchEvent(new Event("input", { bubbles: true }));
-      return {
-        total: document.querySelectorAll(".publication-card").length,
-        visible: document.querySelectorAll(".publication-card:not([hidden])").length,
-        title: document.querySelector(".publication-card:not([hidden]) h3")?.textContent || ""
-      };
-    JS
-    assert_operator result.fetch("total"), :>, 1
-    assert_equal 1, result.fetch("visible")
-    assert_includes result.fetch("title"), "AutoREC"
-
-    browser.set_window(width: 375, height: 812)
-    layout = browser.execute(<<~JS)
-      return {
-        viewport: document.documentElement.clientWidth,
-        scroll: document.documentElement.scrollWidth
-      };
-    JS
-    assert_operator layout.fetch("scroll"), :<=, layout.fetch("viewport") + 1
-  end
-
-  def test_publication_news_expands_and_links_to_the_bibliography
-    navigate("/news")
-    state = browser.execute(<<~JS)
-      const card = document.querySelector('.news-card[data-doi="10.1039/d4dd00203b"]');
-      const button = card.querySelector(".news-card__toggle");
-      button.click();
-      return {
-        month: card.querySelector("time").textContent.trim(),
-        expanded: button.getAttribute("aria-expanded"),
-        citationVisible: !card.querySelector(".news-card__expanded").hidden,
-        memberHref: card.querySelector(".news-card__congratulations a")?.getAttribute("href"),
-        publicationHref: card.querySelector('.news-card__links a')?.getAttribute("href")
-      };
-    JS
-    assert_equal "September 2024", state.fetch("month")
-    assert_equal "true", state.fetch("expanded")
-    assert state.fetch("citationVisible")
-    assert_equal "/group_members#daniel-persaud", state.fetch("memberHref")
-    assert_match(%r{\A/publications#publication-}, state.fetch("publicationHref"))
-
-    browser.set_window(width: 375, height: 812)
-    overflow = browser.execute("document.documentElement.scrollWidth > document.documentElement.clientWidth + 1")
-    refute overflow, "News archive overflows a mobile viewport"
-  end
-
-  def test_software_catalog_on_mobile
-    navigate("/software")
-    browser.set_window(width: 375, height: 812)
-    state = browser.execute(<<~JS)
-      return {
-        viewport: document.documentElement.clientWidth,
-        scroll: document.documentElement.scrollWidth,
-        cards: document.querySelectorAll(".software-card").length,
-        autoeis: Boolean(document.querySelector('a[href="https://autodiallab.ca/AutoEIS/"]')),
-        brokenImages: Array.from(document.querySelectorAll(".software-card img"))
-          .filter((image) => !image.complete || image.naturalWidth === 0).length
-      };
-    JS
-    assert_operator state.fetch("scroll"), :<=, state.fetch("viewport") + 1
-    assert_equal 2, state.fetch("cards")
-    assert state.fetch("autoeis")
-    assert_equal 0, state.fetch("brokenImages")
   end
 
   def test_member_dialog_supports_mouse_and_backdrop_interactions
@@ -266,7 +194,7 @@ class SiteUiTest < Minitest::Test
 
   def test_news_navigation_and_video_playback
     navigate("/news")
-    browser.click(".news-card--post .news-card__title a")
+    browser.click(".blog-title a")
     news = browser.execute(<<~JS)
       return {
         path: location.pathname,
@@ -274,7 +202,7 @@ class SiteUiTest < Minitest::Test
       };
     JS
     assert_match(%r{\A/news/}, news.fetch("path"))
-    assert_equal "Welcome to the AutoDIAL Website", news.fetch("heading")
+    assert_equal "Welcome to Our Research Group", news.fetch("heading")
 
     navigate("/sdls")
     metadata = browser.execute_async(<<~JS)

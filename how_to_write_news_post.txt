@@ -1,39 +1,11 @@
-For a general news post, create a Markdown file in _news with this format:
+To add new blog posts, create new markdown files in the 
+_news directory with this format:
 
 ---
 layout: default
 title: "Your Post Title"
 date: YYYY-MM-DD
-month: "YYYY-MM"
 excerpt: "Brief summary of your post"
 ---
 
 # Your content here...
-
-The date determines the existing post URL. The month controls ordering and is
-the only date shown on the News page and homepage. Use a verified event month;
-do not invent a day or backdate a post to imply an event happened earlier.
-
-Journal-paper announcements live in _news/publications/ as one Markdown file
-per paper. Use an existing file there as a template. Add an entry only for a
-reviewed journal paper already present in _data/publications.json. Record its
-DOI, verified publication month (YYYY-MM), date source/basis, abstract source,
-and a short original description based on the abstract. The first_name should
-identify the paper's first-listed author. Only set member_id when you have
-matched that author to an existing card in _data/members.yml. The card gets
-the full title, author list, journal, and DOI link from the bibliography.
-For a paper with two people to congratulate, use a congratulations list of
-name and optional member_id entries instead of first_name/member_id. The
-AutoREC post shows the format. Each member_id must exist in _data/members.yml.
-
-Use a stable /news/publications/<topic>/ permalink. The internal date is for
-Jekyll ordering; only its month and year are displayed.
-
-If a journal DOI is available but the online publication month is not verified,
-you may instead announce the DOI registration using its verified month. State
-that event in the title and set date_basis to doi-registration. Do not describe
-the registration month as the publication month. The AutoREC announcement is
-an example; its journal issue year is 2027.
-
-The News page sorts all updates by month. If two events share a month,
-their order within that month is editorial rather than day-specific.
