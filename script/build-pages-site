@@ -1,0 +1,55 @@
+#!/bin/sh
+# Assemble a Pages artifact from the original source and this branch's draft.
+set -eu
+
+cd "$(dirname "$0")/.."
+
+if [ "$#" -ne 2 ]; then
+  echo "Usage: script/build-pages-site ABSOLUTE_DESTINATION ORIGINAL_SOURCE" >&2
+  exit 2
+fi
+destination=$1
+original_source=$2
+case "$destination" in /*) ;; *) echo "Choose an absolute destination path." >&2; exit 2 ;; esac
+if [ -e "$destination" ]; then
+  echo "Destination already exists: $destination" >&2
+  exit 2
+fi
+if [ ! -f "$original_source/_config.yml" ] || [ ! -f "$original_source/CNAME" ]; then
+  echo "Original source must contain _config.yml and CNAME: $original_source" >&2
+  exit 2
+fi
+if [ "$(cat "$original_source/CNAME")" != autodiallab.ca ]; then
+  echo "Unexpected custom domain in $original_source/CNAME" >&2
+  exit 2
+fi
+
+BUNDLE_GEMFILE="$PWD/Gemfile" bundle exec jekyll build \
+  --source "$original_source" \
+  --config "$original_source/_config.yml" \
+  --destination "$destination"
+
+# The original master configuration predates the development-file exclusions.
+# Remove only generated copies; the master checkout and its media stay intact.
+for internal in docs script test README.md LICENSE Makefile how_to_write_news_post.txt jekyll-theme-slate.gemspec; do
+  rm -rf -- "$destination/$internal"
+done
+find "$destination" -maxdepth 1 -type f -name '*.gem' -delete
+
+./experimental/script/build-experimental-site "$destination/experimental" https://autodiallab.ca
+
+test -s "$destination/index.html"
+test -s "$destination/experimental/index.html"
+test "$(cat "$destination/CNAME")" = autodiallab.ca
+test ! -e "$destination/experimental/CNAME"
+for internal in docs script test _publication_review _media_sources; do
+  test ! -e "$destination/$internal"
+  test ! -e "$destination/experimental/$internal"
+done
+
+BUNDLE_GEMFILE="$PWD/Gemfile" bundle exec htmlproofer \
+  --assume-extension .html \
+  --disable-external \
+  --check-sri \
+  "$destination"
+printf 'Validated original and experimental Pages artifact: %s\n' "$destination"

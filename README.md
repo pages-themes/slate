@@ -59,6 +59,8 @@ Publication discovery, review decisions, News posts, Software entries, and
 their maintenance scripts live under `experimental/`. Use the commands in
 [`experimental/README.md`](experimental/README.md) to update and preview them.
 Nothing in this branch is published by running the local build commands.
+See [the Pages publication plan](docs/PAGES_PUBLICATION.md) for the prepared
+manual workflow and the approval steps required before public deployment.
 
 Most page content is stored in the Markdown files in the repository root.
 Laboratory content is in `sdls.md`, and homepage content is in `index.md`.

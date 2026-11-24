@@ -45,8 +45,7 @@ make serve
 Open <http://127.0.0.1:4000/> for the original root site and
 <http://127.0.0.1:4000/experimental/> for the draft. The draft rebuilds when
 its source changes. Stop the server with `Ctrl-C`. If port 4000 is occupied,
-run `make serve LOCAL_PORT=4002` and use that port in both URLs. To serve only
-the draft alone at `/`, use `make serve-draft` instead.
+run `make serve LOCAL_PORT=4002` and use that port in both URLs.
 
 ### Private review bundle
 
@@ -85,16 +84,6 @@ To prepare the draft for a possible **later** public URL at
 
 Jekyll omits directories beginning with `_`, so `/experimental/` is a safer
 path than `/_/experimental/` for this repository.
-
-For an isolated subpath preview without the old homepage, use
-`make serve-experimental` and open
-<http://127.0.0.1:4067/experimental/>. If port 4067 is taken, choose another:
-
-```sh
-make serve-experimental EXPERIMENTAL_PORT=4068
-```
-
-Use the address printed by Jekyll, including `/experimental/`.
 
 This creates a ZIP containing an `experimental/` folder built with Jekyll's
 `baseurl`. It checks that local links and media stay under that path, removes

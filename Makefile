@@ -6,10 +6,9 @@ MEDIA_PACKAGES ?= imagemagick ffmpeg
 PYTHON ?= python3
 PUBLICATIONS_DISCOVER_FLAGS ?= --no-crossref
 PUBLICATIONS_LIST_LIMIT ?= 25
-EXPERIMENTAL_PORT ?= 4067
 LOCAL_PORT ?= 4000
 
-.PHONY: install install-system install-gems optimize-media experimental-optimize-media build check test test-ui serve serve-draft serve-experimental clean publications-update publications-review publications-build
+.PHONY: install install-system install-gems optimize-media experimental-optimize-media build check test test-ui serve clean publications-update publications-review publications-build
 
 # Show documentation and some recommended commands and instructions for using this Makefile.
 help:
@@ -17,17 +16,17 @@ help:
 	@echo ""
 	@echo "Usage:"
 	@echo "  make install          Install system dependencies and Ruby gems."
-	@echo "  make optimize-media   Generate web-ready images and video."
+	@echo "  make optimize-media   Generate media for the original site."
+	@echo "  make experimental-optimize-media  Generate media for the draft."
 	@echo "  make build            Build the Jekyll site."
 	@echo "  make check            Build and validate the site and its media."
 	@echo "  make test             Run the full local check and browser interaction tests."
-	@echo "  make test-ui          Build and run browser interaction tests."
+	@echo "  make test-ui          Build and run original-site browser tests only."
 	@echo "  make serve            Serve the original root at / and experimental/ at /experimental/."
-	@echo "  make serve-draft      Serve experimental/ alone at /."
-	@echo "  make serve-experimental  Serve the draft at /experimental/ on port $(EXPERIMENTAL_PORT)."
 	@echo "  make publications-update  Discover OpenAlex and arXiv candidates; do not change the site."
 	@echo "  make publications-review  Show candidate counts and the newest pending records."
 	@echo "  make publications-build   Regenerate the site bibliography from approved records only."
+	@echo "  make clean           Remove the original site's generated build."
 	@echo ""
 	@echo "Environment Variables:"
 	@echo "  APT_GET               Command to use for package installation (default: sudo apt-get)."
@@ -80,12 +79,6 @@ test-ui: build
 
 serve:
 	$(PYTHON) script/serve-local-composite.py --port $(LOCAL_PORT)
-
-serve-draft:
-	$(BUNDLE) exec jekyll serve --source experimental --config experimental/_config.yml --port $(LOCAL_PORT) --host 127.0.0.1 --destination experimental/_site
-
-serve-experimental:
-	$(BUNDLE) exec jekyll serve --source experimental --config experimental/_config.yml --baseurl /experimental --port $(EXPERIMENTAL_PORT) --host 127.0.0.1 --destination experimental/_site_experimental
 
 # Discovery only changes internal candidate/review files. Publishing still
 # requires an individual approval and a separate publications-build command.

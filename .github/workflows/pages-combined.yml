@@ -1,0 +1,71 @@
+name: Publish original and experimental sites
+
+# Publication requires an intentional manual run after scientific approval.
+# GitHub requires this workflow file on the default branch for dispatch.
+"on":
+  workflow_dispatch:
+    inputs:
+      draft_ref:
+        description: Reviewed branch or commit containing experimental/
+        required: true
+        default: feature/incremental-publications-news-software
+        type: string
+
+permissions:
+  contents: read
+  pages: read
+
+concurrency:
+  group: autodial-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Check out the reviewed draft
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.draft_ref }}
+          persist-credentials: false
+      - name: Set up Ruby and Bundler
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Install media tools
+        run: sudo apt-get update && sudo apt-get install -y imagemagick ffmpeg
+      - name: Test the draft and original-source copy
+        run: make test
+        env:
+          TMPDIR: ${{ runner.temp }}
+      - name: Check out the public original site
+        uses: actions/checkout@v6
+        with:
+          ref: master
+          path: original
+          persist-credentials: false
+      - name: Build the combined Pages artifact
+        run: ./script/build-pages-site "${RUNNER_TEMP}/autodial-pages" original
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload the combined site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/autodial-pages
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy both sites
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -26,13 +26,17 @@ def handler_for(site):
         def send_head(self):
             parsed = urlsplit(self.path)
             path = unquote(parsed.path)
-            if path != "/" and not path.endswith("/"):
-                page = (site / (path.lstrip("/") + ".html")).resolve()
+            if path.rstrip("/"):
+                page = (site / (path.strip("/") + ".html")).resolve()
                 if page.is_relative_to(site) and page.is_file():
-                    self.path = parsed.path + ".html"
+                    self.path = parsed.path.rstrip("/") + ".html"
                     if parsed.query:
                         self.path += "?" + parsed.query
             return super().send_head()
+
+        def list_directory(self, path):
+            self.send_error(404, "Page not found")
+            return None
 
     return LocalSiteHandler
 
@@ -40,6 +44,7 @@ def handler_for(site):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=4000)
+    parser.add_argument("--site", type=Path, help="serve an already built combined site")
     args = parser.parse_args()
     if not 1 <= args.port <= 65535:
         parser.error("--port must be between 1 and 65535")
@@ -49,6 +54,19 @@ def main():
             probe.bind(("127.0.0.1", args.port))
         except OSError as error:
             parser.error(f"port {args.port} is unavailable ({error}); stop the existing server or run make serve LOCAL_PORT=4002")
+
+    if args.site is not None:
+        combined = args.site.resolve()
+        if not (combined / "index.html").is_file() or not (combined / "experimental/index.html").is_file():
+            parser.error("--site must contain original and experimental homepages")
+        with ThreadingHTTPServer(("127.0.0.1", args.port), handler_for(combined)) as server:
+            print(f"Original site: http://127.0.0.1:{args.port}/", flush=True)
+            print(f"Experimental draft: http://127.0.0.1:{args.port}/experimental/", flush=True)
+            try:
+                server.serve_forever()
+            except KeyboardInterrupt:
+                pass
+        return
 
     with TemporaryDirectory(prefix="autodial-local-composite-") as temporary:
         temp = Path(temporary)
