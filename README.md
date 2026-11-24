@@ -110,7 +110,14 @@ stable lowercase `id`, their displayed `name`, modal `role`, portrait filename
 stem in `photo`, HTML biography in `bio`, and optional profile `links` and
 `card_title`.
 
-To add a member:
+1. Look at [the template source](https://github.com/pages-themes/slate/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
+2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.zip_url`, you'd add the following:
+    ```yml
+    github:
+      zip_url: http://example.com/download.zip
+      another_url: another value
+    ```
+3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
 
 1. Add the original portrait to `_media_sources/images/people/`.
 2. Add the member record to the appropriate section in `_data/members.yml`.
