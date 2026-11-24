@@ -73,6 +73,30 @@ viewer needs Python 3.9 or newer and serves only on the recipient's computer.
 The bundle leaves out `CNAME` and internal review data. Share it privately;
 the publication selection and News copy still await scientific and PI review.
 
+### Experimental subdirectory build
+
+To prepare the draft for a possible **later** public URL at
+`https://autodiallab.ca/experimental/`, run:
+
+```sh
+./script/create-experimental-bundle
+# Or choose a ZIP path:
+./script/create-experimental-bundle /tmp/autodial-experimental-review.zip
+```
+
+Jekyll omits directories beginning with `_`, so `/experimental/` is a safer
+path than `/_/experimental/` for this repository.
+
+This creates a ZIP containing an `experimental/` folder built with Jekyll's
+`baseurl`. It checks that local links and media stay under that path, removes
+the nested `CNAME`, and leaves the root site untouched. If GitHub Pages
+currently publishes from the root of `master`, the folder could be added there
+**after** scientific and PI review and explicit publication approval. Verify
+the actual Pages publishing source before doing so. The normal homepage would
+keep its current source; no link to the draft is added there. The draft URL
+would still be public and discoverable. Its pages request `noindex`, which is
+not access control.
+
 Most page content is stored in the Markdown files in the repository root.
 Laboratory content is in `sdls.md`, and homepage content is in `index.md`.
 Group-member records are maintained in `_data/members.yml`; reusable templates

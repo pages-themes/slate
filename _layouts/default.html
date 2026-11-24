@@ -5,6 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if site.baseurl == '/experimental' %}<meta name="robots" content="noindex, nofollow">{% endif %}
     
     <!-- Open Graph meta tags for social media preview -->
     <meta property="og:image" content="{{ '/assets/images/nulla_bw.png' | absolute_url }}">
@@ -36,7 +37,7 @@
 
       <div class="header-content">
         <a href="{{ '/' | relative_url }}" style="text-decoration: none;">
-          <img src="/assets/images/nulla_bw-200.webp" srcset="/assets/images/nulla_bw-200.webp 200w, /assets/images/nulla_bw-400.webp 400w" sizes="(max-width: 480px) 80px, 160px" width="200" height="200" alt="Group Logo" class="header-logo" decoding="async" style="cursor: pointer;">
+          <img src="{{ '/assets/images/nulla_bw-200.webp' | relative_url }}" srcset="{{ '/assets/images/nulla_bw-200.webp' | relative_url }} 200w, {{ '/assets/images/nulla_bw-400.webp' | relative_url }} 400w" sizes="(max-width: 480px) 80px, 160px" width="200" height="200" alt="Group Logo" class="header-logo" decoding="async" style="cursor: pointer;">
         </a>
         <div class="header-text" style="flex: 1; min-width: 0;"> 
           <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">

@@ -11,7 +11,7 @@
     <button type="button" class="modal-close" aria-label="Close biography for {{ include.member.name }}">&times;</button>
     <img
       class="modal-image"
-      src="/assets/images/people/{{ include.member.photo }}-600.webp"
+      src="{{ '/assets/images/people/' | append: include.member.photo | append: '-600.webp' | relative_url }}"
       width="200"
       height="200"
       alt="{{ include.member.name }}"
