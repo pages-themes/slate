@@ -48,6 +48,9 @@ make serve
 
 Jekyll will print the local address, normally
 <http://127.0.0.1:4000>. Stop the server with `Ctrl-C`.
+On this feature branch, `make serve` shows the draft at that root URL.
+It does not create an `/experimental/` route; that path is for the separate
+subdirectory build described below.
 
 ### Private review bundle
 

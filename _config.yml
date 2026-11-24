@@ -21,6 +21,7 @@ plugins:
 # These files remain in the repository for maintenance and review.
 exclude:
   - _media_sources
+  - _site_experimental
   - docs
   - script
   - test
