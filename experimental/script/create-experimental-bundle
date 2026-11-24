@@ -1,0 +1,95 @@
+#!/bin/sh
+# Prepare a subdirectory build for later review and publication; do not deploy.
+set -eu
+
+cd "$(dirname "$0")/.."
+
+usage() {
+  cat <<'EOF'
+Usage: ./script/create-experimental-bundle [ABSOLUTE_OUTPUT_PATH]
+
+Validate and build the current branch for https://autodiallab.ca/experimental/,
+then package an experimental/ folder in a ZIP. Nothing is published.
+The default output is a timestamped ZIP in /tmp. The output directory must
+exist, and the ZIP must not already exist.
+EOF
+}
+
+if [ "$#" -gt 1 ]; then usage >&2; exit 2; fi
+case "${1-}" in -h|--help) usage; exit 0 ;; esac
+
+output=${1:-"/tmp/autodial-experimental-$(date +%Y%m%d-%H%M%S).zip"}
+case "$output" in /*) ;; *) echo "Choose an absolute output path." >&2; exit 2 ;; esac
+if [ ! -d "$(dirname "$output")" ]; then
+  echo "Output directory does not exist: $(dirname "$output")" >&2
+  exit 2
+fi
+if [ -e "$output" ]; then echo "Output already exists: $output" >&2; exit 2; fi
+for command_name in zip python3 bundle; do
+  if ! command -v "$command_name" >/dev/null 2>&1; then
+    echo "$command_name is required to create the experimental bundle." >&2
+    exit 2
+  fi
+done
+
+make check
+
+bundle_dir=$(mktemp -d)
+trap 'rm -rf "$bundle_dir"' EXIT
+cat > "$bundle_dir/experimental-config.yml" <<'EOF'
+url: https://autodiallab.ca
+baseurl: /experimental
+EOF
+bundle exec jekyll build --config "_config.yml,$bundle_dir/experimental-config.yml" --destination "$bundle_dir/experimental"
+rm -f "$bundle_dir/experimental/CNAME"
+rm -f "$bundle_dir/experimental/feed.xml"
+# The legacy theme supplies a post layout outside our default layout. Stamp
+# those generated pages too so every HTML page requests no indexing. The
+# repository's empty sample post has no HTML document and is omitted here.
+python3 - "$bundle_dir/experimental" <<'PY'
+from pathlib import Path
+import sys
+
+for page in Path(sys.argv[1]).rglob("*.html"):
+    html = page.read_text(encoding="utf-8")
+    if not html.strip():
+        page.unlink()
+        continue
+    if 'name="robots" content="noindex' in html:
+        continue
+    if "</head>" not in html:
+        raise SystemExit(f"Cannot add noindex to {page}: missing </head>")
+    page.write_text(html.replace("</head>", '<meta name="robots" content="noindex, nofollow">\n</head>', 1), encoding="utf-8")
+PY
+python3 script/check-experimental-build.py "$bundle_dir/experimental"
+cat > "$bundle_dir/README.txt" <<'EOF'
+AutoDIAL experimental site build — local preparation only
+
+The experimental/ folder is a built copy of the current feature branch for
+https://autodiallab.ca/experimental/. It does not modify the existing homepage.
+The site is provisional and has not been approved for public release.
+
+Do not upload or commit this folder to the publishing branch until the
+maintainer and PI have reviewed the scientific content and approved publication.
+When approved, first verify the repository's GitHub Pages publishing source.
+If Pages publishes from the root of master, add only the experimental/ folder
+there. Keep its name experimental and do not replace the root index.html or
+root CNAME. Rebuild this ZIP for each review round instead of editing the
+generated HTML by hand.
+
+A public URL is accessible to anyone who knows or finds it. The pages request
+no indexing, but this is not access control. For private feedback now, use
+./script/create-preview-bundle instead.
+EOF
+(cd "$bundle_dir" && zip -qr "$output" README.txt experimental)
+printf 'Experimental bundle: %s\n' "$output"
+python3 - "$output" <<'PY'
+import hashlib
+import sys
+
+digest = hashlib.sha256()
+with open(sys.argv[1], "rb") as archive:
+    for chunk in iter(lambda: archive.read(1024 * 1024), b""):
+        digest.update(chunk)
+print(f"SHA-256: {digest.hexdigest()}")
+PY

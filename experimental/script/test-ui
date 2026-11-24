@@ -1,0 +1,118 @@
+#!/bin/sh
+
+# Run real-browser smoke tests against the generated Jekyll site.
+
+set -eu
+
+cd "$(dirname "$0")/.."
+
+for command_name in bundle firefox geckodriver ruby; do
+  if ! command -v "$command_name" >/dev/null 2>&1; then
+    echo "$command_name is required to run browser interaction tests." >&2
+    exit 1
+  fi
+done
+
+if [ ! -f _site/index.html ]; then
+  echo "Generated site not found. Run 'make build' before script/test-ui." >&2
+  exit 1
+fi
+
+test_tmp_root=${TMPDIR:-/tmp}
+test_tmp_dir=$(mktemp -d "$test_tmp_root/autodial-ui-test-XXXXXX")
+site_log="$test_tmp_dir/jekyll.log"
+webdriver_log="$test_tmp_dir/geckodriver.log"
+site_pid=
+webdriver_pid=
+test_status=0
+
+cleanup() {
+  exit_status=$?
+  trap - EXIT HUP INT TERM
+
+  if [ "$test_status" -eq 0 ] && [ "$exit_status" -ne 0 ]; then
+    test_status=$exit_status
+  fi
+
+  if [ -n "$webdriver_pid" ]; then
+    kill "$webdriver_pid" 2>/dev/null || true
+    wait "$webdriver_pid" 2>/dev/null || true
+  fi
+  if [ -n "$site_pid" ]; then
+    kill "$site_pid" 2>/dev/null || true
+    wait "$site_pid" 2>/dev/null || true
+  fi
+
+  if [ "$test_status" -eq 0 ]; then
+    rm -rf -- "$test_tmp_dir"
+  else
+    echo "Browser-test diagnostics retained in $test_tmp_dir" >&2
+    echo "--- Jekyll server log ---" >&2
+    sed -n '1,240p' "$site_log" >&2 || true
+    echo "--- WebDriver log ---" >&2
+    sed -n '1,240p' "$webdriver_log" >&2 || true
+  fi
+
+  exit "$test_status"
+}
+trap cleanup EXIT HUP INT TERM
+
+free_port() {
+  ruby -rsocket -e 'server = TCPServer.new("127.0.0.1", 0); puts server.addr[1]; server.close'
+}
+
+site_port=$(free_port)
+webdriver_port=$(free_port)
+while [ "$webdriver_port" -eq "$site_port" ]; do
+  webdriver_port=$(free_port)
+done
+
+bundle exec jekyll serve \
+  --skip-initial-build \
+  --no-watch \
+  --host 127.0.0.1 \
+  --port "$site_port" >"$site_log" 2>&1 &
+site_pid=$!
+
+geckodriver --host 127.0.0.1 --port "$webdriver_port" >"$webdriver_log" 2>&1 &
+webdriver_pid=$!
+
+wait_for_url() {
+  url=$1
+  attempts=0
+  while [ "$attempts" -lt 120 ]; do
+    if ruby -rnet/http -ruri -e '
+      uri = URI(ARGV.fetch(0))
+      response = Net::HTTP.start(uri.host, uri.port, open_timeout: 1, read_timeout: 1) do |http|
+        http.get(uri.request_uri)
+      end
+      exit(response.is_a?(Net::HTTPSuccess) ? 0 : 1)
+    ' "$url" >/dev/null 2>&1; then
+      return 0
+    fi
+    attempts=$((attempts + 1))
+    sleep 0.25
+  done
+  return 1
+}
+
+if ! wait_for_url "http://127.0.0.1:$site_port/"; then
+  echo "Jekyll server did not become ready." >&2
+  test_status=1
+  exit "$test_status"
+fi
+
+if ! wait_for_url "http://127.0.0.1:$webdriver_port/status"; then
+  echo "WebDriver did not become ready." >&2
+  test_status=1
+  exit "$test_status"
+fi
+
+if ! SITE_URL="http://127.0.0.1:$site_port" \
+  WEBDRIVER_URL="http://127.0.0.1:$webdriver_port" \
+  UI_TEST_ARTIFACT_DIR="$test_tmp_dir" \
+  bundle exec ruby -Itest test/site_ui_test.rb; then
+  test_status=1
+fi
+
+exit "$test_status"

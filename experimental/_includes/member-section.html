@@ -1,0 +1,8 @@
+<section class="member-section" aria-labelledby="member-section-{{ include.section.id }}">
+  <h3 id="member-section-{{ include.section.id }}">{{ include.section.title }}</h3>
+  <div class="member-grid{% if include.section.featured %} member-grid--featured{% endif %}">
+    {% for member in include.section.members %}
+      {% include member-card.html member=member featured=include.section.featured eager=forloop.first %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,159 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "open3"
+require "set"
+require "uri"
+require "yaml"
+
+REPOSITORY_ROOT = File.expand_path("..", __dir__)
+MEMBERS_PATH = File.join(REPOSITORY_ROOT, "_data", "members.yml")
+PORTRAIT_SOURCE_ROOT = File.join(REPOSITORY_ROOT, "_media_sources", "images", "people")
+PORTRAIT_ASSET_ROOT = File.join(REPOSITORY_ROOT, "assets", "images", "people")
+ALLOWED_PLATFORMS = %w[cv github linkedin researchgate scholar website].freeze
+
+source_only = ARGV.delete("--source-only")
+unless ARGV.empty?
+  warn "Usage: script/validate-members [--source-only]"
+  exit 2
+end
+
+errors = []
+
+begin
+  data = YAML.safe_load_file(MEMBERS_PATH, aliases: false)
+rescue Psych::Exception => e
+  warn "Could not parse _data/members.yml: #{e.message}"
+  exit 1
+end
+
+sections = data.is_a?(Hash) ? data["sections"] : nil
+unless sections.is_a?(Array) && sections.any?
+  warn "_data/members.yml must contain a non-empty sections array."
+  exit 1
+end
+
+section_ids = Set.new
+member_ids = Set.new
+member_names = Set.new
+photo_stems = Set.new
+member_count = 0
+
+sections.each_with_index do |section, section_index|
+  context = "section #{section_index + 1}"
+  unless section.is_a?(Hash)
+    errors << "#{context} must be a mapping."
+    next
+  end
+
+  section_id = section["id"].to_s
+  section_title = section["title"].to_s.strip
+  members = section["members"]
+
+  errors << "#{context} has an invalid id: #{section_id.inspect}" unless section_id.match?(/\A[a-z0-9]+(?:-[a-z0-9]+)*\z/)
+  errors << "Duplicate section id: #{section_id}" unless section_ids.add?(section_id)
+  errors << "#{context} is missing a title." if section_title.empty?
+
+  unless members.is_a?(Array) && members.any?
+    errors << "#{context} must contain at least one member."
+    next
+  end
+
+  members.each_with_index do |member, member_index|
+    member_count += 1
+    member_context = "#{context}, member #{member_index + 1}"
+    unless member.is_a?(Hash)
+      errors << "#{member_context} must be a mapping."
+      next
+    end
+
+    member_id = member["id"].to_s
+    name = member["name"].to_s.strip
+    role = member["role"].to_s.strip
+    photo = member["photo"].to_s
+    bio = member["bio"].to_s.strip
+
+    errors << "#{member_context} has an invalid id: #{member_id.inspect}" unless member_id.match?(/\A[a-z0-9]+(?:-[a-z0-9]+)*\z/)
+    errors << "Duplicate member id: #{member_id}" unless member_ids.add?(member_id)
+    errors << "#{member_context} is missing a name." if name.empty?
+    errors << "Duplicate member name: #{name}" unless member_names.add?(name)
+    errors << "#{member_context} is missing a role." if role.empty?
+    errors << "#{member_context} is missing a biography." if bio.empty?
+
+    unless photo.match?(/\A[A-Za-z0-9_()\-]+\z/)
+      errors << "#{member_context} has an unsafe photo stem: #{photo.inspect}"
+      next
+    end
+    errors << "Duplicate portrait stem: #{photo}" unless photo_stems.add?(photo)
+
+    source_matches = Dir.glob(File.join(PORTRAIT_SOURCE_ROOT, "#{photo}.*"))
+    if source_matches.length != 1
+      errors << "#{name} must have exactly one source portrait; found #{source_matches.length}."
+    end
+
+    unless source_only
+      [300, 600].each do |size|
+        asset_path = File.join(PORTRAIT_ASSET_ROOT, "#{photo}-#{size}.webp")
+        unless File.file?(asset_path) && !File.zero?(asset_path)
+          errors << "Missing generated #{size}px portrait for #{name}: #{asset_path.delete_prefix("#{REPOSITORY_ROOT}/")}"
+          next
+        end
+
+        dimensions, status = Open3.capture2(
+          "identify", "-format", "%wx%h", asset_path
+        )
+        unless status.success? && dimensions == "#{size}x#{size}"
+          errors << "Invalid #{size}px portrait for #{name}: got #{dimensions.inspect}."
+        end
+      end
+    end
+
+    links = member["links"]
+    next if links.nil?
+
+    unless links.is_a?(Array)
+      errors << "Links for #{name} must be an array."
+      next
+    end
+
+    platforms = Set.new
+    links.each do |link|
+      unless link.is_a?(Hash)
+        errors << "Every link for #{name} must be a mapping."
+        next
+      end
+
+      platform = link["platform"].to_s
+      url = link["url"].to_s
+      errors << "Unsupported profile platform for #{name}: #{platform.inspect}" unless ALLOWED_PLATFORMS.include?(platform)
+      errors << "Duplicate #{platform} link for #{name}." unless platforms.add?(platform)
+
+      begin
+        parsed_url = URI.parse(url)
+        unless parsed_url.is_a?(URI::HTTP) && parsed_url.host && %w[http https].include?(parsed_url.scheme)
+          errors << "Profile URL for #{name} must be absolute: #{url.inspect}"
+        end
+      rescue URI::InvalidURIError
+        errors << "Invalid profile URL for #{name}: #{url.inspect}"
+      end
+    end
+  end
+end
+
+active_source_stems = Dir.glob(File.join(PORTRAIT_SOURCE_ROOT, "*"))
+                         .select { |path| File.file?(path) }
+                         .map { |path| File.basename(path, File.extname(path)) }
+                         .to_set
+
+(active_source_stems - photo_stems).sort.each do |photo|
+  errors << "Active portrait source is not assigned to a member: #{photo}"
+end
+
+if errors.any?
+  warn "Member validation failed with #{errors.length} error(s):"
+  errors.each { |error| warn "- #{error}" }
+  exit 1
+end
+
+scope = source_only ? "member records and source portraits" : "members and generated portraits"
+puts "Validated #{member_count} #{scope}."

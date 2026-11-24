@@ -1,0 +1,24 @@
+#!/bin/sh
+# Build the Jekyll site locally and run basic checks against the output.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+if ! command -v bundle >/dev/null 2>&1; then
+  echo "bundler is not installed. Run script/setup first." >&2
+  exit 1
+fi
+
+echo "Building site into ./_site ..."
+bundle exec jekyll build
+
+if bundle exec htmlproofer --version >/dev/null 2>&1; then
+  echo "Checking output with html-proofer..."
+  bundle exec htmlproofer --assume-extension .html --disable-external ./_site
+else
+  echo "html-proofer not installed; skipping HTML/link checks."
+  echo "Add 'gem \"html-proofer\"' to the Gemfile and run script/setup to enable them."
+fi
+
+echo "Build complete: _site/index.html"

@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Build from scratch and validate the generated website.
+
+set -eu
+
+cd "$(dirname "$0")/.."
+
+for command_name in bundle identify ffprobe python3; do
+  if ! command -v "$command_name" >/dev/null 2>&1; then
+    echo "$command_name is required to check the site." >&2
+    exit 1
+  fi
+done
+
+python3 -m unittest discover -s test -p 'test_publications.py'
+
+bundle exec jekyll clean
+bundle exec ruby script/validate-members
+bundle exec jekyll build
+bundle exec htmlproofer \
+  --assume-extension .html \
+  --disable-external \
+  --check-sri \
+  ./_site
+bundle exec ruby script/validate-site
+bundle exec ruby -Itest test/rendered_site_test.rb
+bundle exec ruby -Itest test/publications_rendering_test.rb

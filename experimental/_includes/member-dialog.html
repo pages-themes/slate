@@ -1,0 +1,39 @@
+<div
+  id="member-dialog-{{ include.member.id }}"
+  class="modal member-dialog"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="member-dialog-name-{{ include.member.id }}"
+  aria-describedby="member-dialog-bio-{{ include.member.id }}"
+  hidden
+>
+  <div class="modal-content" role="document">
+    <button type="button" class="modal-close" aria-label="Close biography for {{ include.member.name }}">&times;</button>
+    <img
+      class="modal-image"
+      src="{{ '/assets/images/people/' | append: include.member.photo | append: '-600.webp' | relative_url }}"
+      width="200"
+      height="200"
+      alt="{{ include.member.name }}"
+      loading="lazy"
+      decoding="async"
+    >
+    <div id="member-dialog-name-{{ include.member.id }}" class="modal-name">{{ include.member.name }}</div>
+    <div class="modal-title">{{ include.member.role }}</div>
+    {% if include.member.links %}
+      <div class="social-icons" aria-label="Profiles for {{ include.member.name }}">
+        {% for link in include.member.links %}
+          <a
+            href="{{ link.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon"
+            title="{{ link.platform | capitalize }}"
+            aria-label="{{ link.platform | capitalize }} profile for {{ include.member.name }}"
+          >{% include social-icon.html platform=link.platform %}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <div id="member-dialog-bio-{{ include.member.id }}" class="modal-bio">{{ include.member.bio }}</div>
+  </div>
+</div>

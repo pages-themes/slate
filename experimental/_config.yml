@@ -1,0 +1,36 @@
+title: Autonomous Discovery of Alloys (AutoDIAL)
+description: Department of Materials Science and Engineering, University of Toronto
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-slate
+
+# Social media preview image
+image: /assets/images/nulla_bw.png
+logo: /assets/images/nulla_bw.png
+
+# Collections configuration
+collections:
+  news:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+
+# Keep source media, development tools, and local environments out of the site.
+# These files remain in the repository for maintenance and review.
+exclude:
+  - _media_sources
+  - _site_experimental
+  - docs
+  - script
+  - test
+  - autodial
+  - .venv
+  - venv
+  - README.md
+  - LICENSE
+  - Makefile
+  - how_to_write_news_post.txt
+  - jekyll-theme-slate.gemspec
+  - "*.gem"

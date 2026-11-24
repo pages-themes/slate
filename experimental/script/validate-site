@@ -1,0 +1,152 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Validate media emitted by a clean Jekyll build. This intentionally checks the
+# generated site, not only the source tree, so truncated or missing copies are
+# detected before deployment.
+
+require "cgi"
+require "fileutils"
+require "nokogiri"
+require "open3"
+require "yaml"
+
+REPOSITORY_ROOT = File.expand_path("..", __dir__)
+SITE_ROOT = File.join(REPOSITORY_ROOT, "_site")
+IMAGE_EXTENSIONS = %w[.gif .jpeg .jpg .png .webp].freeze
+
+errors = []
+html_files = Dir.glob(File.join(SITE_ROOT, "**", "*.html"))
+
+if html_files.empty?
+  errors << "No generated HTML files found under _site."
+end
+
+references = html_files.flat_map do |html_file|
+  html = File.read(html_file)
+  direct_urls = html.scan(/\b(?:poster|src)=["']([^"']+)["']/i).flatten
+  srcset_urls = html.scan(/\bsrcset=["']([^"']+)["']/i).flatten.flat_map do |srcset|
+    srcset.split(",").map { |candidate| candidate.strip.split(/\s+/, 2).first }
+  end
+  direct_urls + srcset_urls
+end
+
+asset_references = references.filter_map do |url|
+  next unless url.start_with?("/assets/")
+
+  CGI.unescape(url.split(/[?#]/, 2).first).delete_prefix("/")
+end.uniq.sort
+
+if asset_references.empty?
+  errors << "No local media references found in generated HTML."
+end
+
+asset_references.each do |relative_path|
+  built_path = File.expand_path(relative_path, SITE_ROOT)
+  source_path = File.expand_path(relative_path, REPOSITORY_ROOT)
+
+  unless built_path.start_with?("#{SITE_ROOT}#{File::SEPARATOR}")
+    errors << "Unsafe generated media path: /#{relative_path}"
+    next
+  end
+
+  unless File.file?(built_path)
+    errors << "Missing generated media: /#{relative_path}"
+    next
+  end
+
+  if File.zero?(built_path)
+    errors << "Empty generated media: /#{relative_path}"
+    next
+  end
+
+  if File.file?(source_path) && !FileUtils.compare_file(source_path, built_path)
+    errors << "Generated copy differs from its asset: /#{relative_path}"
+  end
+
+  extension = File.extname(built_path).downcase
+  if IMAGE_EXTENSIONS.include?(extension)
+    unless system("identify", "-quiet", built_path, out: File::NULL, err: File::NULL)
+      errors << "Unreadable generated image: /#{relative_path}"
+      next
+    end
+
+    portrait_match = relative_path.match(%r{\Aassets/images/people/.+-(300|600)\.webp\z})
+    next unless portrait_match
+
+    expected_dimensions = "#{portrait_match[1]}x#{portrait_match[1]}"
+    dimensions, status = Open3.capture2(
+      "identify", "-format", "%wx%h", built_path
+    )
+    unless status.success? && dimensions == expected_dimensions
+      errors << "Wrong portrait dimensions for /#{relative_path}: " \
+                "expected #{expected_dimensions}, got #{dimensions.inspect}"
+    end
+  elsif extension == ".mp4"
+    codec, status = Open3.capture2e(
+      "ffprobe", "-v", "error", "-select_streams", "v:0",
+      "-show_entries", "stream=codec_name",
+      "-of", "default=noprint_wrappers=1:nokey=1", built_path
+    )
+    unless status.success? && codec.strip == "h264"
+      errors << "Invalid or non-H.264 generated video: /#{relative_path}"
+    end
+  end
+end
+
+empty_assets = Dir.glob(File.join(SITE_ROOT, "assets", "**", "*"))
+                  .select { |path| File.file?(path) && File.zero?(path) }
+empty_assets.each do |path|
+  errors << "Empty published asset: #{path.delete_prefix("#{SITE_ROOT}/")}"
+end
+
+if File.exist?(File.join(SITE_ROOT, "_media_sources"))
+  errors << "_media_sources must not be included in the generated site."
+end
+
+members_data = YAML.safe_load_file(
+  File.join(REPOSITORY_ROOT, "_data", "members.yml"), aliases: false
+)
+expected_sections = members_data.fetch("sections")
+expected_members = expected_sections.flat_map { |section| section.fetch("members") }
+group_page_path = File.join(SITE_ROOT, "group_members.html")
+
+if File.file?(group_page_path)
+  group_page = Nokogiri::HTML(File.read(group_page_path))
+  rendered_names = group_page.css(".person-card .person-name").map { |node| node.text.strip }
+  expected_names = expected_members.map { |member| member.fetch("name") }
+  errors << "Rendered member names or ordering do not match members.yml." unless rendered_names == expected_names
+
+  rendered_sections = group_page.css(".member-section > h3").map { |node| node.text.strip }
+  expected_titles = expected_sections.map { |section| section.fetch("title") }
+  errors << "Rendered member sections or ordering do not match members.yml." unless rendered_sections == expected_titles
+
+  id_counts = group_page.xpath("//*[@id]").map { |node| node["id"] }.tally
+  id_counts.select { |_id, count| count > 1 }.each_key do |duplicate_id|
+    errors << "Duplicate HTML id on group-members page: #{duplicate_id}"
+  end
+
+  expected_members.each do |member|
+    member_id = member.fetch("id")
+    trigger = group_page.at_css(%([data-member-id="#{member_id}"]))
+    dialog_id = "member-dialog-#{member_id}"
+    dialog = group_page.at_css("##{dialog_id}")
+
+    errors << "Missing member trigger for #{member_id}." unless trigger
+    errors << "Missing member dialog for #{member_id}." unless dialog
+    if trigger && trigger["aria-controls"] != dialog_id
+      errors << "Member trigger points to the wrong dialog for #{member_id}."
+    end
+  end
+else
+  errors << "Missing generated group_members.html."
+end
+
+if errors.any?
+  warn "Site validation failed with #{errors.length} error(s):"
+  errors.each { |error| warn "- #{error}" }
+  exit 1
+end
+
+puts "Validated #{html_files.length} HTML files and " \
+     "#{asset_references.length} referenced media assets."

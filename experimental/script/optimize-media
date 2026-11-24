@@ -1,0 +1,240 @@
+#!/bin/sh
+
+# Generate web-ready images and video from the full-resolution source media.
+
+set -eu
+
+cd "$(dirname "$0")/.."
+
+for command_name in convert ffmpeg ffprobe identify ruby; do
+  if ! command -v "$command_name" >/dev/null 2>&1; then
+    echo "$command_name is required to optimize site media." >&2
+    exit 1
+  fi
+done
+
+ruby script/validate-members --source-only
+
+staging_dir=$(mktemp -d _media_sources/.optimized-media-XXXXXX)
+cleanup_staging() {
+  rm -rf -- "$staging_dir"
+}
+trap cleanup_staging 0
+trap 'exit 1' HUP INT TERM
+
+output_root="$staging_dir/assets/images"
+publish_manifest="$staging_dir/publish-manifest"
+destination_manifest="$staging_dir/destination-manifest"
+portrait_stems="$staging_dir/portrait-stems"
+
+mkdir -p "$output_root/people" "$output_root/lab"
+: > "$publish_manifest"
+: > "$destination_manifest"
+: > "$portrait_stems"
+
+record_image() {
+  staged_path=$1
+  destination_path=$2
+  expected_dimensions=${3:-}
+
+  if [ ! -s "$staged_path" ] || ! identify -quiet "$staged_path" >/dev/null 2>&1; then
+    echo "Failed to generate a valid image: $destination_path" >&2
+    exit 1
+  fi
+
+  if [ -n "$expected_dimensions" ]; then
+    actual_dimensions=$(identify -format '%wx%h' "$staged_path")
+    if [ "$actual_dimensions" != "$expected_dimensions" ]; then
+      echo "Unexpected dimensions for $destination_path: $actual_dimensions" >&2
+      exit 1
+    fi
+  fi
+
+  printf '%s\t%s\n' "$staged_path" "$destination_path" >> "$publish_manifest"
+  printf '%s\n' "$destination_path" >> "$destination_manifest"
+}
+
+portrait_count=0
+
+for source_image in _media_sources/images/people/*; do
+  [ -f "$source_image" ] || continue
+
+  image_name=$(basename "$source_image")
+  image_stem=${image_name%.*}
+
+  if grep -Fqx "$image_stem" "$portrait_stems"; then
+    echo "Multiple portrait sources use the same filename stem: $image_stem" >&2
+    exit 1
+  fi
+  printf '%s\n' "$image_stem" >> "$portrait_stems"
+  portrait_count=$((portrait_count + 1))
+
+  for size in 300 600; do
+    staged_path="$output_root/people/${image_stem}-${size}.webp"
+    destination_path="assets/images/people/${image_stem}-${size}.webp"
+
+    convert "$source_image" \
+      -auto-orient \
+      -strip \
+      -thumbnail "${size}x${size}^" \
+      -gravity center \
+      -extent "${size}x${size}" \
+      -quality 82 \
+      -define webp:method=6 \
+      "$staged_path"
+
+    record_image "$staged_path" "$destination_path" "${size}x${size}"
+  done
+done
+
+if [ "$portrait_count" -eq 0 ]; then
+  echo "No portrait sources found in _media_sources/images/people." >&2
+  exit 1
+fi
+
+convert _media_sources/images/home/Group_Picture_Fall_2026.jpg \
+  -auto-orient -strip -resize '640x640>' -quality 82 -define webp:method=6 \
+  "$output_root/Group_Picture_Fall_2026-640.webp"
+record_image \
+  "$output_root/Group_Picture_Fall_2026-640.webp" \
+  assets/images/Group_Picture_Fall_2026-640.webp
+
+convert _media_sources/images/home/Group_Picture_Fall_2026.jpg \
+  -auto-orient -strip -resize '1200x1200>' -quality 82 -define webp:method=6 \
+  "$output_root/Group_Picture_Fall_2026-1200.webp"
+record_image \
+  "$output_root/Group_Picture_Fall_2026-1200.webp" \
+  assets/images/Group_Picture_Fall_2026-1200.webp
+
+convert _media_sources/images/branding/nulla_bw.png \
+  -auto-orient -strip -define png:compression-level=9 \
+  "$output_root/nulla_bw.png"
+record_image "$output_root/nulla_bw.png" assets/images/nulla_bw.png
+
+convert _media_sources/images/branding/nulla_bw.png \
+  -strip -resize '200x200>' -quality 82 -define webp:method=6 \
+  "$output_root/nulla_bw-200.webp"
+record_image "$output_root/nulla_bw-200.webp" assets/images/nulla_bw-200.webp 200x200
+
+convert _media_sources/images/branding/nulla_bw.png \
+  -strip -resize '400x400>' -quality 82 -define webp:method=6 \
+  "$output_root/nulla_bw-400.webp"
+record_image "$output_root/nulla_bw-400.webp" assets/images/nulla_bw-400.webp 400x400
+
+convert _media_sources/images/lab/electrochemistry.png \
+  -auto-orient -strip -resize '900x900>' -quality 82 -define webp:method=6 \
+  "$output_root/lab/electrochemistry-900.webp"
+record_image \
+  "$output_root/lab/electrochemistry-900.webp" \
+  assets/images/lab/electrochemistry-900.webp
+
+convert _media_sources/images/lab/electrochemistry.png \
+  -auto-orient -strip -resize '1800x1800>' -quality 82 -define webp:method=6 \
+  "$output_root/lab/electrochemistry-1800.webp"
+record_image \
+  "$output_root/lab/electrochemistry-1800.webp" \
+  assets/images/lab/electrochemistry-1800.webp
+
+for lab_source in \
+  _media_sources/images/lab/potentiostat.jpeg \
+  _media_sources/images/lab/battery_holder.jpg; do
+  lab_filename=$(basename "$lab_source")
+  lab_image=${lab_filename%.*}
+
+  convert "$lab_source" \
+    -auto-orient -strip -resize '480x480>' -quality 82 -define webp:method=6 \
+    "$output_root/lab/${lab_image}-480.webp"
+  record_image \
+    "$output_root/lab/${lab_image}-480.webp" \
+    "assets/images/lab/${lab_image}-480.webp"
+
+  convert "$lab_source" \
+    -auto-orient -strip -resize '960x960>' -quality 82 -define webp:method=6 \
+    "$output_root/lab/${lab_image}-960.webp"
+  record_image \
+    "$output_root/lab/${lab_image}-960.webp" \
+    "assets/images/lab/${lab_image}-960.webp"
+done
+
+poster_source="$staging_dir/corrosion-map-poster-source.png"
+
+ffmpeg -y -loglevel error \
+  -ss 00:00:02 \
+  -i _media_sources/videos/corrosion_map_1.mp4 \
+  -frames:v 1 \
+  "$poster_source"
+
+convert "$poster_source" \
+  -strip -resize '848x848>' -quality 82 -define webp:method=6 \
+  "$output_root/lab/corrosion_map_1-poster.webp"
+record_image \
+  "$output_root/lab/corrosion_map_1-poster.webp" \
+  assets/images/lab/corrosion_map_1-poster.webp
+
+ffmpeg -y -loglevel warning \
+  -i _media_sources/videos/corrosion_map_1.mp4 \
+  -map 0:v:0 \
+  -map '0:a:0?' \
+  -c:v libx264 \
+  -preset medium \
+  -crf 26 \
+  -pix_fmt yuv420p \
+  -c:a aac \
+  -b:a 96k \
+  -movflags +faststart \
+  "$output_root/lab/corrosion_map_1.mp4"
+
+video_codec=$(ffprobe \
+  -v error \
+  -select_streams v:0 \
+  -show_entries stream=codec_name \
+  -of default=noprint_wrappers=1:nokey=1 \
+  "$output_root/lab/corrosion_map_1.mp4")
+if [ "$video_codec" != h264 ]; then
+  echo "Generated CorrosionMAP video does not contain an H.264 video stream." >&2
+  exit 1
+fi
+printf '%s\t%s\n' \
+  "$output_root/lab/corrosion_map_1.mp4" \
+  assets/images/lab/corrosion_map_1.mp4 >> "$publish_manifest"
+printf '%s\n' assets/images/lab/corrosion_map_1.mp4 >> "$destination_manifest"
+
+# Refuse to publish a set that cannot satisfy the portrait stems declared in
+# the member data. This catches naming mistakes before existing assets are
+# replaced.
+member_photos="$staging_dir/member-photos"
+ruby -ryaml -e '
+  data = YAML.safe_load_file("_data/members.yml", aliases: false)
+  data.fetch("sections").each do |section|
+    section.fetch("members").each { |member| puts member.fetch("photo") }
+  end
+' | sort -u > "$member_photos"
+
+while IFS= read -r photo_stem; do
+  for size in 300 600; do
+    destination_path="assets/images/people/${photo_stem}-${size}.webp"
+    if ! grep -Fqx "$destination_path" "$destination_manifest"; then
+      echo "No generated portrait matches $destination_path." >&2
+      exit 1
+    fi
+  done
+done < "$member_photos"
+
+# Publishing is deliberately last. Each completed file replaces its previous
+# version with a same-filesystem rename, so Jekyll can never copy a partially
+# written image or video. Identical files are left untouched to avoid rebuilds.
+updated_count=0
+unchanged_count=0
+tab=$(printf '\t')
+while IFS="$tab" read -r staged_path destination_path; do
+  mkdir -p "$(dirname "$destination_path")"
+  if [ -f "$destination_path" ] && cmp -s "$staged_path" "$destination_path"; then
+    unchanged_count=$((unchanged_count + 1))
+  else
+    mv -f -- "$staged_path" "$destination_path"
+    updated_count=$((updated_count + 1))
+  fi
+done < "$publish_manifest"
+
+ruby script/validate-members
+echo "Optimized media ready: $updated_count updated, $unchanged_count unchanged."

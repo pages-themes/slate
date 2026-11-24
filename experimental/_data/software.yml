@@ -1,0 +1,34 @@
+# Editorial descriptions and artwork are provisional pending PI review.
+# Add a package by copying the fields below. Omit any resource link that is
+# unavailable or has not been verified. Package order is the display order.
+# AutoEIS description: https://autodiallab.ca/AutoEIS/
+# AutoEIS repository and publication: https://github.com/AUTODIAL/AutoEIS
+packages:
+  - id: autoeis
+    name: AutoEIS
+    category: Electrochemical analysis
+    summary: A Python package that combines gene expression programming and Bayesian inference to automatically generate and evaluate equivalent circuit models from EIS data.
+    image: /assets/images/software/autoeis.svg
+    image_width: 800
+    image_height: 480
+    image_alt: Diagram showing an EIS Nyquist plot, a GEP expression tree with series and parallel operators, and an equivalent circuit with a parameter probability distribution.
+    resources:
+      - label: Documentation
+        url: https://autodiallab.ca/AutoEIS/
+      - label: GitHub repository
+        url: https://github.com/AUTODIAL/AutoEIS
+      - label: Related publication
+        url: https://doi.org/10.1149/1945-7111/aceab2
+  - id: autorec
+    name: AutoREC
+    category: Electrochemical analysis
+    summary: A Python package for developing and evaluating reinforcement learning agents that sequentially generate equivalent circuit models from EIS data.
+    image: /assets/images/software/autorec.svg
+    image_width: 800
+    image_height: 480
+    image_alt: Diagram showing an EIS Nyquist plot, a reinforcement learning cycle connecting ECM state, agent, action, and environment, and a generated equivalent circuit.
+    resources:
+      - label: GitHub repository
+        url: https://github.com/AUTODIAL/AutoREC
+      - label: Related publication
+        url: https://doi.org/10.1016/j.commatsci.2026.115242

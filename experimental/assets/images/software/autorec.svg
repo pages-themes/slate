@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="405" viewBox="0 50 620 405" role="img" aria-labelledby="title desc">
+<title id="title">AutoREC: reinforcement learning for sequential equivalent circuit construction</title>
+<desc id="desc">A minimal three-stage diagram. Nyquist impedance data flow through a compact reinforcement learning cycle: ECM state, learned agent, circuit editing action, and evaluation environment. The output is an equivalent circuit model.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#eff4f1"/><stop offset="1" stop-color="#e4ede8"/></linearGradient>
+  <linearGradient id="mid" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#fffdfb"/><stop offset="1" stop-color="#fff7f3"/></linearGradient>
+  <linearGradient id="curve" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c26242" stop-opacity=".33"/><stop offset="1" stop-color="#c26242" stop-opacity=".035"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#24483f" flood-opacity=".045"/></filter>
+</defs>
+<rect width="620" height="538" fill="url(#bg)"/>
+<path d="M0 481 C100 450 169 509 291 479 S510 451 620 491" stroke="#d7e4dd" stroke-width="2" fill="none"/>
+<path d="M0 507 C121 483 201 527 328 510 S508 490 620 516" stroke="#e1ebe6" stroke-width="1.5" fill="none"/>
+
+<!-- Three sparse, equally weighted visual stations. -->
+<g filter="url(#shadow)">
+  <rect x="23" y="71" width="174" height="362" rx="17" fill="#ffffff" stroke="#cadbd4" stroke-width="1.5"/>
+  <rect x="230" y="71" width="160" height="362" rx="17" fill="url(#mid)" stroke="#e3d5ce" stroke-width="1.5"/>
+  <rect x="423" y="71" width="174" height="362" rx="17" fill="#ffffff" stroke="#cadbd4" stroke-width="1.5"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" fill="#193943" text-anchor="middle" font-weight="700">
+  <text x="110" y="113" font-size="17">EIS data</text>
+  <text x="310" y="113" font-size="17">RL</text>
+  <text x="510" y="113" font-size="16">Equivalent circuit</text>
+</g>
+
+<!-- EIS Nyquist trace -->
+<g stroke="#284b55" stroke-width="2.3" stroke-linecap="round" fill="none">
+  <path d="M54 348 V191 M54 348 H173"/>
+</g>
+<path d="M65 340 C77 279 90 244 113 238 C139 232 165 274 175 340" fill="none" stroke="#ad4527" stroke-width="3.4" stroke-linecap="round"/>
+<g fill="#ad4527" stroke="#fff" stroke-width="1.5">
+  <circle cx="65" cy="340" r="4.4"/><circle cx="76" cy="298" r="4.4"/><circle cx="91" cy="266" r="4.4"/><circle cx="111" cy="240" r="4.4"/><circle cx="135" cy="244" r="4.4"/><circle cx="154" cy="273" r="4.4"/><circle cx="169" cy="310" r="4.4"/><circle cx="175" cy="340" r="4.4"/>
+</g>
+<g fill="#597076" font-family="Arial, Helvetica, sans-serif" font-style="italic" font-size="14">
+<text x="105" y="371">Z′</text><text x="41" y="281" transform="rotate(-90 41 281)">−Z″</text>
+</g>
+
+<!-- Compact reinforcement-learning cycle: State -> Agent -> Action -> Environment -> State. -->
+<defs>
+  <marker id="cycle-arrow" viewBox="0 0 10 10" refX="8.7" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#718e95"/></marker>
+</defs>
+<!-- Connecting curves are intentionally subtle: the four nodes carry the story. -->
+<g fill="none" stroke="#718e95" stroke-width="1.8" stroke-linecap="round" marker-end="url(#cycle-arrow)">
+  <path d="M265 242 C263 215 276 192 287 187"/>
+  <path d="M342 188 C358 201 361 216 359 241"/>
+  <path d="M359 284 C360 303 347 320 333 327"/>
+  <path d="M287 334 C271 324 262 308 262 285"/>
+</g>
+<!-- Cardinal cycle nodes; use short, legible labels at card scale. -->
+<g stroke="#b5ccc7" stroke-width="1.2">
+  <rect x="281" y="164" width="58" height="39" rx="11" fill="#e4efec"/>
+  <rect x="338" y="242" width="46" height="42" rx="10" fill="#fff6f0" stroke="#e1c6b9"/>
+  <rect x="268" y="326" width="84" height="42" rx="11" fill="#ecf2eb"/>
+  <rect x="236" y="242" width="50" height="42" rx="10" fill="#fff"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#193943">
+  <text x="310" y="181" font-size="11" font-weight="700">Agent</text>
+  <text x="310" y="195" font-size="9">(ML policy)</text>
+  <text x="361" y="259" font-size="10.5" font-weight="700">Action</text>
+  <text x="361" y="273" font-size="9">(edit)</text>
+  <text x="310" y="342" font-size="10.2" font-weight="700">Environment</text>
+  <text x="310" y="356" font-size="9">(fit / reward)</text>
+  <text x="261" y="259" font-size="11" font-weight="700">ECM</text>
+  <text x="261" y="273" font-size="9">state</text>
+</g>
+<!-- Tiny robot/ML icon in the quiet center, separate from the four stages. -->
+<g stroke="#284b55" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M310 240 V233"/><circle cx="310" cy="230.8" r="2" fill="#c26242"/>
+  <rect x="297" y="241" width="26" height="26" rx="8" fill="#f4faf7"/>
+  <path d="M294 250 V258 M326 250 V258"/>
+</g>
+<g fill="#284b55"><circle cx="304" cy="252" r="2.1"/><circle cx="316" cy="252" r="2.1"/></g>
+<path d="M305 260 Q310 263 315 260" fill="none" stroke="#284b55" stroke-width="1.25" stroke-linecap="round"/>
+<text x="310" y="396" text-anchor="middle" fill="#697e7d" font-family="Arial, Helvetica, sans-serif" font-size="11.5">Sequential circuit search</text>
+
+<!-- Connectors -->
+<g fill="#193d47">
+  <circle cx="213.5" cy="251" r="15"/><circle cx="406.5" cy="251" r="15"/>
+</g>
+<g stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M207 251 H220 M216 246 L221 251 L216 256"/><path d="M400 251 H413 M409 246 L414 251 L409 256"/></g>
+
+<!-- Final constructed ECM. No posterior bell curve: Bayesian inference is not part of this visual. -->
+<g transform="translate(0,44)">
+<g fill="none" stroke="#193d47" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M443 239 H451 L456 232 L462 246 L468 232 L474 246 L480 232 L485 239 H491"/>
+  <path d="M491 239 V205 H511 M538 205 H568 V273 H539 M523 273 H491 V239 M568 239 H580"/>
+  <rect x="511" y="196" width="27" height="18" rx="1"/>
+  <path d="M523 261 V284 M539 261 V284"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" fill="#577075" font-size="13" font-style="italic">
+  <text x="457" y="221">R₀</text><text x="517" y="190">R₁</text><text x="518" y="300">C₁</text>
+</g>
+</g>
+</svg>

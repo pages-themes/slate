@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if site.baseurl == '/experimental' %}<meta name="robots" content="noindex, nofollow">{% endif %}
+    
+    <!-- Open Graph meta tags for social media preview -->
+    <meta property="og:image" content="{{ '/assets/images/nulla_bw.png' | absolute_url }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="AutoDIAL Group Logo - Autonomous Discovery of Alloys">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ '/assets/images/nulla_bw.png' | absolute_url }}">
+    <meta name="twitter:image:alt" content="AutoDIAL Group Logo - Autonomous Discovery of Alloys">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <!-- <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml"> -->
+{% seo %}
+    {% include head-custom.html %}
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main_content">Skip to main content</a>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer" style="padding:0px;">
+        <header class="inner">
+          <!-- {% if site.github.is_project_page %} -->
+          <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+          <!-- {% endif %} -->
+
+      <div class="header-content">
+        <a href="{{ '/' | relative_url }}" style="text-decoration: none;">
+          <img src="{{ '/assets/images/nulla_bw-200.webp' | relative_url }}" srcset="{{ '/assets/images/nulla_bw-200.webp' | relative_url }} 200w, {{ '/assets/images/nulla_bw-400.webp' | relative_url }} 400w" sizes="(max-width: 480px) 80px, 160px" width="200" height="200" alt="Group Logo" class="header-logo" decoding="async" style="cursor: pointer;">
+        </a>
+        <div class="header-text" style="flex: 1; min-width: 0;"> 
+          <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">
+            <h1 id="project_title" style="cursor: pointer;">{{ site.title | default: site.github.repository_name }}</h1>
+            <h2 id="project_tagline" style="cursor: pointer;">{{ site.description | default: site.github.project_tagline }}</h2>
+          </a>
+        </div>
+      </div>
+
+          {% if site.github.is_project_page %}
+            <p class="project_description">{{ site.github.project_tagline }}</p>
+          {% endif %}
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer" style="display: flex; padding: 0; max-width: 1200px; margin: 0 auto;">
+  <nav id="sidebar" style="min-width:200px;max-width:250px;">
+    <ul style="list-style:none;padding:0;">
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <!-- <li><a class="btn btn-rss" href="/feed.xml" target="_blank">News</a></li> -->
+      <li><a href="{{ '/news' | relative_url }}">News</a></li>
+      <li><a href="{{ '/sdls' | relative_url }}">Self Driving Labs</a></li>
+      <li><a href="{{ '/publications' | relative_url }}">Publications</a></li>
+      <li><a href="{{ '/software' | relative_url }}">Software</a></li>
+      <li><a href="{{ '/group_members' | relative_url }}">Group Members</a></li>
+      <li><a href="{{ '/openings' | relative_url }}">Openings</a></li>
+      <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+      <!-- Add more links as needed -->
+    </ul>
+  </nav>
+  <main id="main_content" tabindex="-1" style="flex:1; padding: 40px 50px 40px 20px;">
+    {{ content }}
+  </main>
+</div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer" style="padding: 0 50px;">
+      <footer class="inner">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

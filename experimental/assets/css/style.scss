@@ -1,0 +1,504 @@
+---
+---
+
+@import "jekyll-theme-slate";
+
+.skip-link {
+  background: #ffffff;
+  border: 3px solid #ea580c;
+  color: #1f2937;
+  font-weight: 700;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  top: 1rem;
+  transform: translateY(-200%);
+  z-index: 2000;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Custom CSS to increase the font size of the nav bar */
+#sidebar {
+  padding: 50px 20px 0px 50px !important; /* Proper spacing */
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 15px;
+}
+
+#sidebar ul li a {
+  font-size: 1.25em;
+  color: #373737;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#sidebar ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+/* Layout fixes */
+#main_content_wrap {
+  min-height: calc(100vh - 300px);
+  padding: 0 20px !important; /* Side padding for very wide screens */
+  max-width: 1200px !important; /* Maximum width for content */
+  margin: 0 auto !important; /* Center the content */
+  width: 100% !important; /* Full width up to max-width */
+  box-sizing: border-box !important;
+}
+
+#main_content {
+  max-width: none;
+  margin: 0;
+  padding: 40px 50px 40px 20px !important; /* Add right padding for spacing */
+}
+
+#header_wrap {
+  min-height: auto;
+  padding: 0 !important; /* Full width header */
+}
+
+#header_wrap .inner {
+  max-width: none !important; /* Remove width constraint for full width */
+  padding: 0 !important; /* Remove inner padding */
+  margin: 0 !important; /* Remove auto margin */
+}
+
+.header-content {
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(10px, 2vw, 20px) !important; /* Dynamic gap that scales with viewport */
+  max-width: none !important; /* Remove width constraint for full page width */
+  margin: 0 !important; /* Remove auto margin to allow full width */
+  justify-content: flex-start !important; /* Left-justify content while using full width */
+  box-sizing: border-box !important;
+  width: 100% !important; /* Ensure full width usage */
+}
+
+.header-logo {
+  height: clamp(100px, 12vw, 160px) !important; /* Increased logo size with dynamic sizing */
+  width: auto !important; /* Maintain aspect ratio */
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  flex-shrink: 0 !important;
+}
+
+.header-text {
+  flex: 1 !important;
+  min-width: 0 !important; /* Allows text to shrink and wrap */
+  max-width: none !important; /* Remove width constraint to use full available space */
+  overflow-wrap: break-word !important; /* Better word wrapping */
+  hyphens: auto !important; /* Enable hyphenation */
+}
+
+.header-text h1, .header-text h2 {
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 1.3;
+  white-space: normal;
+  font-weight: normal;
+  color: inherit;
+}
+
+.header-text h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem) !important; /* Larger, more prominent title */
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.header-text h2 {
+  font-size: clamp(1.1rem, 2.8vw, 1.6rem) !important; /* Larger subtitle */
+  line-height: 1.4;
+}
+
+#footer_wrap {
+  padding: 0 !important; /* Full width - match main content */
+}
+
+/* Ensure proper flexbox behavior */
+#main_content_wrap.outer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#sidebar, #main_content {
+  box-sizing: border-box;
+}
+
+/* Medium screen breakpoint for tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-content {
+    padding: 15px 10px !important; /* Further reduced padding */
+    gap: 12px !important; /* Reduce gap on medium screens */
+    justify-content: flex-start !important; /* Left-justify content on tablets */
+    width: 100% !important; /* Ensure full width on tablets */
+    max-width: none !important; /* Remove width constraint for full width */
+    margin: 0 !important; /* Remove auto margin for full width */
+  }
+  
+  .header-logo {
+    height: clamp(65px, 8vw, 100px) !important; /* Larger logo for tablets */
+  }
+  
+  .header-text {
+    max-width: none !important; /* Remove width constraint for full width */
+  }
+  
+  .header-text h1 {
+    font-size: clamp(1.6rem, 3.5vw, 2.5rem) !important;
+  }
+  
+  .header-text h2 {
+    font-size: clamp(0.9rem, 2.2vw, 1.3rem) !important;
+  }
+  
+  #main_content_wrap {
+    max-width: 95% !important;
+    padding: 0 10px !important;
+  }
+  
+  #sidebar {
+    min-width: 180px !important;
+    max-width: 200px !important;
+  }
+}
+
+/* Small desktop breakpoint for better text wrapping */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .header-content {
+    gap: 15px !important; /* Reduced gap for compact header */
+    justify-content: flex-start !important; /* Left-justify content on small desktop */
+    width: 100% !important; /* Ensure full width usage */
+    max-width: none !important; /* Remove width constraint for full width */
+    margin: 0 !important; /* Remove auto margin for full width */
+  }
+  
+  .header-logo {
+    height: clamp(85px, 9vw, 115px) !important; /* Larger logo for small desktop */
+  }
+  
+  .header-text {
+    max-width: none !important; /* Remove width constraint for full width */
+  }
+  
+  .header-text h1 {
+    font-size: clamp(2rem, 3.8vw, 2.8rem) !important;
+  }
+  
+  .header-text h2 {
+    font-size: clamp(1.1rem, 2.3vw, 1.4rem) !important;
+  }
+}
+
+/* Large screen optimization */
+@media (min-width: 1201px) {
+  .header-content {
+    padding: 20px 40px !important; /* Reduced padding for shorter header */
+    justify-content: flex-start !important; /* Left-justify content on large screens */
+    width: 100% !important; /* Ensure full width usage */
+    max-width: none !important; /* Remove width constraints for true full width */
+    margin: 0 !important; /* Remove auto margin to allow full width */
+  }
+  
+  #header_wrap {
+    padding: 0 !important; /* Ensure no padding constrains header width */
+  }
+  
+  #header_wrap .inner {
+    max-width: none !important; /* Remove inner width constraint */
+    padding: 0 !important; /* Remove inner padding */
+    margin: 0 !important; /* Remove inner margin */
+  }
+  
+  .header-text {
+    max-width: none !important; /* Allow text to use full available width */
+  }
+  
+  #main_content_wrap {
+    padding: 0 40px !important;
+  }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  #header_wrap {
+    padding: 0 !important;
+    min-width: auto !important;
+  }
+  
+  .header-content {
+    padding: 15px 20px 5px 20px !important; /* More compact mobile spacing */
+    flex-direction: column !important;
+    text-align: center;
+    gap: 8px !important; /* Reduced gap for shorter mobile header */
+    max-width: none !important; /* Remove width constraint on mobile */
+    justify-content: center !important;
+  }
+  
+  .header-logo {
+    height: clamp(65px, 14vw, 90px) !important; /* Larger mobile logo */
+  }
+  
+  .header-text {
+    width: 100% !important; /* Full width on mobile */
+    flex: none !important; /* Override flex behavior on mobile */
+    text-align: center !important;
+    max-width: none !important; /* Remove width constraint on mobile */
+  }
+  
+  .header-text h1 {
+    font-size: clamp(1.5rem, 6vw, 2.2rem) !important; /* Responsive mobile sizing */
+    line-height: 1.1 !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .header-text h2 {
+    font-size: clamp(0.9rem, 4vw, 1.2rem) !important; /* Responsive mobile sizing */
+    line-height: 1.3 !important;
+  }
+  
+  #header_wrap .outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #header_wrap img {
+    height: 100px !important;
+    margin-bottom: 10px;
+  }
+  
+  #project_title {
+    font-size: 1.8em !important;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  #project_tagline {
+    font-size: 1.1em !important;
+    text-align: center;
+  }
+  
+  #forkme_banner {
+    display: none !important;
+  }
+  
+  /* Main content layout */
+  #main_content_wrap {
+    flex-direction: column !important;
+    padding: 10px 20px !important;
+    max-width: none !important; /* Remove max-width constraint on mobile */
+    margin: 0 !important; /* Remove auto margin on mobile */
+  }
+  
+  #sidebar {
+    min-width: auto !important;
+    max-width: none !important;
+    width: 100%;
+    padding: 10px 0 !important;
+    margin-bottom: 20px;
+    order: -1;
+  }
+  
+  #sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #sidebar ul li {
+    margin: 0;
+  }
+  
+  #sidebar ul li a {
+    font-size: 0.9em;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #main_content {
+    padding: 20px 0px !important;
+  }
+  
+  /* Footer adjustments */
+  #footer_wrap {
+    padding: 0 !important;
+  }
+  
+  #footer_wrap .inner {
+    padding: 0 20px !important; /* Mobile internal spacing for footer */
+  }
+  /* Grid layouts for group members */
+  div[style*="grid-template-columns"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    margin: 20px 0 !important;
+    max-width: 100% !important;
+    padding: 0 10px !important;
+  }
+  
+  /* Flex layouts for side by side content */
+  div[style*="display: flex"][style*="gap: 20px"],
+  div[style*="display: flex"][style*="gap: 24px"],
+  .lab-images {
+    flex-direction: column !important;
+    gap: 15px !important;
+    align-items: center !important;
+    margin: 20px 0 !important;
+    padding: 0 10px !important;
+  }
+  
+  .lab-images img {
+    width: 90% !important;
+    max-width: 300px !important;
+  }
+  
+  /* Videos and images */
+  video {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Video containers */
+  div[style*="justify-content: center"] video {
+    width: 100% !important;
+    max-width: 350px !important;
+  }
+  
+  /* Text becomes more readable */
+  h1 {
+    font-size: 1.8em !important;
+  }
+  
+  h2 {
+    font-size: 1.5em !important;
+  }
+  
+  h3 {
+    font-size: 1.3em !important;
+  }
+  
+  p {
+    line-height: 1.6 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Single column for group members on very small screens */
+  div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    max-width: 250px !important;
+  }
+  
+  #project_title {
+    font-size: 1.5em !important;
+  }
+  
+  #project_tagline {
+    font-size: 1em !important;
+  }
+  
+  #sidebar ul li a {
+    font-size: 0.8em;
+    padding: 6px 10px;
+  }
+  
+  #header_wrap img {
+    height: 80px !important;
+  }
+  
+  /* Even smaller videos on tiny screens */
+  div[style*="justify-content: center"] video {
+    max-width: 280px !important;
+  }
+}
+
+/* Publications: scoped to the bibliography so the existing Slate pages keep their layout. */
+.publications-intro { margin-bottom: 2rem; }
+.publications-intro h1 { margin-bottom: .6rem; }
+.publications-intro .eyebrow, .publication-card__type { color: #a6410d; font-size: .8rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.publication-filters { align-items: end; background: #f7f8f8; border: 1px solid #d6d9da; display: grid; gap: .8rem; grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr)) auto; padding: 1rem; }
+.publication-filters[hidden], .publication-no-results[hidden], .publication-year[hidden], .publication-card[hidden] { display: none; }
+.publication-filters label { display: grid; font-weight: 700; gap: .3rem; min-width: 0; }
+.publication-filters input, .publication-filters select, .publication-filters button { box-sizing: border-box; min-height: 44px; padding: .45rem .6rem; width: 100%; }
+.publication-filters input, .publication-filters select { background: #fff; border: 1px solid #aab2b5; }
+.publication-filters button { background: #fff; border: 1px solid #a6410d; color: #8b350c; cursor: pointer; }
+.publication-count { font-size: .9rem; margin: .8rem 0; }
+.publication-year { margin-top: 2rem; }
+.publication-year h2 { border-bottom: 1px solid #d6d9da; padding-bottom: .4rem; }
+.publication-card { border-bottom: 1px solid #d6d9da; display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr) auto; padding: 1.3rem 0; }
+.publication-card h3 { font-size: 1.25rem; margin: .2rem 0 .5rem; overflow-wrap: anywhere; }
+.publication-card p { margin: .4rem 0; }
+.publication-card__doi { overflow-wrap: anywhere; }
+.publication-card__links { display: flex; flex-wrap: wrap; gap: .4rem 1rem; list-style: none; padding: 0; }
+.publication-card__figure { margin: 0; max-width: 220px; }
+.publication-card__figure img { display: block; height: auto; max-width: 100%; }
+.publication-no-results, .publication-empty { background: #f7f8f8; padding: 1rem; }
+@media (max-width: 900px) { .publication-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .publication-filters, .publication-card { grid-template-columns: 1fr; } .publication-card__figure { max-width: 100%; } }
+
+/* Publication announcements in the existing News archive. */
+.news-feed { margin: 0 auto; max-width: 850px; }
+.news-feed__heading { margin-bottom: 2rem; }
+.news-feed__heading .eyebrow { color: #a6410d; font-size: .8rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.news-card { background: #fff; border: 1px solid #d6d9da; border-left: 4px solid #c05219; box-sizing: border-box; margin-bottom: 1rem; padding: clamp(1.15rem, 3vw, 1.8rem); }
+.news-card time { color: #8b350c; display: block; font-size: .82rem; font-weight: 700; margin-bottom: .4rem; text-transform: uppercase; }
+.news-card__title { font-size: 1.4rem; margin: .2rem 0 .7rem; }
+.news-card__title a { color: inherit; text-decoration: none; }
+.news-card__title a:hover { text-decoration: underline; }
+.news-card__congratulations { margin: .4rem 0 .7rem; }
+.news-card__description { margin: .6rem 0; }
+.news-has-js .news-card:not(.news-card--expanded) .news-card__description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
+.news-card__toggle { background: none; border: 0; color: #8b350c; cursor: pointer; display: none; font: inherit; font-weight: 700; min-height: 44px; padding: .3rem 0; }
+.news-has-js .news-card__toggle { display: inline-block; }
+.news-card__toggle:hover { text-decoration: underline; }
+.news-card__toggle:focus-visible { outline: 3px solid #c05219; outline-offset: 3px; }
+.news-card__expanded { border-top: 1px solid #d6d9da; padding-top: .8rem; }
+.news-card__expanded[hidden] { display: none; }
+.news-card__links { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; margin-top: .8rem; }
+.news-feed .text-link { display: inline-block; font-weight: 700; margin-top: .35rem; }
+
+/* Curated Software page in the existing Slate layout. */
+.software-intro { margin-bottom: 2rem; }
+.software-intro h1 { margin-bottom: .6rem; }
+.software-intro .eyebrow, .software-card .eyebrow { color: #a6410d; font-size: .8rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.software-list { display: grid; gap: 1.25rem; }
+.software-card { border: 1px solid #d6d9da; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); overflow: hidden; }
+.software-card__visual { align-items: center; background: #f0f4f2; display: flex; justify-content: center; margin: 0; min-width: 0; padding: 1rem; }
+.software-card__visual img { display: block; height: auto; max-width: 100%; width: 100%; }
+.software-card__content { align-self: center; min-width: 0; padding: clamp(1.2rem, 3vw, 2rem); }
+.software-card__content h2 { margin: .3rem 0 1rem; }
+.software-card__summary { font-size: 1.05rem; line-height: 1.55; }
+.software-card__resources { display: flex; flex-wrap: wrap; gap: .6rem; list-style: none; margin: 1.2rem 0 0; padding: 0; }
+.software-card__resources li { margin: 0; }
+.software-card__resources a { border: 1px solid #b9c1c3; display: inline-block; font-weight: 700; min-height: 44px; padding: .5rem .7rem; text-decoration: none; }
+.software-card__resources a:hover, .software-card__resources a:focus-visible { border-color: #a6410d; text-decoration: underline; }
+@media (max-width: 850px) { .software-card { grid-template-columns: 1fr; } }

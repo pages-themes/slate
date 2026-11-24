@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% assign paper = site.data.publications | where: 'doi', page.doi | first %}
+{% if paper and paper.type == 'journal' %}
+<div class="news-feed">
+  <p><a class="text-link" href="{{ '/news' | relative_url }}">← All news</a></p>
+  {% include publication-news-card.html item=page paper=paper %}
+</div>
+<script src="{{ '/assets/js/news.js' | relative_url }}" defer></script>
+{% endif %}

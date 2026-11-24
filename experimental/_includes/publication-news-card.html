@@ -1,0 +1,21 @@
+<article class="news-card news-card--publication" id="news-{{ include.paper.id }}" data-doi="{{ include.paper.doi | escape }}">
+  <time datetime="{{ include.item.month }}">{{ include.item.month | append: '-01' | date: '%B %Y' }}</time>
+  <h2 class="news-card__title">{{ include.item.title | escape }}</h2>
+  <p class="news-card__congratulations">
+    Congratulations to
+    {% if include.item.congratulations %}
+      {% for author in include.item.congratulations %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}{% if author.member_id %}<a href="{{ '/group_members' | relative_url }}#{{ author.member_id | escape }}">{{ author.name | escape }}</a>{% else %}{{ author.name | escape }}{% endif %}{% endfor %}
+    {% elsif include.item.member_id %}<a href="{{ '/group_members' | relative_url }}#{{ include.item.member_id | escape }}">{{ include.item.first_name | escape }}</a>{% else %}{{ include.item.first_name | escape }}{% endif %}
+    on the publication of this paper in <cite>{{ include.paper.venue | escape }}</cite>!
+  </p>
+  <p class="news-card__description" id="description-{{ include.paper.id }}">{{ include.item.description | escape }}</p>
+  <button class="news-card__toggle" type="button" aria-expanded="false" aria-controls="description-{{ include.paper.id }} citation-{{ include.paper.id }}">+ More</button>
+  <div class="news-card__expanded" id="citation-{{ include.paper.id }}" hidden>
+    <p><strong>Paper:</strong> {{ include.paper.title | escape }}</p>
+    <p><strong>All authors:</strong> {{ include.paper.authors | join: ', ' | escape }}</p>
+  </div>
+  <div class="news-card__links">
+    <a class="text-link" href="{{ '/publications' | relative_url }}#{{ include.paper.id }}">View in Publications <span aria-hidden="true">→</span></a>
+    <a class="text-link" href="{{ include.paper.doi_url | escape }}">Read paper (DOI) <span aria-hidden="true">↗</span></a>
+  </div>
+</article>

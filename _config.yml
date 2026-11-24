@@ -20,6 +20,7 @@ plugins:
 # Keep source media, development tools, and local environments out of the site.
 # These files remain in the repository for maintenance and review.
 exclude:
+  - experimental
   - _media_sources
   - _site_experimental
   - docs

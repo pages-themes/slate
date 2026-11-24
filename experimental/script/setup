@@ -1,0 +1,21 @@
+#!/bin/sh
+# Set up the Ruby/Jekyll environment needed to build this site locally.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+if ! command -v ruby >/dev/null 2>&1; then
+  echo "Ruby is not installed. Install it (e.g. 'brew install ruby') and re-run this script." >&2
+  exit 1
+fi
+
+if ! command -v bundle >/dev/null 2>&1; then
+  echo "Installing bundler..."
+  gem install bundler
+fi
+
+echo "Installing gems from Gemfile..."
+bundle install
+
+echo "Environment ready. Use script/build to build and test the site."
