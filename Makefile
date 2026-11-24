@@ -6,8 +6,9 @@ MEDIA_PACKAGES ?= imagemagick ffmpeg
 PYTHON ?= python3
 PUBLICATIONS_DISCOVER_FLAGS ?= --no-crossref
 PUBLICATIONS_LIST_LIMIT ?= 25
+EXPERIMENTAL_PORT ?= 4067
 
-.PHONY: install install-system install-gems optimize-media build check test test-ui serve clean publications-update publications-review publications-build
+.PHONY: install install-system install-gems optimize-media build check test test-ui serve serve-experimental clean publications-update publications-review publications-build
 
 # Show documentation and some recommended commands and instructions for using this Makefile.
 help:
@@ -21,6 +22,7 @@ help:
 	@echo "  make test             Run the full local check and browser interaction tests."
 	@echo "  make test-ui          Build and run browser interaction tests."
 	@echo "  make serve            Serve the Jekyll site locally."
+	@echo "  make serve-experimental  Serve the draft at /experimental/ on port $(EXPERIMENTAL_PORT)."
 	@echo "  make publications-update  Discover OpenAlex and arXiv candidates; do not change the site."
 	@echo "  make publications-review  Show candidate counts and the newest pending records."
 	@echo "  make publications-build   Regenerate the site bibliography from approved records only."
@@ -69,6 +71,9 @@ test-ui: build
 
 serve:
 	$(BUNDLE) exec jekyll serve
+
+serve-experimental:
+	$(BUNDLE) exec jekyll serve --baseurl /experimental --port $(EXPERIMENTAL_PORT) --host 127.0.0.1 --destination _site_experimental
 
 # Discovery only changes internal candidate/review files. Publishing still
 # requires an individual approval and a separate publications-build command.

@@ -87,6 +87,17 @@ To prepare the draft for a possible **later** public URL at
 Jekyll omits directories beginning with `_`, so `/experimental/` is a safer
 path than `/_/experimental/` for this repository.
 
+To view this branch locally at that path, run `make serve-experimental` and
+open <http://127.0.0.1:4067/experimental/>. This uses a separate output
+directory and port from `make serve`. If port 4067 is taken, choose another:
+
+```sh
+make serve-experimental EXPERIMENTAL_PORT=4068
+```
+
+Use the address printed by Jekyll, including `/experimental/`. This command
+serves the draft only; it does not place the original `master` homepage at `/`.
+
 This creates a ZIP containing an `experimental/` folder built with Jekyll's
 `baseurl`. It checks that local links and media stay under that path, removes
 the nested `CNAME`, and leaves the root site untouched. If GitHub Pages
