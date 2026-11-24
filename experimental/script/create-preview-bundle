@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 
 usage() {
   cat <<'EOF'
-Usage: ./script/create-preview-bundle [ABSOLUTE_OUTPUT_PATH]
+Usage: ./experimental/script/create-preview-bundle [ABSOLUTE_OUTPUT_PATH]
 
 Build and check the local site, then create a private review ZIP.
 Without an output path, the ZIP is timestamped and written to /tmp.
@@ -40,7 +40,7 @@ if ! command -v zip >/dev/null 2>&1; then
   exit 2
 fi
 
-make check
+BUNDLE_GEMFILE="$(cd .. && pwd)/Gemfile" ./script/check-site
 
 bundle_dir=$(mktemp -d)
 trap 'rm -rf "$bundle_dir"' EXIT

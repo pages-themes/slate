@@ -19,8 +19,6 @@ Alloys (AutoDIAL) research group.
 - Ruby and Bundler
 - ImageMagick (`convert` and `identify`)
 - FFmpeg (`ffmpeg` and `ffprobe`)
-- Python 3.9 or newer for publication updates and private previews
-- `zip` for creating a private review bundle
 - Firefox and Geckodriver for `make test` and `make test-ui`
 
 On Debian or Ubuntu, install the Ruby and media dependencies with:
@@ -48,89 +46,24 @@ make serve
 
 Jekyll will print the local address, normally
 <http://127.0.0.1:4000>. Stop the server with `Ctrl-C`.
-On this feature branch, `make serve` shows the draft at that root URL.
-It does not create an `/experimental/` route; that path is for the separate
-subdirectory build described below.
 
-### Private review bundle
+On the local redesign branch, `make serve` shows the original root site at
+<http://127.0.0.1:4000/> and the isolated draft source in
+[`experimental/`](experimental/README.md) at
+<http://127.0.0.1:4000/experimental/>. Editing files under `experimental/`
+rebuilds the draft. `make check` and `make test` validate both sites. The
+original site source stays at the repository root; `CNAME` remains there only.
+If port 4000 is occupied, use `make serve LOCAL_PORT=4002`.
 
-To share a draft without publishing the branch, create a ZIP from the current
-checkout in a shell with the build dependencies installed:
-
-```sh
-./script/create-preview-bundle
-```
-
-The script runs `make check`, then writes a timestamped ZIP to `/tmp` and
-prints its SHA-256 checksum. To choose the output file, pass an absolute path
-in an existing directory; the file must not already exist:
-
-```sh
-./script/create-preview-bundle /tmp/autodial-colleague-review.zip
-```
-
-The ZIP contains the built site, a README, and `serve-preview.py`. Recipients
-can extract it and run `python3 serve-preview.py` on macOS/Linux or
-`py serve-preview.py` on Windows, then open <http://127.0.0.1:8000/>. The
-viewer needs Python 3.9 or newer and serves only on the recipient's computer.
-The bundle leaves out `CNAME` and internal review data. Share it privately;
-the publication selection and News copy still await scientific and PI review.
-
-### Experimental subdirectory build
-
-To prepare the draft for a possible **later** public URL at
-`https://autodiallab.ca/experimental/`, run:
-
-```sh
-./script/create-experimental-bundle
-# Or choose a ZIP path:
-./script/create-experimental-bundle /tmp/autodial-experimental-review.zip
-```
-
-Jekyll omits directories beginning with `_`, so `/experimental/` is a safer
-path than `/_/experimental/` for this repository.
-
-To view this branch locally at that path, run `make serve-experimental` and
-open <http://127.0.0.1:4067/experimental/>. This uses a separate output
-directory and port from `make serve`. If port 4067 is taken, choose another:
-
-```sh
-make serve-experimental EXPERIMENTAL_PORT=4068
-```
-
-Use the address printed by Jekyll, including `/experimental/`. This command
-serves the draft only; it does not place the original `master` homepage at `/`.
-
-This creates a ZIP containing an `experimental/` folder built with Jekyll's
-`baseurl`. It checks that local links and media stay under that path, removes
-the nested `CNAME`, and leaves the root site untouched. If GitHub Pages
-currently publishes from the root of `master`, the folder could be added there
-**after** scientific and PI review and explicit publication approval. Verify
-the actual Pages publishing source before doing so. The normal homepage would
-keep its current source; no link to the draft is added there. The draft URL
-would still be public and discoverable. Its pages request `noindex`, which is
-not access control.
+Publication discovery, review decisions, News posts, Software entries, and
+their maintenance scripts live under `experimental/`. Use the commands in
+[`experimental/README.md`](experimental/README.md) to update and preview them.
+Nothing in this branch is published by running the local build commands.
 
 Most page content is stored in the Markdown files in the repository root.
 Laboratory content is in `sdls.md`, and homepage content is in `index.md`.
 Group-member records are maintained in `_data/members.yml`; reusable templates
 under `_includes/` generate their cards and biography dialogs.
-
-The Publications page reads reviewed records from `_data/publications.json`.
-Run `make publications-update` to discover candidates, review them with
-`make publications-review`, then run `make publications-build` after recording
-individual approval decisions. Discovery alone never adds a paper to the site.
-See [the Publications workflow](docs/PUBLICATIONS_WORKFLOW.md) for the full
-review process and source-verification rules.
-
-Publication News posts live in `_news/publications/`. Each post records a DOI,
-publication month, source links, and a provisional summary. The News page draws
-the full citation from the reviewed bibliography, keeping bibliographic details
-in one place. See `how_to_write_news_post.txt` for the post format.
-
-The Software page reads `_data/software.yml`; add or revise packages there
-instead of editing card markup. AutoEIS documentation remains available at
-`https://autodiallab.ca/AutoEIS/` through its Software card.
 
 ## Updating media
 

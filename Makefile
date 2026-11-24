@@ -7,8 +7,9 @@ PYTHON ?= python3
 PUBLICATIONS_DISCOVER_FLAGS ?= --no-crossref
 PUBLICATIONS_LIST_LIMIT ?= 25
 EXPERIMENTAL_PORT ?= 4067
+LOCAL_PORT ?= 4000
 
-.PHONY: install install-system install-gems optimize-media build check test test-ui serve serve-experimental clean publications-update publications-review publications-build
+.PHONY: install install-system install-gems optimize-media experimental-optimize-media build check test test-ui serve serve-draft serve-experimental clean publications-update publications-review publications-build
 
 # Show documentation and some recommended commands and instructions for using this Makefile.
 help:
@@ -21,7 +22,8 @@ help:
 	@echo "  make check            Build and validate the site and its media."
 	@echo "  make test             Run the full local check and browser interaction tests."
 	@echo "  make test-ui          Build and run browser interaction tests."
-	@echo "  make serve            Serve the Jekyll site locally."
+	@echo "  make serve            Serve the original root at / and experimental/ at /experimental/."
+	@echo "  make serve-draft      Serve experimental/ alone at /."
 	@echo "  make serve-experimental  Serve the draft at /experimental/ on port $(EXPERIMENTAL_PORT)."
 	@echo "  make publications-update  Discover OpenAlex and arXiv candidates; do not change the site."
 	@echo "  make publications-review  Show candidate counts and the newest pending records."
@@ -56,39 +58,49 @@ install-gems:
 optimize-media:
 	./script/optimize-media
 
+experimental-optimize-media:
+	./experimental/script/optimize-media
+
 build:
 	$(BUNDLE) exec jekyll clean
 	$(BUNDLE) exec jekyll build
+	./experimental/script/build-experimental-site "$(CURDIR)/_site/experimental" http://127.0.0.1:$(LOCAL_PORT)
 
 check:
 	./script/check-site
+	BUNDLE_GEMFILE="$(CURDIR)/Gemfile" ./experimental/script/check-site
+	./experimental/script/build-experimental-site "$(CURDIR)/_site/experimental" http://127.0.0.1:$(LOCAL_PORT)
 
 test: check
 	./script/test-ui
+	BUNDLE_GEMFILE="$(CURDIR)/Gemfile" ./experimental/script/test-ui
 
 test-ui: build
 	./script/test-ui
 
 serve:
-	$(BUNDLE) exec jekyll serve
+	$(PYTHON) script/serve-local-composite.py --port $(LOCAL_PORT)
+
+serve-draft:
+	$(BUNDLE) exec jekyll serve --source experimental --config experimental/_config.yml --port $(LOCAL_PORT) --host 127.0.0.1 --destination experimental/_site
 
 serve-experimental:
-	$(BUNDLE) exec jekyll serve --baseurl /experimental --port $(EXPERIMENTAL_PORT) --host 127.0.0.1 --destination _site_experimental
+	$(BUNDLE) exec jekyll serve --source experimental --config experimental/_config.yml --baseurl /experimental --port $(EXPERIMENTAL_PORT) --host 127.0.0.1 --destination experimental/_site_experimental
 
 # Discovery only changes internal candidate/review files. Publishing still
 # requires an individual approval and a separate publications-build command.
 publications-update:
-	$(PYTHON) script/publications.py discover $(PUBLICATIONS_DISCOVER_FLAGS)
-	$(PYTHON) script/publications.py discover-arxiv
-	$(PYTHON) script/publications.py report
+	$(PYTHON) experimental/script/publications.py discover $(PUBLICATIONS_DISCOVER_FLAGS)
+	$(PYTHON) experimental/script/publications.py discover-arxiv
+	$(PYTHON) experimental/script/publications.py report
 	@echo "Candidates refreshed; review them before running make publications-build."
 
 publications-review:
-	$(PYTHON) script/publications.py report
-	$(PYTHON) script/publications.py list --status pending --limit $(PUBLICATIONS_LIST_LIMIT)
+	$(PYTHON) experimental/script/publications.py report
+	$(PYTHON) experimental/script/publications.py list --status pending --limit $(PUBLICATIONS_LIST_LIMIT)
 
 publications-build:
-	$(PYTHON) script/publications.py build
+	$(PYTHON) experimental/script/publications.py build
 
 clean:
 	$(BUNDLE) exec jekyll clean

@@ -1,7 +1,10 @@
 # Local publications workflow
 
+All data paths below are relative to `experimental/`; run the shell commands
+from the repository root. The original website uses separate source files.
+
 The Publications page reads only `_data/publications.json`. That file is
-generated from reviewed records by `python3 script/publications.py build`.
+generated from reviewed records by `python3 experimental/script/publications.py build`.
 Discovery never puts a paper on the site. This workflow is local only: do not
 schedule it, push, open a PR, merge, or deploy without the website maintainer's
 explicit authorization and the required scientific review.
@@ -19,7 +22,7 @@ make check
 `make publications-update` defaults to `discover --no-crossref`, so it needs no
 contact email. To enrich new DOI records with Crossref, set a real contact
 email and run `make publications-update PUBLICATIONS_DISCOVER_FLAGS=`. For a
-single DOI, `python3 script/publications.py verify-doi '<candidate-id>'` checks
+single DOI, `python3 experimental/script/publications.py verify-doi '<candidate-id>'` checks
 Crossref without rebuilding the site. `PUBLICATIONS_LIST_LIMIT=50` changes how
 many pending records `make publications-review` shows. These commands use the
 verified identifiers in the review configuration; they do not discover every
@@ -90,9 +93,9 @@ The direct script command for an OpenAlex-only refresh leaves newly found
 records pending; the Make target above also refreshes configured arXiv IDs:
 
 ```sh
-python3 script/publications.py discover --no-crossref
-python3 script/publications.py list --year 2025 --limit 25
-python3 script/publications.py list --status approved
+python3 experimental/script/publications.py discover --no-crossref
+python3 experimental/script/publications.py list --year 2025 --limit 25
+python3 experimental/script/publications.py list --status approved
 ```
 
 `list` is newest first and can also filter with `--status pending`,
@@ -100,7 +103,7 @@ python3 script/publications.py list --status approved
 metadata warnings for detailed review. To check one DOI against Crossref:
 
 ```sh
-python3 script/publications.py verify-doi '<candidate-id>'
+python3 experimental/script/publications.py verify-doi '<candidate-id>'
 ```
 
 For bulk Crossref enrichment, provide a **real contact email you are
@@ -110,7 +113,7 @@ the environment, never in Git:
 ```sh
 export PUBLICATIONS_CONTACT_EMAIL='your-real-contact@example.org'
 export OPENALEX_API_KEY='your-private-key' # optional for ordinary paging
-python3 script/publications.py discover
+python3 experimental/script/publications.py discover
 ```
 
 Those values are placeholders. The OpenAlex key becomes necessary if an author
@@ -145,8 +148,8 @@ needs_review` until a reviewer checks the actual paper and independent author
 evidence. Search results stay pending and are never published automatically.
 
 ```sh
-python3 script/publications.py discover-arxiv
-python3 script/publications.py list --status pending --year 2026
+python3 experimental/script/publications.py discover-arxiv
+python3 experimental/script/publications.py list --status pending --year 2026
 ```
 
 arXiv IDs and URLs are normalized to a version-free `arxiv:<id>` alias and an
@@ -161,7 +164,7 @@ documents `id_list`, author search, Atom metadata, and versioned IDs.
 
 ## 3. Match versions into stable works
 
-Run `python3 script/publications.py sync-works` after editing manual records
+Run `python3 experimental/script/publications.py sync-works` after editing manual records
 or relationship evidence. Discovery and DOI verification run it automatically.
 `works.json` gives every scientific work a stable `work-...` ID and a
 `site_id`; the initial migration retained the existing 16 website card IDs.
@@ -182,11 +185,11 @@ For a confirmed pair without a deposited relationship, inspect both original
 sources and record the evidence in a manual link decision:
 
 ```sh
-python3 script/publications.py link-versions '<preprint-id>' '<journal-id>' \
+python3 experimental/script/publications.py link-versions '<preprint-id>' '<journal-id>' \
   --reviewer '<reviewer>' --note '<specific source links and matching evidence>'
-python3 script/publications.py reject-match '<first-id>' '<second-id>' \
+python3 experimental/script/publications.py reject-match '<first-id>' '<second-id>' \
   --note '<why these similar titles describe different work>'
-python3 script/publications.py report
+python3 experimental/script/publications.py report
 ```
 
 The Cantor alloy SSRN preprint and 2026 journal article were manually linked
@@ -246,14 +249,14 @@ work rather than approving them as two site entries. Resolve any
 author identity evidence; no Crossref lookup is required.
 
 ```sh
-python3 script/publications.py approve '<candidate-id>' \
+python3 experimental/script/publications.py approve '<candidate-id>' \
   --type journal --reviewer '<reviewer>' \
   --note '<evidence that this paper belongs on the site>'
-python3 script/publications.py approve 'doi:10.48550/arxiv.<id>' \
+python3 experimental/script/publications.py approve 'doi:10.48550/arxiv.<id>' \
   --type preprint --reviewer '<reviewer>' \
   --identity-evidence '<institutional profile or author confirmation>' \
   --note '<evidence that this preprint belongs on the site>'
-python3 script/publications.py exclude '<candidate-id>' \
+python3 experimental/script/publications.py exclude '<candidate-id>' \
   --note '<reason for exclusion>'
 ```
 
@@ -295,7 +298,7 @@ scope needs the maintainer's and PI's judgment:
 | `doi:10.1088/2632-2153/add3bb` | LLM4Mat-Bench has a Toronto coauthor but appears led elsewhere. Check contribution and preferred scope. |
 | `doi:10.1016/j.matt.2021.06.036` | Community perspective from the lab's starting period; decide whether perspectives/reviews belong here. |
 
-Use `python3 script/publications.py list --status pending --year 2025` (or
+Use `python3 experimental/script/publications.py list --status pending --year 2025` (or
 another year) to review the rest. Do not bulk approve by year, affiliation,
 or PI coauthorship. Also decide whether to show a complete lab bibliography
 or a curated selection; this local set is deliberately incomplete.
@@ -304,7 +307,7 @@ To add a paper missing from OpenAlex, use `add` with a verified DOI or a stable
 `manual:short-slug` ID. The paper stays pending until separately approved:
 
 ```sh
-python3 script/publications.py add --id 'manual:<short-slug>' \
+python3 experimental/script/publications.py add --id 'manual:<short-slug>' \
   --title '<verified title>' --author '<first author>' \
   --author '<second author>' --venue '<verified venue>' \
   --year 2025 --url 'https://<verified-publication-page>'

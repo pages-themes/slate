@@ -1,18 +1,14 @@
 # AutoDIAL Website
 
-This repository contains the Jekyll website for the Autonomous Discovery of
-Alloys (AutoDIAL) research group.
+This directory contains the separate, provisional Jekyll source for the
+AutoDIAL redesign. The repository-root source is the original website. Run
+the commands below from the repository root unless a command says otherwise.
 
 ## Project documentation
 
-- [Developer guide](docs/DEVELOPER_GUIDE.md): repository structure and
-  task-oriented update procedures.
-- [Verification plan](docs/TESTING.md): automated checks, browser review, and
-  regression-test design.
-- [Improvement roadmap](docs/ROADMAP.md): prioritized implementation work and
-  acceptance criteria.
-- [Agent feature map](docs/feature-map.yml): structured feature ownership,
-  dependencies, update recipes, and validation contracts.
+- [Publications workflow](docs/PUBLICATIONS_WORKFLOW.md): candidate discovery,
+  manual review, approval, and bibliography generation.
+- [Repository guide](../README.md): original site and combined local preview.
 
 ## Requirements
 
@@ -40,17 +36,17 @@ Build the site once:
 make build
 ```
 
-Serve the original `master` site and this branch's draft together:
+Serve the original root site and this directory's draft together:
 
 ```sh
 make serve
 ```
 
-Open <http://127.0.0.1:4000/> for committed `master` and
+Open <http://127.0.0.1:4000/> for the original root site and
 <http://127.0.0.1:4000/experimental/> for the draft. The draft rebuilds when
 its source changes. Stop the server with `Ctrl-C`. If port 4000 is occupied,
 run `make serve LOCAL_PORT=4002` and use that port in both URLs. To serve only
-the current branch at `/`, use `make serve-draft` instead.
+the draft alone at `/`, use `make serve-draft` instead.
 
 ### Private review bundle
 
@@ -58,15 +54,15 @@ To share a draft without publishing the branch, create a ZIP from the current
 checkout in a shell with the build dependencies installed:
 
 ```sh
-./script/create-preview-bundle
+./experimental/script/create-preview-bundle
 ```
 
-The script runs `make check`, then writes a timestamped ZIP to `/tmp` and
+The script checks the experimental site, then writes a timestamped ZIP to `/tmp` and
 prints its SHA-256 checksum. To choose the output file, pass an absolute path
 in an existing directory; the file must not already exist:
 
 ```sh
-./script/create-preview-bundle /tmp/autodial-colleague-review.zip
+./experimental/script/create-preview-bundle /tmp/autodial-colleague-review.zip
 ```
 
 The ZIP contains the built site, a README, and `serve-preview.py`. Recipients
@@ -82,9 +78,9 @@ To prepare the draft for a possible **later** public URL at
 `https://autodiallab.ca/experimental/`, run:
 
 ```sh
-./script/create-experimental-bundle
+./experimental/script/create-experimental-bundle
 # Or choose a ZIP path:
-./script/create-experimental-bundle /tmp/autodial-experimental-review.zip
+./experimental/script/create-experimental-bundle /tmp/autodial-experimental-review.zip
 ```
 
 Jekyll omits directories beginning with `_`, so `/experimental/` is a safer
@@ -110,7 +106,7 @@ keep its current source; no link to the draft is added there. The draft URL
 would still be public and discoverable. Its pages request `noindex`, which is
 not access control.
 
-Most page content is stored in the Markdown files in the repository root.
+Most draft page content is stored in Markdown files in `experimental/`.
 Laboratory content is in `sdls.md`, and homepage content is in `index.md`.
 Group-member records are maintained in `_data/members.yml`; reusable templates
 under `_includes/` generate their cards and biography dialogs.
@@ -151,7 +147,7 @@ After adding or replacing an active source file, generate the website-ready
 versions with:
 
 ```sh
-make optimize-media
+make experimental-optimize-media
 ```
 
 The generated files are written to `assets/images/`. Commit both the source and
@@ -178,7 +174,7 @@ To add a member:
 
 1. Add the original portrait to `_media_sources/images/people/`.
 2. Add the member record to the appropriate section in `_data/members.yml`.
-3. Run `make optimize-media` to generate the 300px and 600px portraits.
+3. Run `make experimental-optimize-media` to generate the 300px and 600px portraits.
 4. Run `make check` and inspect the page with `make serve`.
 
 To move someone to alumni, move their complete record to the `alumni` section
@@ -220,7 +216,7 @@ the theme's Ruby, HTML, and package checks.
 
 1. Edit the appropriate Markdown file.
 2. Put new original media in `_media_sources/`, if needed.
-3. Run `make optimize-media` after changing media.
+3. Run `make experimental-optimize-media` after changing media.
 4. Run `make check`.
 5. Run `make test` for layout, template, or interaction changes.
 6. Run `make serve` and inspect the affected pages in a browser.

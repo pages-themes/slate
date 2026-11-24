@@ -1,0 +1,45 @@
+#!/bin/sh
+# Build the isolated draft under a URL prefix and validate its local links.
+set -eu
+
+cd "$(dirname "$0")/../.."
+
+if [ "$#" -lt 1 ] || [ "$#" -gt 2 ]; then
+  echo "Usage: experimental/script/build-experimental-site ABSOLUTE_DESTINATION [SITE_URL]" >&2
+  exit 2
+fi
+destination=$1
+site_url=${2:-https://autodiallab.ca}
+case "$destination" in /*) ;; *) echo "Choose an absolute destination path." >&2; exit 2 ;; esac
+
+temp_dir=$(mktemp -d)
+trap 'rm -rf "$temp_dir"' EXIT
+temp_config="$temp_dir/overlay.yml"
+printf 'url: %s\nbaseurl: /experimental\n' "$site_url" > "$temp_config"
+
+BUNDLE_GEMFILE="$PWD/Gemfile" bundle exec jekyll build \
+  --source experimental \
+  --config "experimental/_config.yml,$temp_config" \
+  --destination "$destination"
+rm -f "$destination/CNAME" "$destination/feed.xml"
+
+# The theme's post layout does not include the draft's noindex tag. Also
+# discard the empty legacy sample post so the link checker sees real pages.
+python3 - "$destination" <<'PY'
+from pathlib import Path
+import sys
+
+for page in Path(sys.argv[1]).rglob("*.html"):
+    html = page.read_text(encoding="utf-8")
+    if not html.strip():
+        page.unlink()
+        continue
+    if 'name="robots" content="noindex' not in html:
+        if "</head>" not in html:
+            raise SystemExit(f"Cannot add noindex to {page}: missing </head>")
+        page.write_text(
+            html.replace("</head>", '<meta name="robots" content="noindex, nofollow">\n</head>', 1),
+            encoding="utf-8",
+        )
+PY
+python3 experimental/script/check-experimental-build.py "$destination"

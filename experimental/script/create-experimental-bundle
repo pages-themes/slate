@@ -2,13 +2,13 @@
 # Prepare a subdirectory build for later review and publication; do not deploy.
 set -eu
 
-cd "$(dirname "$0")/.."
+cd "$(dirname "$0")/../.."
 
 usage() {
   cat <<'EOF'
-Usage: ./script/create-experimental-bundle [ABSOLUTE_OUTPUT_PATH]
+Usage: ./experimental/script/create-experimental-bundle [ABSOLUTE_OUTPUT_PATH]
 
-Validate and build the current branch for https://autodiallab.ca/experimental/,
+Validate and build the experimental/ source for https://autodiallab.ca/experimental/,
 then package an experimental/ folder in a ZIP. Nothing is published.
 The default output is a timestamped ZIP in /tmp. The output directory must
 exist, and the ZIP must not already exist.
@@ -36,36 +36,11 @@ make check
 
 bundle_dir=$(mktemp -d)
 trap 'rm -rf "$bundle_dir"' EXIT
-cat > "$bundle_dir/experimental-config.yml" <<'EOF'
-url: https://autodiallab.ca
-baseurl: /experimental
-EOF
-bundle exec jekyll build --config "_config.yml,$bundle_dir/experimental-config.yml" --destination "$bundle_dir/experimental"
-rm -f "$bundle_dir/experimental/CNAME"
-rm -f "$bundle_dir/experimental/feed.xml"
-# The legacy theme supplies a post layout outside our default layout. Stamp
-# those generated pages too so every HTML page requests no indexing. The
-# repository's empty sample post has no HTML document and is omitted here.
-python3 - "$bundle_dir/experimental" <<'PY'
-from pathlib import Path
-import sys
-
-for page in Path(sys.argv[1]).rglob("*.html"):
-    html = page.read_text(encoding="utf-8")
-    if not html.strip():
-        page.unlink()
-        continue
-    if 'name="robots" content="noindex' in html:
-        continue
-    if "</head>" not in html:
-        raise SystemExit(f"Cannot add noindex to {page}: missing </head>")
-    page.write_text(html.replace("</head>", '<meta name="robots" content="noindex, nofollow">\n</head>', 1), encoding="utf-8")
-PY
-python3 script/check-experimental-build.py "$bundle_dir/experimental"
+./experimental/script/build-experimental-site "$bundle_dir/experimental"
 cat > "$bundle_dir/README.txt" <<'EOF'
 AutoDIAL experimental site build — local preparation only
 
-The experimental/ folder is a built copy of the current feature branch for
+The experimental/ folder is built from the separate experimental/ source for
 https://autodiallab.ca/experimental/. It does not modify the existing homepage.
 The site is provisional and has not been approved for public release.
 
@@ -79,7 +54,7 @@ generated HTML by hand.
 
 A public URL is accessible to anyone who knows or finds it. The pages request
 no indexing, but this is not access control. For private feedback now, use
-./script/create-preview-bundle instead.
+./experimental/script/create-preview-bundle instead.
 EOF
 (cd "$bundle_dir" && zip -qr "$output" README.txt experimental)
 printf 'Experimental bundle: %s\n' "$output"
